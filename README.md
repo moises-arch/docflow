@@ -1,115 +1,126 @@
-# DocFlow — AI Document Processing
+# DocFlow — AI Purchase Order Automation for Odoo 19
 
-> Convierte órdenes de compra en papel, PDF o email en registros de venta
-> estructurados y sincronizados a tu ERP — sin re-tipeo manual.
+> Turn purchase orders (PDF, email, or photo) into **Odoo 19 Sales Orders**
+> automatically. Claude AI reads each document, a human approves in one click,
+> and the order lands in Odoo as a `sale.order` — no manual data entry.
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square&logo=next.js)](https://nextjs.org)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![Tailwind](https://img.shields.io/badge/Tailwind-v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Odoo](https://img.shields.io/badge/Odoo-19-714B67?style=flat-square&logo=odoo&logoColor=white)](https://www.odoo.com)
 [![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?style=flat-square&logo=supabase&logoColor=white)](https://supabase.com)
 [![Anthropic](https://img.shields.io/badge/Claude-Sonnet-D97706?style=flat-square)](https://anthropic.com)
 [![License](https://img.shields.io/badge/license-MIT-8b5cf6?style=flat-square)](LICENSE)
 
-> **Nota:** versión pública y auditable de un producto interno. Las credenciales,
-> dominios y nombres de proveedores reales han sido reemplazados por
-> placeholders. El código es funcional pero requiere tu propia configuración
-> (Supabase, Anthropic, ERP) para correr de punta a punta.
+> **Note:** public, auditable edition of a production product. Real credentials,
+> domains, and customer names have been replaced with placeholders. The code is
+> functional but needs your own configuration (Supabase, Anthropic, Odoo 19) to
+> run end to end.
 
 ---
 
-## ¿Qué es DocFlow?
+## What is DocFlow?
 
-DocFlow convierte **órdenes de compra en papel o PDF** en registros de ventas
-sincronizados en un ERP, sin re-tipeo manual. Un proveedor sube un PDF, Claude
-extrae cada línea con precios y cantidades, un revisor aprueba en segundos, y el
-pedido llega al ERP como orden de venta.
+**DocFlow is an AI-powered purchase order automation layer for Odoo 19.** It
+converts incoming purchase orders — on paper, PDF, or email — into structured
+Odoo Sales Orders without re-typing. A supplier uploads a PDF, Claude extracts
+every line with prices and quantities, a reviewer approves in seconds, and the
+order is pushed to Odoo 19 over native XML-RPC as a `sale.order`.
 
 ```
-📄 PDF / Email / Foto    →    🤖 Claude AI extrae    →    👤 Revisor 1 clic    →    ✅ ERP sale order
+📄 PDF / Email / Photo   →   🤖 Claude AI extracts   →   👤 1-click review   →   ✅ Odoo 19 sale.order
 ```
+
+### Why DocFlow for Odoo 19?
+
+- **Native Odoo 19 integration** over XML-RPC — creates `sale.order`,
+  `res.partner` and `product.product` records directly, no middleware.
+- **Zero manual entry** — eliminate the data-entry desk for inbound POs.
+- **Human-in-the-loop** — AI extracts, a person approves; full audit trail.
+- **ERP-agnostic core** — Odoo 19 supported out of the box; the connector layer
+  can target any XML-RPC ERP.
 
 ---
 
-## Características
+## Features
 
-### 📥 Ingestión multicanal
+### 📥 Multichannel ingestion
 
-| Canal | Descripción |
+| Channel | Description |
 |---|---|
-| **Upload directo** | Drag & drop — PDF, imagen, JPEG, Excel |
-| **Email** | Webhook (Mailgun · Resend) o un proveedor de correo vía OAuth |
-| **IMAP** | Polling automático de cualquier buzón |
-| **QR Scanner** | Código QR → foto desde celular, sin login |
-| **Conectores de portal** | Conectores de portal de proveedor / marketplace, cron diario |
+| **Direct upload** | Drag & drop — PDF, image, JPEG, Excel |
+| **Email** | Webhook (Mailgun · Resend) or an OAuth email provider |
+| **IMAP** | Automatic polling of any mailbox |
+| **QR scanner** | QR code → photo from a phone, no login |
+| **Portal connectors** | Supplier portal / marketplace connectors, daily cron |
 
-### 🤖 Extracción con IA
+### 🤖 AI extraction
 
-- **Claude Sonnet** — multimodal, lee PDFs e imágenes directamente
-- Extrae proveedor, número de orden, fecha, líneas, SKU, cantidades, precios y totales
-- **Review Profiles** — plantillas configurables por tipo de documento
-- **Provider Templates** — anotaciones de campos específicas por proveedor
-- **Auto-approve** — umbral de confianza configurable, sin revisión humana cuando la IA está segura
-- Idempotencia por `processing_run_id` — los reintentos no duplican gasto de API
+- **Claude Sonnet** — multimodal, reads PDFs and images directly
+- Extracts supplier, order number, date, line items, SKU, quantities, prices, totals
+- **Review Profiles** — configurable templates per document type
+- **Provider Templates** — per-supplier field annotations
+- **Auto-approve** — configurable confidence threshold, no human review when the AI is sure
+- Idempotent per `processing_run_id` — retries never double-charge the API
 
-### ✅ Workflow de revisión
+### ✅ Review workflow
 
-- Vista lado a lado: PDF original + campos extraídos
-- Edición inline de cualquier campo antes de aprobar
-- Rechazo con auditoría completa (`rejected_by`, `rejected_at`)
-- Bulk actions para equipos de alto volumen
-- Reseller mappings: SKU de proveedor → producto propio del ERP
+- Side-by-side view: original PDF + extracted fields
+- Inline editing of any field before approval
+- Rejection with full audit trail (`rejected_by`, `rejected_at`)
+- Bulk actions for high-volume teams
+- Reseller mappings: supplier SKU → your own Odoo product
 
-### 🔄 Sincronización con el ERP
+### 🔄 Odoo 19 synchronization
 
-- XML-RPC nativo
-- Crea la orden de venta con todas sus líneas automáticamente
-- Mapeo de clientes y productos configurable por tenant
-- Modo reseller (compra a proveedor, vende al cliente)
-- Rate limiting (30 reintentos/h por tenant)
-- Log completo de cada intento
+- Native XML-RPC — built and tested against **Odoo 19**
+- Creates the `sale.order` with all its lines automatically
+- Per-tenant customer and product mapping
+- Reseller mode (buy from supplier, sell to customer)
+- Rate limiting (30 retries/h per tenant)
+- Full log of every push attempt
 
 ### 🏢 Multi-tenant
 
-- Aislamiento completo con RLS (Row Level Security) de PostgreSQL
-- Cada tenant tiene su propia configuración de ERP, IA, proveedores y mappings
-- Invitaciones por email al equipo
+- Full isolation with PostgreSQL Row Level Security (RLS)
+- Each tenant has its own Odoo, AI, supplier and mapping configuration
+- Email team invitations
 
-### 🛡️ Seguridad y observabilidad
+### 🛡️ Security & observability
 
-- Rate limiting token-bucket en upload (100/h) y retry-sync (30/h)
-- Replay protection en email-ingest (rechaza mensajes > 15 min)
-- Tokens QR firmados con HMAC-SHA256, TTL 7 días
-- `workflow_events` — timeline completo de cada documento
+- Token-bucket rate limiting on upload (100/h) and retry-sync (30/h)
+- Replay protection on email ingestion (rejects messages older than 15 min)
+- HMAC-SHA256 signed QR tokens, 7-day TTL
+- `workflow_events` — complete timeline for every document
 
 ---
 
-## Arquitectura
+## Architecture
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │                        BROWSER                               │
 │   Next.js 16 · React 19 · Tailwind v4 · shadcn/ui           │
-│   next-intl (es/en) · Sonner · Recharts · TanStack Table    │
+│   next-intl (en/es) · Sonner · Recharts · TanStack Table    │
 └──────────────────────────────┬───────────────────────────────┘
                                │ HTTPS
 ┌──────────────────────────────▼───────────────────────────────┐
 │                       WEB (serverless)                        │
 │                                                              │
-│  /api/upload          → valida, guarda en Supabase Storage   │
-│  /api/scan-links      → genera QR firmado (HMAC-SHA256)      │
+│  /api/upload          → validate, store in Supabase Storage  │
+│  /api/scan-links      → generate signed QR (HMAC-SHA256)     │
 │  /api/order-drafts/*  → approve · reject · retry-sync       │
-│  /api/settings/*      → erp · ai · team · mappings          │
-│  /api/ingest/*        → webhooks de email                    │
-│  /api/cron/*          → browser-ingest (diario 6am)         │
+│  /api/settings/*      → odoo · ai · team · mappings         │
+│  /api/ingest/*        → email webhooks                       │
+│  /api/cron/*          → browser-ingest (daily 6am)          │
 └──────────────┬───────────────────────────┬───────────────────┘
                │ Supabase JS SDK            │ XML-RPC
 ┌──────────────▼──────────────┐   ┌────────▼──────────────────┐
-│          SUPABASE           │   │            ERP             │
+│          SUPABASE           │   │          ODOO 19           │
 │                             │   │                            │
-│  PostgreSQL + RLS           │   │  sale order                │
-│  Auth (magic link)          │   │  partner                   │
-│  Storage (PDFs/imágenes)    │   │  product                   │
+│  PostgreSQL + RLS           │   │  sale.order                │
+│  Auth (magic link)          │   │  res.partner               │
+│  Storage (PDFs/images)      │   │  product.product           │
 │                             │   └────────────────────────────┘
 │  Edge Functions (Deno):     │
 │  ├── ai-process  ───────────┼──▶  Anthropic API
@@ -121,7 +132,7 @@ pedido llega al ERP como orden de venta.
 └─────────────────────────────┘
 ```
 
-### Estado de un documento
+### Document lifecycle
 
 ```
 uploaded → processing → needs_review → reviewed → synced
@@ -131,145 +142,168 @@ uploaded → processing → needs_review → reviewed → synced
 
 ---
 
-## Stack tecnológico
+## Tech stack
 
-| Capa | Tecnología | Versión |
+| Layer | Technology | Version |
 |---|---|---|
 | Framework | Next.js App Router | 16.x |
 | UI | React | 19.x |
-| Lenguaje | TypeScript | 5.x |
-| Estilos | Tailwind CSS | v4 |
-| Componentes | shadcn/ui + Radix UI | — |
-| i18n | next-intl | 4.x |
-| Base de datos | Supabase (PostgreSQL) | — |
+| Language | TypeScript | 5.x |
+| Styling | Tailwind CSS | v4 |
+| Components | shadcn/ui + Radix UI | — |
+| i18n | next-intl (en/es) | 4.x |
+| Database | Supabase (PostgreSQL) | — |
 | Auth | Supabase Auth (magic link) | — |
 | Storage | Supabase Storage | — |
 | Edge Functions | Supabase Functions (Deno) | — |
-| IA / LLM | Anthropic Claude Sonnet | — |
-| ERP | XML-RPC | — |
+| AI / LLM | Anthropic Claude Sonnet | — |
+| ERP | **Odoo 19** via XML-RPC | 19 |
 | Package manager | pnpm | 10.x |
-| Tests unit | Vitest | 4.x |
-| Tests e2e | Playwright | 1.x |
+| Unit tests | Vitest | 4.x |
+| E2E tests | Playwright | 1.x |
 
 ---
 
-## Estructura del proyecto
+## Project structure
 
 ```
 docflow/
 ├── src/
 │   ├── app/
-│   │   ├── [locale]/               # Rutas con i18n (es / en)
-│   │   │   ├── inbox/              # Documentos por procesar
-│   │   │   ├── review/[id]/        # Workspace de revisión
-│   │   │   ├── processed/          # Órdenes sincronizadas
-│   │   │   ├── templates/          # Plantillas de extracción
-│   │   │   ├── integrations/       # Conectores externos
-│   │   │   ├── settings/           # ERP · IA · equipo · mappings
-│   │   │   ├── help/               # Centro de ayuda bilingüe
-│   │   │   └── dashboard/          # Métricas y resumen
+│   │   ├── [locale]/               # i18n routes (en / es)
+│   │   │   ├── inbox/              # Documents to process
+│   │   │   ├── review/[id]/        # Review workspace
+│   │   │   ├── processed/          # Synced orders
+│   │   │   ├── templates/          # Extraction templates
+│   │   │   ├── integrations/       # External connectors
+│   │   │   ├── settings/           # Odoo · AI · team · mappings
+│   │   │   ├── help/               # Bilingual help center
+│   │   │   └── dashboard/          # Metrics and overview
 │   │   └── api/                    # Route handlers (Node.js)
 │   ├── components/
-│   │   ├── app/                    # Componentes del producto
+│   │   ├── app/                    # Product components
 │   │   └── ui/                     # shadcn/ui base
 │   ├── lib/
-│   │   ├── supabase/               # Clients server · client · middleware
-│   │   ├── rate-limit.ts           # Token bucket por tenant
-│   │   └── scan-token.ts           # HMAC para QR
+│   │   ├── supabase/               # Clients: server · client · middleware
+│   │   ├── rate-limit.ts           # Per-tenant token bucket
+│   │   └── scan-token.ts           # HMAC for QR
 │   └── messages/
-│       ├── en.json                 # Traducciones inglés
-│       └── es.json                 # Traducciones español
+│       ├── en.json                 # English translations
+│       └── es.json                 # Spanish translations
 │
 ├── supabase/
 │   ├── functions/                  # Edge Functions (Deno)
-│   │   ├── ai-process/             # Extracción con Claude
-│   │   ├── odoo-sync/              # Sync al ERP
-│   │   ├── ingest/                 # Pipeline de documentos
+│   │   ├── ai-process/             # Extraction with Claude
+│   │   ├── odoo-sync/              # Sync to Odoo 19
+│   │   ├── ingest/                 # Document pipeline
 │   │   ├── email-ingest/           # Email webhooks
-│   │   ├── odoo-sync-catalog/      # Sincroniza catálogo del ERP
-│   │   └── janitor-uploads/        # Limpieza de storage
-│   └── migrations/                 # 25+ migraciones SQL
+│   │   ├── odoo-sync-catalog/      # Sync Odoo catalog
+│   │   └── janitor-uploads/        # Storage cleanup
+│   └── migrations/                 # 25+ SQL migrations
 │
-├── e2e/                            # Tests Playwright
-├── spec/                           # Especificaciones del producto
+├── e2e/                            # Playwright tests
+├── spec/                           # Product specifications
 └── package.json
 ```
 
 ---
 
-## Inicio rápido
+## Quick start
 
-### Prerrequisitos
+### Prerequisites
 
 - Node.js ≥ 22, pnpm ≥ 9
-- Proyecto en Supabase
-- API key de Anthropic
-- Instancia de ERP accesible vía XML-RPC
+- A Supabase project
+- An Anthropic API key
+- An Odoo 19 instance reachable over XML-RPC
 
 ### Setup
 
 ```bash
-# 1. Clonar
-git clone https://github.com/your-org/docflow.git && cd docflow
+# 1. Clone
+git clone https://github.com/moises-arch/docflow.git && cd docflow
 
-# 2. Instalar
+# 2. Install
 pnpm install --frozen-lockfile
 
-# 3. Variables de entorno
+# 3. Environment variables
 cp .env.example .env.local
-# editar .env.local con tus valores
+# edit .env.local with your values
 
-# 4. Base de datos
+# 4. Database
 npx supabase link --project-ref <project-id>
 npx supabase db push
 pnpm db:types
 
-# 5. Secrets de Edge Functions
+# 5. Edge Function secrets
 npx supabase secrets set ANTHROPIC_API_KEY=sk-ant-...
 npx supabase secrets set INTAKE_SECRETS_KEY=$(openssl rand -hex 32)
 
 # 6. Deploy Edge Functions
 npx supabase functions deploy ai-process odoo-sync ingest email-ingest janitor-uploads
 
-# 7. Servidor local
+# 7. Local server
 pnpm dev   # → http://localhost:3001
 ```
 
 ---
 
-## Variables de entorno
+## Environment variables
 
-| Variable | Requerida | Descripción |
+| Variable | Required | Description |
 |---|:-:|---|
-| `NEXT_PUBLIC_APP_URL` | ✅ | URL pública de la app |
-| `NEXT_PUBLIC_ERP_BASE_URL` | ⬜ | Base URL del ERP para deep links |
-| `NEXT_PUBLIC_SUPABASE_URL` | ✅ | URL del proyecto Supabase |
-| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | ✅ | Key anon de Supabase |
-| `SUPABASE_SERVICE_ROLE_KEY` | ✅ | Service role key (solo server) |
+| `NEXT_PUBLIC_APP_URL` | ✅ | Public app URL |
+| `NEXT_PUBLIC_ERP_BASE_URL` | ⬜ | Odoo 19 base URL for deep links |
+| `NEXT_PUBLIC_SUPABASE_URL` | ✅ | Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` | ✅ | Supabase anon key |
+| `SUPABASE_SERVICE_ROLE_KEY` | ✅ | Service role key (server only) |
 | `CRON_SECRET` | ✅ | `openssl rand -hex 32` |
 | `SCAN_TOKEN_SECRET` | ✅ | `openssl rand -hex 32` |
-| `NEXT_PUBLIC_SENTRY_DSN` | ⬜ | Error reporting con Sentry |
+| `NEXT_PUBLIC_SENTRY_DSN` | ⬜ | Error reporting with Sentry |
 
-> ⚠️ `ANTHROPIC_API_KEY` e `INTAKE_SECRETS_KEY` van **solo en Supabase Secrets**, nunca en el host web.
+> ⚠️ `ANTHROPIC_API_KEY` and `INTAKE_SECRETS_KEY` go in **Supabase Secrets only**, never on the web host.
 
-Ver [`.env.example`](.env.example) para la lista completa con descripciones.
+See [`.env.example`](.env.example) for the full list with descriptions.
 
 ---
 
-## Comandos
+## Commands
 
 ```bash
-pnpm dev          # Servidor local :3001 (turbopack)
-pnpm build        # Build de producción
-pnpm typecheck    # Verificación TypeScript (obligatorio antes de deploy)
+pnpm dev          # Local server :3001 (turbopack)
+pnpm build        # Production build
+pnpm typecheck    # TypeScript check (required before deploy)
 pnpm test         # Vitest unit tests
 pnpm test:e2e     # Playwright e2e tests
-pnpm db:types     # Regenera database.types.ts desde Supabase
-pnpm format       # Prettier en todo el repo
+pnpm db:types     # Regenerate database.types.ts from Supabase
+pnpm format       # Prettier across the repo
 ```
 
 ---
 
-## Licencia
+## Use cases & keywords
 
-MIT — ver [LICENSE](LICENSE).
+DocFlow is built for teams that receive a high volume of inbound purchase orders
+and want them in **Odoo 19** without manual data entry:
+
+- **Odoo 19 purchase order automation** / **Odoo 19 sales order automation**
+- **AI document extraction for Odoo** — PDF, image and email to `sale.order`
+- **Odoo 19 EDI / PO ingestion** from supplier portals and marketplaces
+- **PDF to Odoo 19** sales order converter with human review
+- **Odoo 19 AI integration** powered by Anthropic Claude
+- **B2B order automation** and **purchase order OCR** for distributors and resellers
+- **Odoo 19 connector** for invoices, purchase orders and product catalogs
+
+Topics: `odoo` · `odoo-19` · `odoo-integration` · `purchase-order-automation` ·
+`document-ai` · `sales-order` · `nextjs` · `supabase` · `anthropic-claude` ·
+`erp-integration` · `ocr` · `b2b`
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE).
+
+---
+
+*⚡ Built by [Mojo Dev](https://github.com/moises-arch)*

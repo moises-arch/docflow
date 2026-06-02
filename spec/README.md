@@ -1,8 +1,8 @@
-# Intake — Spec System
+# DocFlow — Spec System
 
-This directory is the **single source of truth** for Intake: a B2B product that automates purchase-order ingestion from uploaded documents into **Odoo 19** via an AI pipeline.
+This directory is the **single source of truth** for DocFlow: a B2B product that automates purchase-order ingestion from uploaded documents into **Odoo 19** via an AI pipeline.
 
-Core flow: **Upload → AI processing → Review → Push to Odoo.**
+Core flow: **Upload → AI processing → Review → Push to Odoo 19.**
 
 These specs describe **Phase 1 — Engine First**. Stripe UI, per-tenant branding, subdomains, admin dashboards, team management, public APIs are deferred — see [roadmap.md](./roadmap.md).
 
@@ -45,10 +45,6 @@ Every spec follows the same skeleton so you can skim consistently:
 ### Auth & tenancy
 
 - [tenancy-auth.md](./tenancy-auth.md) — Supabase Auth, tenant isolation, per-tenant secrets
-
-### Credits
-
-- [credits.md](./credits.md) — credit rules (provisional), ledger, Stripe-ready foundation
 
 ### Workflows (end-to-end engine flows)
 
@@ -113,12 +109,6 @@ Every workflow emits structured events with at minimum:
 - Logs are plain JSON lines.
 - PII (document contents, customer names from POs) must not be logged at INFO or below.
 
-### Credits
-
-- Users see **"1 order = 1 credit"**.
-- Internally, credits are computed from **relevant pages** (see [credits.md](./credits.md)).
-- Credit thresholds in [credits.md](./credits.md) are **provisional** — intended for calibration once we have real document samples.
-
 ### Odoo
 
 - Target Odoo version is **19** (released late 2025). The adapter is built behind an interface (`services/odoo.md`) so we can swap it if APIs shift.
@@ -144,6 +134,9 @@ If a rule needs to exist in two places, one of them is wrong — extract it to i
 
 - **No implementation code.** Minimal SQL DDL or type shapes are allowed only to disambiguate structure.
 - **Design tokens** live in [design-system.md](./design-system.md). [ui.md](./ui.md) describes screen-level behavior.
-- **No Stripe flows.** Only the data shape required to plug Stripe in later — see [credits.md](./credits.md).
 - **No public API spec.** Phase 1 has no public API surface; internal Edge Function contracts are covered by their owning workflow.
 - **No tests spec.** Testing strategy is per-workflow and appears inline under "Success criteria".
+
+---
+
+*⚡ Built by [Mojo Dev](https://github.com/moises-arch)*
