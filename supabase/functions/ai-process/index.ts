@@ -2683,7 +2683,7 @@ Deno.serve(async (req) => {
     }
 
     // ── 10. Debit credits ─────────────────────────────────────────────────
-    // Billing: 1 credit per document (provisional — see spec/credits.md)
+    // Billing: 1 credit per document (provisional)
     await supabase.from("credit_ledger").insert({
       tenant_id: tenantId,
       kind: "debit",

@@ -202,7 +202,7 @@ docflow/
 │   └── migrations/                 # 25+ SQL migrations
 │
 ├── e2e/                            # Playwright tests
-├── spec/                           # Product specifications
+├── docs/                           # Deployment & guides
 └── package.json
 ```
 
