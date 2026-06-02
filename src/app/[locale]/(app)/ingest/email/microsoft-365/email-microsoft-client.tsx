@@ -352,7 +352,7 @@ export function EmailMicrosoftClient({
                 <strong>New registration</strong>.
               </li>
               <li>
-                Name: <code>Intake Email Ingest</code>. Account types:{" "}
+                Name: <code>DocFlow Email Ingest</code>. Account types:{" "}
                 <strong>Single tenant</strong>. Redirect URI: déjalo vacío. Click{" "}
                 <strong>Register</strong>.
               </li>
@@ -362,7 +362,7 @@ export function EmailMicrosoftClient({
               </li>
               <li>
                 <strong>Certificates &amp; secrets</strong> → New client secret → Description{" "}
-                <code>Intake</code>, Expires <code>24 months</code> →{" "}
+                <code>DocFlow</code>, Expires <code>24 months</code> →{" "}
                 <strong>copia el "Value"</strong> (no el Secret ID; sólo se muestra una vez).
               </li>
               <li>

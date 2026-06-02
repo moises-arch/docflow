@@ -60,7 +60,7 @@ brew install --cask docker
 You said you already have all of these except the domain. Double-check you have access to each **now**, before writing code:
 
 - [ ] **GitHub** organization or personal account with private repo quota
-- [ ] **Supabase** — 3 projects: `intake-dev`, `intake-staging`, `intake-prod` (pick region nearest your clients — ask this week if you haven't)
+- [ ] **Supabase** — 3 projects: `docflow-dev`, `docflow-staging`, `docflow-prod` (pick region nearest your clients — ask this week if you haven't)
 - [ ] **Vercel** — 1 team, 1 project (create at end of setup, not now)
 - [ ] **Google Cloud** — project with billing enabled; Document AI API enabled; a **processor** provisioned (`OCR_PROCESSOR`, general); service account JSON key downloaded
 - [ ] **Gemini** — API key from Google AI Studio
@@ -376,7 +376,7 @@ Studio at `http://localhost:54323` — verify it loads.
 ### 4.2 Link to dev project
 
 ```bash
-supabase link --project-ref <your-intake-dev-project-ref>
+supabase link --project-ref <your-docflow-dev-project-ref>
 ```
 
 (Find the project ref in Supabase dashboard → Project Settings → General.)
@@ -945,7 +945,7 @@ pnpm dlx vercel@latest env pull  # populates .env.local from Vercel if you set e
 
 ### 13.2 Set production env
 
-In Vercel dashboard → Project → Settings → Environment Variables, add every key from `.env.example` (production values, pointing at `intake-prod` Supabase). Repeat for `preview` (pointing at `intake-staging`).
+In Vercel dashboard → Project → Settings → Environment Variables, add every key from `.env.example` (production values, pointing at `docflow-prod` Supabase). Repeat for `preview` (pointing at `docflow-staging`).
 
 ### 13.3 Push to main
 

@@ -1,5 +1,5 @@
 -- ============================================================
--- Intake — initial schema  (generated from spec/data.md)
+-- DocFlow — initial schema  (generated from spec/data.md)
 -- Order: extensions → tables → triggers → helper functions → RLS → views
 -- ============================================================
 

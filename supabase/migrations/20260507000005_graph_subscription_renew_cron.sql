@@ -1,6 +1,6 @@
 -- Auto-renew Microsoft Graph email subscriptions every 6 hours.
 -- Graph mailbox subscriptions max out at ~70.5h; renewal window is 24h before
--- expiry. Uses the same vault secrets as the other Intake cron jobs.
+-- expiry. Uses the same vault secrets as the other DocFlow cron jobs.
 
 do $$
 declare
