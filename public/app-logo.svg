@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" fill="none">
+  <rect x="0" y="6" width="36" height="36" rx="9" fill="#1a1a1e"/>
+  <path d="M 11 13 L 22 13 L 28 19 L 28 35 Q 28 37 26 37 L 11 37 Q 9 37 9 35 L 9 15 Q 9 13 11 13 Z"
+    fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linejoin="round"/>
+  <path d="M 22 13 L 22 19 L 28 19 Z" fill="#ffffff"/>
+  <text x="48" y="33" font-family="ui-sans-serif, system-ui, sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5" fill="#0f172a">Doc<tspan fill="#3ecf8e" font-weight="400">Flow</tspan></text>
+</svg>

@@ -1,0 +1,441 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Typography — Geist via next/font (layout.tsx injects the actual vars) */
+  --font-sans: var(--font-geist-sans, "Inter", system-ui, sans-serif);
+  --font-mono: var(--font-geist-mono, "JetBrains Mono", ui-monospace, monospace);
+
+  /* Type scale */
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 24px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0, 0, 1);
+}
+
+/* ─── Light (tweakcn default) ──────────────────────────────────────────────── */
+:root {
+  color-scheme: light;
+
+  /* shadcn / tweakcn base tokens */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.1450 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.1450 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.1450 0 0);
+  --primary: oklch(0.2050 0 0);
+  --primary-foreground: oklch(0.9850 0 0);
+  --secondary: oklch(0.9700 0 0);
+  --secondary-foreground: oklch(0.2050 0 0);
+  --muted: oklch(0.9700 0 0);
+  --muted-foreground: oklch(0.5560 0 0);
+  --accent: oklch(0.9700 0 0);
+  --accent-foreground: oklch(0.2050 0 0);
+  --destructive: oklch(0.5770 0.2450 27.3250);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.9220 0 0);
+  --input: oklch(0.9220 0 0);
+  --ring: oklch(0.7080 0 0);
+  --radius: 0.875rem;
+  /* Light mode: sidebar DARK (inverted) */
+  --sidebar: oklch(0.2300 0 0);
+  --sidebar-foreground: oklch(0.9850 0 0);
+  --sidebar-primary: oklch(0.9850 0 0);
+  --sidebar-primary-foreground: oklch(0.2300 0 0);
+  --sidebar-accent: oklch(0.2900 0 0);
+  --sidebar-accent-foreground: oklch(0.9850 0 0);
+  --sidebar-border: oklch(0.3100 0 0);
+  --sidebar-ring: oklch(0.5000 0 0);
+  --chart-1: oklch(0.8100 0.1000 252);
+  --chart-2: oklch(0.6200 0.1900 260);
+  --chart-3: oklch(0.5500 0.2200 263);
+  --chart-4: oklch(0.4900 0.2200 264);
+  --chart-5: oklch(0.4200 0.1800 266);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --tracking-normal: 0em;
+  --shadow-color: oklch(0 0 0);
+  --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10);
+  --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
+  --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
+  --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+
+  /* Component tokens — neutral depth hierarchy */
+  --color-bg: oklch(0.9700 0 0);
+  --color-surface: oklch(1.0000 0 0);
+  --color-surface-mute: oklch(0.9500 0 0);
+  --color-border: var(--border);
+  --color-border-hv: var(--ring);
+  --color-fg: var(--foreground);
+  --color-fg-mute: var(--muted-foreground);
+  --color-fg-subtle: color-mix(in oklab, var(--muted-foreground) 50%, transparent);
+  --color-blue: oklch(0.5880 0.2000 258);
+  --color-rose: var(--destructive);
+  --color-teal: oklch(0.5400 0.1700 162);
+  --color-violet: oklch(0.5000 0.2000 292);
+  --color-amber: oklch(0.7000 0.1800 70);
+  --color-pink: oklch(0.6400 0.2200 355);
+  --color-slate: var(--muted-foreground);
+  --color-sand: oklch(0.8000 0.0500 80);
+  --shadow-opacity: 0.1;
+  --shadow-blur: 3px;
+  --shadow-spread: 0px;
+  --shadow-offset-x: 0;
+  --shadow-offset-y: 1px;
+  --letter-spacing: 0em;
+  --spacing: 0.25rem;
+  --success: var(--color-emerald-500);
+  --success-foreground: var(--color-emerald-900);
+  --info: var(--color-violet-500);
+  --info-foreground: var(--color-violet-900);
+  --warning: var(--color-yellow-500);
+  --warning-foreground: var(--color-yellow-900);
+  --invert: var(--color-zinc-900);
+  --invert-foreground: var(--color-zinc-50);
+}
+
+/* ─── Dark — shadcn default neutral (data-theme="dark") ─────────────────────── */
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --background: oklch(0.1450 0 0);
+  --foreground: oklch(0.9850 0 0);
+  --card: oklch(0.2050 0 0);
+  --card-foreground: oklch(0.9850 0 0);
+  --popover: oklch(0.1450 0 0);
+  --popover-foreground: oklch(0.9850 0 0);
+  --primary: oklch(0.9850 0 0);
+  --primary-foreground: oklch(0.2050 0 0);
+  --secondary: oklch(0.2690 0 0);
+  --secondary-foreground: oklch(0.9850 0 0);
+  --muted: oklch(0.2690 0 0);
+  --muted-foreground: oklch(0.7080 0 0);
+  --accent: oklch(0.2690 0 0);
+  --accent-foreground: oklch(0.9850 0 0);
+  --destructive: oklch(0.3960 0.1410 25.768);
+  --destructive-foreground: oklch(0.6370 0.2370 25.331);
+  --border: oklch(0.2690 0 0);
+  --input: oklch(0.2690 0 0);
+  --ring: oklch(0.5560 0 0);
+  --radius: 0.625rem;
+  /* Dark mode: sidebar LIGHT (inverted) */
+  --sidebar: oklch(0.9700 0 0);
+  --sidebar-foreground: oklch(0.1450 0 0);
+  --sidebar-primary: oklch(0.1450 0 0);
+  --sidebar-primary-foreground: oklch(0.9700 0 0);
+  --sidebar-accent: oklch(0.9220 0 0);
+  --sidebar-accent-foreground: oklch(0.1450 0 0);
+  --sidebar-border: oklch(0.8800 0 0);
+  --sidebar-ring: oklch(0.6000 0 0);
+  --chart-1: oklch(0.4880 0.2430 264.376);
+  --chart-2: oklch(0.6960 0.1700 162.480);
+  --chart-3: oklch(0.7690 0.1880 70.080);
+  --chart-4: oklch(0.6270 0.2650 303.900);
+  --chart-5: oklch(0.6450 0.2460 16.439);
+  --tracking-normal: 0em;
+  --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.30);
+  --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.30);
+  --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.50), 0 1px 2px -1px hsl(0 0% 0% / 0.50);
+  --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.50), 0 1px 2px -1px hsl(0 0% 0% / 0.50);
+  --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.50), 0 2px 4px -1px hsl(0 0% 0% / 0.50);
+  --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.50), 0 4px 6px -1px hsl(0 0% 0% / 0.50);
+  --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.50), 0 8px 10px -1px hsl(0 0% 0% / 0.50);
+  --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.60);
+
+  /* Component tokens — neutral dark depth hierarchy */
+  --color-bg: oklch(0.0900 0 0);
+  --color-surface: oklch(0.1450 0 0);
+  --color-surface-mute: oklch(0.0900 0 0);
+  --color-border: var(--border);
+  --color-border-hv: var(--ring);
+  --color-fg: var(--foreground);
+  --color-fg-mute: var(--muted-foreground);
+  --color-fg-subtle: color-mix(in oklab, var(--muted-foreground) 50%, transparent);
+  --color-blue: oklch(0.6000 0.2000 258);
+  --color-rose: oklch(0.6370 0.2370 25.331);
+  --color-teal: oklch(0.6960 0.1700 162.480);
+  --color-violet: oklch(0.6270 0.2650 303.900);
+  --color-amber: oklch(0.7690 0.1880 70.080);
+  --color-pink: oklch(0.7200 0.2200 350);
+  --color-slate: var(--muted-foreground);
+  --color-sand: oklch(0.7500 0.0500 80);
+}
+
+/* ─── Tailwind inline mappings (from tweakcn) ───────────────────────────────── */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-heading: var(--font-sans);
+  --tracking-normal: var(--tracking-normal);
+  --tracking-tighter: calc(var(--tracking-normal) - 0.05em);
+  --tracking-tight: calc(var(--tracking-normal) - 0.025em);
+  --tracking-wide: calc(var(--tracking-normal) + 0.025em);
+  --tracking-wider: calc(var(--tracking-normal) + 0.05em);
+  --tracking-widest: calc(var(--tracking-normal) + 0.1em);
+  --shadow-2xl: var(--shadow-2xl);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-md: var(--shadow-md);
+  --shadow: var(--shadow);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-2xs: var(--shadow-2xs);
+  --color-shadow-color: var(--shadow-color);
+  --radius: 0.625rem;
+  --spacing: var(--spacing);
+  --letter-spacing: var(--letter-spacing);
+  --shadow-offset-y: var(--shadow-offset-y);
+  --shadow-offset-x: var(--shadow-offset-x);
+  --shadow-spread: var(--shadow-spread);
+  --shadow-blur: var(--shadow-blur);
+  --shadow-opacity: var(--shadow-opacity);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+  --color-invert-foreground: var(--invert-foreground);
+  --color-invert: var(--invert);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning: var(--warning);
+  --color-info-foreground: var(--info-foreground);
+  --color-info: var(--info);
+  --color-success-foreground: var(--success-foreground);
+  --color-success: var(--success);
+}
+
+/* ─── Base layer ─────────────────────────────────────────────────────────────── */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    letter-spacing: var(--tracking-normal);
+    font-feature-settings: "tnum" 1, "ss01" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  html {
+    @apply font-sans;
+  }
+}
+
+/* ─── Body background override (uses our depth token, not shadcn --background) ── */
+html,
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden; /* cada página controla su propio scroll internamente */
+  height: 100%;
+}
+
+/* ─── Animations ─────────────────────────────────────────────────────────────── */
+@keyframes state-flash {
+  0%   { background-color: color-mix(in srgb, var(--color-blue) 12%, transparent); }
+  100% { background-color: transparent; }
+}
+.row-state-flash {
+  animation: state-flash 900ms var(--ease-out) forwards;
+}
+
+@keyframes row-exit {
+  0%   { opacity: 1; transform: translateX(0);  max-height: 48px; }
+  60%  { opacity: 0; transform: translateX(8px); max-height: 48px; }
+  100% { opacity: 0; transform: translateX(8px); max-height: 0; padding-block: 0; }
+}
+.row-exiting {
+  animation: row-exit 280ms var(--ease-out) forwards;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* ─── Skeleton shimmer ───────────────────────────────────────────────────────── */
+@keyframes skeleton-shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.skeleton-shimmer {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-surface-mute) 0%,
+    color-mix(in srgb, var(--color-fg) 8%, var(--color-surface-mute)) 50%,
+    var(--color-surface-mute) 100%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.6s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-shimmer { animation: none; }
+}
+
+/* ─── Misc ───────────────────────────────────────────────────────────────────── */
+::selection {
+  background-color: color-mix(in srgb, var(--color-blue) 26%, transparent);
+}
+
+[data-slot="sidebar-inset"] {
+  box-shadow: -4px 0 16px 0 rgba(0, 0, 0, 0.25);
+}
+
+.dark {
+  --background: oklch(0.1450 0 0);
+  --foreground: oklch(0.9850 0 0);
+  --card: oklch(0.2050 0 0);
+  --card-foreground: oklch(0.9850 0 0);
+  --popover: oklch(0.2690 0 0);
+  --popover-foreground: oklch(0.9850 0 0);
+  --primary: oklch(0.9220 0 0);
+  --primary-foreground: oklch(0.2050 0 0);
+  --secondary: oklch(0.2690 0 0);
+  --secondary-foreground: oklch(0.9850 0 0);
+  --muted: oklch(0.2690 0 0);
+  --muted-foreground: oklch(0.7080 0 0);
+  --accent: oklch(0.3710 0 0);
+  --accent-foreground: oklch(0.9850 0 0);
+  --destructive: oklch(0.7040 0.1910 22.2160);
+  --destructive-foreground: oklch(0.9850 0 0);
+  --border: oklch(0.2750 0 0);
+  --input: oklch(0.3250 0 0);
+  --ring: oklch(0.5560 0 0);
+  --chart-1: oklch(0.8100 0.1000 252);
+  --chart-2: oklch(0.6200 0.1900 260);
+  --chart-3: oklch(0.5500 0.2200 263);
+  --chart-4: oklch(0.4900 0.2200 264);
+  --chart-5: oklch(0.4200 0.1800 266);
+  --radius: 0.875rem;
+  --sidebar: oklch(0.9700 0 0);
+  --sidebar-foreground: oklch(0.1450 0 0);
+  --sidebar-primary: oklch(0.1450 0 0);
+  --sidebar-primary-foreground: oklch(0.9700 0 0);
+  --sidebar-accent: oklch(0.9220 0 0);
+  --sidebar-accent-foreground: oklch(0.1450 0 0);
+  --sidebar-border: oklch(0.8800 0 0);
+  --sidebar-ring: oklch(0.6000 0 0);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --shadow-color: oklch(0 0 0);
+  --shadow-opacity: 0.1;
+  --shadow-blur: 3px;
+  --shadow-spread: 0px;
+  --shadow-offset-x: 0;
+  --shadow-offset-y: 1px;
+  --letter-spacing: 0em;
+  --spacing: 0.25rem;
+  --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+  --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+  --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10);
+  --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
+  --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
+  --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+  --success: var(--color-emerald-500);
+  --success-foreground: var(--color-emerald-600);
+  --info: var(--color-violet-500);
+  --info-foreground: var(--color-violet-600);
+  --warning: var(--color-yellow-500);
+  --warning-foreground: var(--color-yellow-600);
+  --invert: var(--color-zinc-700);
+  --invert-foreground: var(--color-zinc-50);
+}
+/* ── PDF.js text layer (review screen) ────────────────────────────────────
+   Minimum subset of pdfjs-dist/web/pdf_viewer.css needed for transparent
+   selectable text overlay on top of the canvas-rendered PDF page.
+   Inlined here because Next.js serverExternalPackages prevents importing
+   CSS directly from the pdfjs-dist package. */
+.textLayer {
+  position: absolute;
+  text-align: initial;
+  inset: 0;
+  overflow: clip;
+  opacity: 1;
+  line-height: 1;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+  transform-origin: 0 0;
+  caret-color: CanvasText;
+  z-index: 2;
+}
+.textLayer span,
+.textLayer br {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+}
+.textLayer .markedContent {
+  display: contents;
+}
+.textLayer span[role="img"] {
+  user-select: none;
+  cursor: default;
+}
+.textLayer ::selection {
+  background: rgba(0, 100, 255, 0.25);
+}
+.textLayer ::-moz-selection {
+  background: rgba(0, 100, 255, 0.25);
+}
+.textLayer .endOfContent {
+  display: block;
+  position: absolute;
+  inset: 100% 0 0;
+  z-index: -1;
+  cursor: default;
+  user-select: none;
+}

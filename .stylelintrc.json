@@ -1,0 +1,16 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "declaration-property-value-disallowed-list": {
+      "box-shadow": ["/.*/"],
+      "background-image": ["/gradient/"]
+    },
+    "color-no-hex": [
+      true,
+      {
+        "message": "Use CSS custom properties from globals.css — not raw hex. e.g. var(--color-fg) instead of #1A1A1A"
+      }
+    ]
+  },
+  "ignoreFiles": ["src/app/globals.css", "node_modules/**", ".next/**"]
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 36" fill="none">
+  <rect x="0" y="2" width="32" height="32" rx="8" fill="#e2e8f0"/>
+  <path d="M 9 18 h 14 M 16 11 v 14" stroke="#475569" stroke-width="2.6" stroke-linecap="round"/>
+  <text x="42" y="24" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="600" fill="#334155">Connector</text>
+</svg>

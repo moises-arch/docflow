@@ -1,0 +1,111 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "pnpm build",
+  "installCommand": "pnpm install --frozen-lockfile",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "functions": {
+    "src/app/api/ingest/cleo/process/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/cleo/orders/[id]/retry/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/cleo/retry-batch-stream/route.ts": { "memory": 3009 },
+    "src/app/api/cron/cleo-retry-failed/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/rithum/process/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/rithum/retry-batch-worker/route.ts": { "memory": 3009 },
+    "src/app/api/cron/rithum-retry-failed/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/rithum/scan-pending/route.ts": { "memory": 3009 },
+    "src/app/api/cron/rithum-healthcheck/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/rithum/scan-stream/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/rithum/deep-smoke/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/rithum/manual-dispatch/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/rithum/orders/[id]/retry-stream/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/rithum/orders/[id]/apply-parsed/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/rithum/orders/[id]/retry/route.ts": { "memory": 3009 },
+    "src/app/api/ingest/cleo/orders/[id]/reparse/route.ts": { "memory": 3009 }
+  },
+  "crons": [
+    {
+      "path": "/api/cron/browser-ingest",
+      "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/ingest/rithum/scan-pending",
+      "schedule": "*/10 * * * *"
+    },
+    {
+      "path": "/api/cron/rithum-healthcheck",
+      "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/cron/walmart-scan-pending",
+      "schedule": "*/30 * * * *"
+    },
+    {
+      "path": "/api/cron/walmart-healthcheck",
+      "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/cron/walmart-sync-catalog",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/walmart-sync-inventory",
+      "schedule": "0 */4 * * *"
+    },
+    {
+      "path": "/api/cron/walmart-sync-performance",
+      "schedule": "0 4 * * *"
+    },
+    {
+      "path": "/api/cron/walmart-sync-returns",
+      "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/cron/walmart-sync-buybox",
+      "schedule": "30 4 * * *"
+    },
+    {
+      "path": "/api/cron/cleo-scan-inbox",
+      "schedule": "*/30 * * * *"
+    },
+    {
+      "path": "/api/cron/cleo-retry-failed",
+      "schedule": "*/15 * * * *"
+    },
+    {
+      "path": "/api/cron/rithum-retry-failed",
+      "schedule": "*/15 * * * *"
+    },
+    {
+      "path": "/api/cron/m365-renew-subscriptions",
+      "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/cron/m365-scan-inbox",
+      "schedule": "*/30 * * * *"
+    },
+    {
+      "path": "/api/cron/m365-healthcheck",
+      "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/cron/odoo-sync-catalog",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/odoo-sync-cleanup",
+      "schedule": "*/10 * * * *"
+    },
+    {
+      "path": "/api/cron/notifications-cleanup",
+      "schedule": "0 4 * * *"
+    },
+    {
+      "path": "/api/cron/email-digest",
+      "schedule": "0 13 * * *"
+    },
+    {
+      "path": "/api/cron/email-digest",
+      "schedule": "0 20 * * *"
+    }
+  ]
+}

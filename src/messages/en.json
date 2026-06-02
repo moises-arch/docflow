@@ -1,0 +1,2661 @@
+{
+  "common": {
+    "loading": "Loading…",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "yes": "Yes",
+    "no": "No",
+    "back": "Back",
+    "close": "Close",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "clearFilters": "Clear filters",
+    "search": "Search",
+    "noResults": "No results",
+    "or": "or",
+    "bulkSelected": "{count, plural, one {# selected} other {# selected}}",
+    "bulkActions": "Actions",
+    "clearSelection": "Clear selection"
+  },
+  "nav": {
+    "brand": "DocFlow",
+    "dashboard": "Dashboard",
+    "inbox": "Inbox",
+    "ingestHub": "Ingest Hub",
+    "email": "Email",
+    "portals": "Portals",
+    "browser": "Browser",
+    "review": "Review",
+    "processed": "Processed",
+    "providers": "Templates",
+    "integrations": "Integrations",
+    "settings": "Settings",
+    "help": "Help",
+    "configuration": "Configuration",
+    "odoo19": "ERP 19",
+    "emailInbound": "Email Inbound",
+    "processingCosts": "Processing Costs"
+  },
+  "sidebar": {
+    "processingCostTemp": "Processing Cost (Temp)"
+  },
+  "userMenu": {
+    "signOut": "Sign out",
+    "switchLocale": "Español",
+    "account": "Account",
+    "openMenu": "Open user menu",
+    "openCommand": "Commands",
+    "theme": "Theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System"
+  },
+  "auth": {
+    "title": "Sign in to DocFlow",
+    "subtitle": "Use the account your team invited.",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "email": "Email",
+    "password": "Password",
+    "signingIn": "Signing in…",
+    "errors": {
+      "invalidCredentials": "Email or password is incorrect."
+    },
+    "brand": "DocFlow",
+    "appName": "AI Document Processing",
+    "appTagline": "Intelligent purchase order processing",
+    "poweredBy": "A DocFlow product",
+    "disclaimer": "Access restricted to authorized personnel only. All activity is monitored and logged.",
+    "confidential": "Confidential system",
+    "passcode": {
+      "title": "Access code required",
+      "subtitle": "Enter your 4-digit access code to continue.",
+      "wrong": "Invalid code",
+      "attempt": "attempt"
+    },
+    "copyright": "© {} DocFlow. All rights reserved."
+  },
+  "inbox": {
+    "title": "Inbox",
+    "header": {
+      "reviewNext": "Review Next",
+      "deleteSelected": "Delete {count}",
+      "search": "Search…",
+      "clearSearch": "Clear",
+      "uploadButton": "Upload"
+    },
+    "metrics": {
+      "total": "Total"
+    },
+    "empty": {
+      "title": "No documents waiting",
+      "subtitle": "Upload a purchase order PDF to get started.",
+      "cta": "Upload file"
+    },
+    "dropzone": {
+      "title": "Drop PDF files here",
+      "subtitle": "Up to 25 MB per file",
+      "button": "Choose files"
+    },
+    "columns": {
+      "document": "Document",
+      "type": "Type",
+      "pages": "Pages",
+      "size": "Size",
+      "source": "Source",
+      "status": "Status",
+      "uploaded": "Uploaded",
+      "credits": "Credits"
+    },
+    "actions": {
+      "review": "Review",
+      "retry": "Retry",
+      "upload": "Upload",
+      "delete": "Delete",
+      "deleteConfirm": "Delete document?",
+      "deleteWarning": "This will permanently delete the file and cannot be undone.",
+      "deleteSuccess": "Document deleted.",
+      "deleteFailed": "Could not delete document."
+    },
+    "filters": {
+      "search": "Search",
+      "searchPlaceholder": "Search by filename…",
+      "state": "State",
+      "all": "All states",
+      "results": "{count, plural, one {# result} other {# results}}",
+      "noResults": "No documents match the current filters."
+    },
+    "errors": {
+      "failedBanner": "{count, plural, one {# document failed processing} other {# documents failed processing}}",
+      "uploadFailed": "Upload failed. Please try again.",
+      "insufficientCredits": "No credits remaining. Contact your administrator.",
+      "invalidType": "Only PDF, JPG, PNG, WEBP, XLSX, or XLS files are accepted.",
+      "tooLarge": "File exceeds the 25 MB limit."
+    },
+    "tabs": {
+      "toReview": "To Review",
+      "processing": "Processing",
+      "failed": "Failed",
+      "allLabel": "All"
+    },
+    "noData": "No data available",
+    "rowsPerPage": "Rows per page",
+    "pageRange": "{from} – {to} of {count}",
+    "welcome": {
+      "title": "Welcome to {tenantName}",
+      "subtitle": "Process purchase orders in three steps — no manual data entry needed.",
+      "step1": "Upload a PDF",
+      "step2": "Review and correct",
+      "step3": "Approve → ERP",
+      "dismiss": "Dismiss"
+    },
+    "docType": {
+      "title": "What kind of document is this?",
+      "subtitle": "Choose how to process what you're uploading.",
+      "auto": "Detect automatically",
+      "autoHint": "Orders, invoices, receipts (standard flow)",
+      "payment": "Payment / settlement document",
+      "paymentHint": "Sent to the ERP reconciliation inbox",
+      "confirm": "Process"
+    }
+  },
+  "command": {
+    "title": "Command",
+    "placeholder": "Type a command or search…",
+    "empty": "No results",
+    "section": {
+      "navigate": "Navigate",
+      "help": "Help"
+    },
+    "action": {
+      "inbox": "Go to Inbox",
+      "ingestHub": "Go to Ingest Hub",
+      "review": "Go to Review",
+      "processed": "Go to Processed",
+      "providers": "Go to Provider Templates",
+      "integrations": "Go to Integrations",
+      "settings": "Go to Settings"
+    },
+    "help": {
+      "open": "Open command palette",
+      "inbox": "Go to Inbox",
+      "ingestHub": "Go to Ingest Hub",
+      "review": "Go to Review",
+      "processed": "Go to Processed",
+      "providers": "Go to Provider Templates",
+      "integrations": "Go to Integrations",
+      "settings": "Go to Settings"
+    }
+  },
+  "integrations": {
+    "title": "Integrations",
+    "marketplace": {
+      "eyebrow": "CONNECT YOUR STACK",
+      "subtitle": "Connect DocFlow to your ERP, store, and marketplaces. Each connector lets you sync data into your reviews.",
+      "search": "Search integrations…",
+      "categories": {
+        "all": "All",
+        "erp": "ERP",
+        "ecommerce": "Ecommerce",
+        "marketplace": "Marketplace",
+        "accounting": "Accounting"
+      },
+      "status": {
+        "connected": "Connected",
+        "available": "Connect",
+        "comingSoon": "Coming soon"
+      },
+      "summary": {
+        "connected": "{count} connected",
+        "available": "{count} available"
+      },
+      "open": "Open",
+      "notifyMe": "Notify me",
+      "emptyTitle": "No integrations match",
+      "emptyDescription": "Try clearing filters or search.",
+      "clearFilters": "Clear filters"
+    },
+    "catalog": {
+      "odoo": {
+        "name": "ERP",
+        "tagline": "Open-source ERP",
+        "description": "Two-way sync of products, partners, sales orders, and invoices with ERP 19."
+      },
+      "sap-business-one": {
+        "name": "SAP Business One",
+        "tagline": "ERP for growing companies",
+        "description": "Push approved orders, invoices, and POs to SAP Business One."
+      },
+      "netsuite": {
+        "name": "NetSuite",
+        "tagline": "Cloud ERP",
+        "description": "Sync items, customers, and transactions with Oracle NetSuite."
+      },
+      "quickbooks": {
+        "name": "QuickBooks",
+        "tagline": "Accounting",
+        "description": "Send approved invoices and bills to QuickBooks Online."
+      },
+      "xero": {
+        "name": "Xero",
+        "tagline": "Accounting",
+        "description": "Push bills and invoices to Xero in one click."
+      },
+      "shopify": {
+        "name": "Shopify",
+        "tagline": "Ecommerce",
+        "description": "Pull orders, customers, and products from your Shopify store."
+      },
+      "tiendanube": {
+        "name": "Tiendanube",
+        "tagline": "Ecommerce LATAM",
+        "description": "Connect your Tiendanube store and import orders."
+      },
+      "mercadolibre": {
+        "name": "MercadoLibre",
+        "tagline": "Marketplace LATAM",
+        "description": "Import orders from MercadoLibre and sync inventory."
+      }
+    },
+    "detail": {
+      "back": "Back to integrations",
+      "tabs": {
+        "overview": "Overview",
+        "connection": "Connection",
+        "sync": "Sync",
+        "mappings": "Mappings",
+        "profiles": "Profiles",
+        "runs": "Runs"
+      },
+      "actions": {
+        "syncNow": "Sync now",
+        "testConnection": "Test connection",
+        "disconnect": "Disconnect",
+        "viewDocs": "View docs"
+      },
+      "comingSoon": {
+        "title": "Coming soon",
+        "description": "We're working on this connector. Tell us if you need it sooner and we'll prioritize it.",
+        "notify": "Email me when it's ready",
+        "emailPlaceholder": "you@company.com",
+        "thanks": "Thanks — we'll let you know."
+      }
+    },
+    "odoo": {
+      "title": "ERP",
+      "description": "ERP 19 connector",
+      "longDescription": "Multi-ERP core with ERP 19 as a first-class connector. Sync models, import catalogs, manage mappings, export profiles, and monitor runs.",
+      "sections": {
+        "connection": "Connection",
+        "schema": "Schema",
+        "catalog": "Catalog",
+        "sku": "SKU Mapping",
+        "profiles": "Export Profiles",
+        "runs": "Runs"
+      },
+      "ui": {
+        "showHelp": "Show help"
+      },
+      "help": {
+        "connection": "Save and test the connection to your ERP 19 instance. Without this connection, models, catalogs, and exports cannot run.",
+        "schema": "Sync real models and fields from ERP (for example: sale.order, purchase.order, account.move). This defines which fields are required and writable during export.",
+        "schemaField": "Technical field name in ERP.",
+        "schemaType": "Field data type (char, many2one, float, etc).",
+        "schemaRequired": "If Yes, ERP requires a value to create or update the record.",
+        "schemaWritable": "If Yes, the system can write this field during export.",
+        "catalog": "Import live catalogs from ERP: products/SKUs, partners, and reference data (taxes, currencies, UoM, warehouses, carriers, payment terms). They are used for mapping and validation.",
+        "sku": "Match document SKUs to the correct ERP product. This reduces line-level errors and speeds up approvals.",
+        "skuSource": "SKU detected in the supplier document.",
+        "skuCompany": "Your internal company SKU when applicable.",
+        "skuProduct": "Target ERP product for that line.",
+        "profiles": "An export profile defines which ERP model receives the approved document (sales_order, purchase_order, invoice, shipping, or custom), and which field mapping it uses. You can keep multiple profiles for different flows.",
+        "profilesFlow": "Flow indicates the target document type: sales, purchase, invoice, shipping, or custom.",
+        "profilesRun": "Run export creates the ERP record in draft mode. It does not auto-confirm documents.",
+        "runs": "Execution history for exports. You can see success/failure, created external reference in ERP, and failure reason when present.",
+        "runsDate": "Date and time when the run was started.",
+        "runsStatus": "Final run status: success, failed, pending, etc.",
+        "runsExternal": "ID or name of the record created in ERP.",
+        "runsDraft": "Internal draft used for that export run.",
+        "runsError": "Technical error message for troubleshooting."
+      },
+      "toasts": {
+        "catalogKindLoadFailed": "Failed to load {kind}.",
+        "catalogSyncFailed": "Catalog sync failed.",
+        "catalogSynced": "Catalog synced.",
+        "exportCompleted": "Export run completed.",
+        "exportFailed": "Export failed.",
+        "exportRunFailed": "Export run failed.",
+        "fieldsLoadFailed": "Failed to load fields.",
+        "pickDraftFirst": "Pick a draft first.",
+        "profileCreateFailed": "Could not create profile.",
+        "profileCreated": "Profile {flow} created.",
+        "schemaSyncFailed": "Schema sync failed.",
+        "schemaSynced": "ERP schema synced."
+      }
+    }
+  },
+  "ingestHub": {
+    "title": "Ingest Hub",
+    "description": "Centralize every channel orders can arrive through: manual upload, email, API, and provider portals.",
+    "console": {
+      "eyebrow": "Operating console",
+      "network": "Capture network"
+    },
+    "hero": {
+      "eyebrow": "Document Control",
+      "title": "A command center for every order entering the business",
+      "description": "Monitor channels, templates, and capture routes from one place. Every method feeds the same review and sync pipeline.",
+      "signalLive": "Channels ready",
+      "signalEvidence": "Evidence preserved",
+      "signalRouting": "Smart routing"
+    },
+    "metrics": {
+      "system": "System",
+      "channels": "Channels",
+      "templates": "Templates",
+      "sources": "Sources"
+    },
+    "status": {
+      "active": "Active",
+      "ready": "Ready",
+      "planned": "Planned"
+    },
+    "manual": {
+      "title": "Manual upload",
+      "status": "Active",
+      "description": "Upload PDFs and images from the Inbox.",
+      "metric": "Current primary channel"
+    },
+    "email": {
+      "title": "Email ingest",
+      "description": "Receive orders from email, attachments, and HTML bodies.",
+      "metric": "{count, plural, one {# active source} other {# active sources}}"
+    },
+    "api": {
+      "title": "API ingest",
+      "description": "Programmatic entry point for external integrations.",
+      "metric": "Webhooks and API keys later"
+    },
+    "portal": {
+      "title": "Supplier Portal",
+      "description": "Receive 850 Purchase Orders automatically from Marketplace, Retailer B, Retailer C and other partners via Supplier Portal.",
+      "metric": "{count, plural, one {# active integration} other {# active integrations}}"
+    },
+    "rithum": {
+      "title": "Supplier Portal OrderStream",
+      "description": "Auto-download Home Depot and Marketplace Marketplace POs from CommerceHub OrderStream.",
+      "metric": "Active integration"
+    },
+    "walmart": {
+      "title": "Marketplace Marketplace",
+      "description": "Direct API integration with Marketplace Seller Center: orders, catalog, inventory, performance, Buy Box, returns, financials.",
+      "metric": "Direct API · webhook + cron"
+    },
+    "routing": {
+      "title": "Routing",
+      "description": "Each channel can assign a provider template, detection rules, and source metadata.",
+      "providers": "Templates",
+      "emailSources": "Email sources",
+      "browserSources": "Portals",
+      "live": "Operational",
+      "next": "Next channel",
+      "nextValue": "Email"
+    },
+    "next": {
+      "title": "Next move",
+      "description": "Start with the channel your providers already use, then connect templates so every order is interpreted correctly.",
+      "email": "Configure email",
+      "portal": "Configure portals"
+    },
+    "browserIngest": {
+      "title": "Portal Ingest",
+      "description": "Capture orders from provider portals, download documents, and preserve visual evidence for audit.",
+      "backToHub": "Back to Ingest Hub",
+      "eyebrow": "Portal intelligence",
+      "heroTitle": "A capture center for complex portals",
+      "heroText": "Register a portal, run it on demand, and let the system detect downloadable documents, evidence, and status signals.",
+      "readySignal": "Engine ready",
+      "evidenceSignal": "Evidence stored",
+      "pipelineSignal": "Pipeline connected",
+      "newConnection": "New portal",
+      "name": "Name",
+      "portalUrl": "Portal URL",
+      "loginUrl": "Login URL",
+      "provider": "Template",
+      "autoDetect": "Auto-detect",
+      "create": "Create portal",
+      "created": "Portal created.",
+      "createFailed": "Portal could not be created.",
+      "connections": "Portals",
+      "emptyConnections": "No portals configured yet.",
+      "status": "Status",
+      "lastRun": "Last run",
+      "actions": "Actions",
+      "runNow": "Run",
+      "runComplete": "Run completed.",
+      "runFailed": "Run failed.",
+      "needsAttention": "Portal needs attention.",
+      "attentionRequired": "Review run",
+      "activePortals": "Active portals",
+      "documentsCaptured": "Documents captured",
+      "evidenceCaptured": "Evidence",
+      "systemState": "System state",
+      "runs": "Runs",
+      "emptyRuns": "No runs yet.",
+      "connection": "Portal",
+      "state": "State",
+      "documents": "Docs",
+      "artifacts": "Artifacts",
+      "error": "Error",
+      "createdAt": "Created",
+      "stateLabels": {
+        "active": "Active",
+        "paused": "Paused",
+        "archived": "Archived",
+        "needs_attention": "Needs attention",
+        "queued": "Queued",
+        "running": "Running",
+        "processed": "Processed",
+        "failed": "Failed"
+      }
+    },
+    "emailIngest": {
+      "title": "Email ingest",
+      "description": "Receive orders through webhooks, preserve the original email, process PDF/image attachments, and create documents from HTML or text when the order is in the email body.",
+      "backToHub": "Back to Ingest Hub",
+      "webhookTitle": "Inbound webhook",
+      "webhookDescription": "Connect this URL to your Email provider Exchange Online mailbox via Email provider notifications. The webhook secret is sent as a query parameter.",
+      "webhookUrl": "Webhook URL",
+      "copyWebhook": "Copy webhook",
+      "copy": "Copy",
+      "copied": "Webhook copied.",
+      "connect": "Connect",
+      "renew": "Renew",
+      "subscribed": "Subscription created.",
+      "subscribeFailed": "Subscription could not be created.",
+      "methods": {
+        "label": "Email ingest methods",
+        "microsoft-365": "Email provider",
+        "imap": "IMAP"
+      },
+      "mailgunBadge": "Mailgun ready",
+      "mailgunTitle": "Set up order receiving with Mailgun",
+      "mailgunDescription": "Create an email source, copy its webhook, and use it as the Forward destination in a Mailgun route. Every source has its own secret.",
+      "mailgunStepDomain": "Domain",
+      "mailgunStepDomainText": "Add and verify your receiving domain in Mailgun.",
+      "mailgunExpression": "Expression",
+      "mailgunAction": "Action",
+      "microsoftBadge": "Email provider enterprise",
+      "microsoftTitle": "Connect Outlook with Email provider",
+      "microsoftDescription": "Use an Exchange Online shared mailbox and Email provider notifications. The system receives the notification, downloads the message, and processes attachments or HTML through the same pipeline.",
+      "microsoftApp": "Entra app",
+      "microsoftAppText": "Register an app with the client secret stored as an environment variable.",
+      "microsoftPermissions": "Permissions",
+      "microsoftSubscription": "Subscription",
+      "graphTenantId": "Tenant ID",
+      "graphClientId": "Client ID",
+      "graphMailbox": "Mailbox",
+      "graphFolder": "Folder",
+      "newSource": "New email source",
+      "address": "Address",
+      "provider": "Template",
+      "adapter": "Adapter",
+      "allowedSenders": "Allowed senders",
+      "autoDetect": "Auto-detect",
+      "anySender": "Any sender",
+      "create": "Create source",
+      "created": "Email source created.",
+      "createFailed": "Email source could not be created.",
+      "updated": "Source updated.",
+      "updateFailed": "Source could not be updated.",
+      "sources": "Email sources",
+      "emptySources": "No email sources configured yet.",
+      "status": "Status",
+      "active": "Active",
+      "paused": "Paused",
+      "pause": "Pause",
+      "activate": "Activate",
+      "recent": "Recent emails",
+      "emptyRecent": "No emails have arrived yet.",
+      "from": "From",
+      "subject": "Subject",
+      "state": "State",
+      "received": "Received",
+      "unknown": "Unknown",
+      "quality": {
+        "security": "Security",
+        "securityText": "Every webhook requires its own secret and sources can restrict senders by email or domain.",
+        "idempotency": "Idempotency",
+        "idempotencyText": "Message-ID prevents duplicates even when the email provider retries the webhook.",
+        "adapters": "Adapters",
+        "adaptersText": "The core supports Email provider, Mailgun, Resend, SendGrid, and generic payloads without locking the app to one provider."
+      }
+    }
+  },
+  "review": {
+    "title": "Review",
+    "lockedBanner": "Locked — this document was already processed and is read-only.",
+    "backToInbox": "Inbox",
+    "summary": "Summary",
+    "syncState": "ERP",
+    "mockBanner": "Mock extraction. Wire Anthropic before using this with customers.",
+    "pdfPreview": "Purchase order PDF",
+    "pdfUnavailable": "PDF preview is not available.",
+    "approve": "Approve",
+    "reject": "Reject",
+    "reanalyze": "Re-analyze",
+    "reanalyzing": "Re-analyzing…",
+    "reanalyzeQueued": "Re-analysis started. Returning to Inbox.",
+    "approving": "Approving…",
+    "rejecting": "Rejecting…",
+    "rejectConfirm": "Reject this document?",
+    "rejectConfirmDescription": "This will move the document to Processed as rejected. This action cannot be undone.",
+    "noLines": "Add at least one line item before approving",
+    "emptyTitle": "You're all caught up",
+    "emptySubtitle": "No documents are waiting for review. Upload a purchase order from the Inbox to get started.",
+    "emptyBadge": "Clear queue",
+    "goToInbox": "Go to Inbox",
+    "blockedApprovalBanner": "Approval is blocked until provider/template and ERP reseller mapping are resolved.",
+    "signals": {
+      "review": "To review",
+      "inbox": "Inbox",
+      "status": "Status",
+      "ready": "Ready",
+      "clear": "Clear"
+    },
+    "errors": {
+      "approveFailed": "Approval failed. Please try again.",
+      "rejectFailed": "Rejection failed. Please try again.",
+      "saveFailed": "Changes could not be saved.",
+      "reanalyzeFailed": "Re-analysis could not be started."
+    },
+    "saveState": {
+      "saved": "Saved",
+      "saving": "Saving",
+      "unsaved": "Unsaved"
+    },
+    "shortcuts": {
+      "next": "⌘⇧N next"
+    },
+    "layoutEmpty": "No fields are assigned to this section for the current profile.",
+    "header": {
+      "title": "Header"
+    },
+    "shipping": {
+      "title": "Shipping"
+    },
+    "details": {
+      "title": "Details",
+      "headerHint": "Confirm the core order data before approving.",
+      "shippingHint": "Verify delivery and billing addresses before syncing to ERP.",
+      "linesHint": "Open only the line you need to correct.",
+      "notesHint": "Internal notes for the team and sync context.",
+      "customerAddressHint": "Used to match or create the customer record in ERP.",
+      "deliveryAddressHint": "Used as ship-to address in ERP.",
+      "billingAddressHint": "Used as invoice-to address in ERP.",
+      "saveError": "The latest changes were not saved."
+    },
+    "document": {
+      "pages": "Pages"
+    },
+    "viewer": {
+      "thumbnails": "Pages",
+      "detectedFields": "Detected fields",
+      "viewOriginal": "Original",
+      "viewJson": "JSON",
+      "viewStudio": "Studio",
+      "viewRendered": "Rendered",
+      "previousPage": "Previous page",
+      "nextPage": "Next page",
+      "zoomOut": "Zoom out",
+      "zoomIn": "Zoom in",
+      "fitPage": "Fit",
+      "flowVertical": "Vertical flow",
+      "flowHorizontal": "Horizontal flow",
+      "page": "Page",
+      "of": "of",
+      "loading": "Loading PDF",
+      "clearSelection": "Clear selection",
+      "openRail": "Show thumbnails",
+      "closeRail": "Hide thumbnails",
+      "openFields": "Show detected fields",
+      "closeFields": "Hide detected fields"
+    },
+    "sidebarTabs": {
+      "order": "Sales Order",
+      "template": "Template"
+    },
+    "template": {
+      "providerSection": "Provider",
+      "providerResolved": "Reseller assigned",
+      "providerPending": "No reseller assigned",
+      "changeReseller": "Change",
+      "searchPlaceholder": "Search company in ERP...",
+      "searchButton": "Search",
+      "searching": "Searching ERP partners...",
+      "searchHint": "Type at least 2 letters to find the correct partner.",
+      "predictiveHint": "Pick a suggestion. Results are deduplicated and prioritized.",
+      "partnerSelected": "Partner selected. You can assign it to this provider now.",
+      "noResults": "No results.",
+      "saveReseller": "Assign",
+      "createTemplate": "Create template",
+      "teachTitle": "Teach the AI",
+      "teachDescription": "Only correct what the AI gets wrong — you don't need to map every field. Click a highlighted value in the PDF, tell it which ERP field it belongs to, and save. That correction applies automatically to all future documents from this provider.",
+      "stepPdf": "Step 1 — Select text in the PDF",
+      "stepField": "Step 2 — Which field does it map to?",
+      "stepFieldLabel": "Select the field this text represents in ERP.",
+      "fieldSearchPlaceholder": "Search field (e.g. order number, customer...)",
+      "noHighlightSelected": "No text selected yet",
+      "highlightReady": "Text selected",
+      "save": "Save",
+      "goToOriginal": "View PDF",
+      "reanalyze": "Reanalyze",
+      "providerRequired": "Assign a provider first.",
+      "mappingsTitle": "What it already learned",
+      "noMappings": "Nothing saved yet. Complete the step above to train the AI.",
+      "pdfField": "in PDF",
+      "odooField": "ERP field",
+      "unresolved": {
+        "provider": "Provider not detected.",
+        "template": "Template missing.",
+        "mapping": "Assign an ERP reseller.",
+        "detected": "All set."
+      }
+    },
+    "studio": {
+      "badge": "Studio",
+      "title": "Template learning",
+      "subtitle": "Select a target field in the right panel, then choose the correct extracted field to teach the system how it should map it.",
+      "targetSelected": "Target field",
+      "pickTargetHint": "First select a target field from the sidebar to begin mapping.",
+      "pickSourceHint": "Now select the extracted field that matches it in this view.",
+      "sidebarTitle": "Learnable target fields",
+      "sidebarDescription": "These changes are saved into the provider template and automatically reused on future documents.",
+      "groups": {
+        "header": "Header",
+        "addresses": "Addresses",
+        "terms": "Terms",
+        "totals": "Totals",
+        "lines": "Lines",
+        "other": "Other"
+      },
+      "mapped": "Mapped",
+      "currentMapping": "Mapped from: {source}",
+      "noMapping": "No saved mapping yet.",
+      "replaceSku": "Replace SKU",
+      "replaceSkuHint": "Save the equivalence between the provider SKU and the internal/ERP product.",
+      "confidence": "Confidence {value}%",
+      "page": "Page {page}",
+      "modal": {
+        "title": "Map \"{target}\" to \"{source}\"",
+        "description": "Confirm the learning that will be saved into the provider template.",
+        "target": "Target field",
+        "source": "Extracted field",
+        "effect": "This mapping will be saved in the template for {provider}. The next time a document from this provider is scanned, this change will be applied automatically.",
+        "replaceWarning": "This field already had a saved mapping from \"{source}\". If you confirm, that mapping will be replaced.",
+        "confirm": "Confirm mapping"
+      },
+      "skuModal": {
+        "title": "SKU replacement",
+        "description": "Map this provider SKU to the correct product for future automatic extractions from {provider}.",
+        "providerSku": "Provider SKU",
+        "currentMapping": "Current mapping",
+        "noCurrentMapping": "No saved mapping",
+        "suggestions": "Suggestions",
+        "searchPlaceholder": "Search internal or ERP product...",
+        "unresolved": "Product not resolved",
+        "clickToResolve": "Click to resolve",
+        "reasons": {
+          "mapping": "Saved mapping",
+          "exact": "Exact SKU",
+          "rule": "Provider rule",
+          "prefix": "Remove prefix {value}",
+          "suffix": "Remove suffix {value}",
+          "separators": "Ignore separators",
+          "description": "Similar name"
+        },
+        "effect": "The template for {provider} will save that this SKU corresponds to the selected product. Future documents will apply this replacement automatically.",
+        "confirm": "Save replacement"
+      },
+      "toasts": {
+        "pickTargetFirst": "Select a target field in the sidebar first.",
+        "providerRequired": "Resolve the provider before teaching mappings.",
+        "mappingSaved": "Mapping saved for {field}.",
+        "mappingFailed": "The mapping could not be saved to the template.",
+        "skuMappingSaved": "SKU replacement saved successfully.",
+        "skuMappingFailed": "The SKU replacement could not be saved."
+      }
+    },
+    "rendered": {
+      "sections": {
+        "header": "Header",
+        "addresses": "Addresses",
+        "totals": "Totals",
+        "lines": "Lines"
+      },
+      "rows": {
+        "detectedProvider": "Detected provider",
+        "po": "PO",
+        "date": "Date",
+        "currency": "Currency",
+        "customer": "Customer",
+        "billing": "Billing",
+        "shipping": "Shipping",
+        "customerText": "Customer (text)",
+        "subtotal": "Subtotal",
+        "tax": "Tax",
+        "total": "Total"
+      },
+      "lineSummary": "SKU: {sku} | Qty: {qty} | Price: {price}"
+    },
+    "fields": {
+      "poNumber": "PO Number",
+      "poDate": "PO Date",
+      "deliveryDate": "Delivery Date",
+      "currency": "Currency",
+      "paymentTerms": "Payment Terms",
+      "paymentTermsPlaceholder": "e.g. Net 30",
+      "customer": "Customer",
+      "customerAddress": "Customer address",
+      "contactPerson": "Contact person",
+      "deliveryAddress": "Delivery address",
+      "billingAddress": "Billing address",
+      "odooSo": "ERP SO",
+      "notes": "Notes",
+      "subtotal": "Subtotal",
+      "tax": "Tax",
+      "total": "Total"
+    },
+    "lines": {
+      "title": "Line items",
+      "shortTitle": "Lines",
+      "count": "{count, plural, one {# line} other {# lines}}",
+      "addLine": "Add line",
+      "description": "Description",
+      "descriptionRequired": "Description is required",
+      "sku": "SKU",
+      "qty": "Qty",
+      "unit": "Unit",
+      "unitPrice": "Unit price",
+      "taxRate": "Tax",
+      "total": "Total",
+      "actions": "Actions",
+      "newLine": "New line item",
+      "removeLine": "Remove",
+      "incomplete": "{count, plural, one {# line has required fields pending} other {# lines have required fields pending}}",
+      "emptyTitle": "No lines yet",
+      "emptySubtitle": "Add a line item before approving this order."
+    },
+    "required": {
+      "requiredShort": "Req",
+      "missingTitle": "Required data is missing",
+      "missingList": "Missing: {fields}.",
+      "missingField": "{field} is missing.",
+      "missingInline": "Missing: {fields}",
+      "missingToast": "{count, plural, one {Missing a required field: {fields}} other {Missing required fields: {fields}}}"
+    },
+    "toasts": {
+      "annotationDeleteFailed": "Mapping could not be removed.",
+      "annotationDeleted": "Mapping removed.",
+      "approveErrorWithReason": "Approval error: {reason}",
+      "autoSyncOff": "Auto-sync is OFF",
+      "autoSyncOffDescription": "Order will be approved and held in Processed → Pending.",
+      "buyerUnresolved": "The customer could not be resolved automatically. Assign the ERP customer manually in the panel.",
+      "duplicatePo": "This PO has already been processed. It is a duplicate — reject it.",
+      "duplicatePoWithSo": "This order was already approved (ERP: {so}). Duplicate — reject it.",
+      "odooConnectionInactive": "ERP connection inactive. Check your settings.",
+      "odooSyncFailed": "Error syncing with ERP: {detail}",
+      "providerResolutionLoadFailed": "Provider resolution could not be loaded.",
+      "providerUnresolvedBeforeApprove": "You must resolve provider/template and map an ERP reseller before approval.",
+      "resellerAssignFailed": "Reseller could not be assigned.",
+      "resellerAssigned": "Reseller assigned successfully.",
+      "resolveProviderFirst": "Resolve the provider first.",
+      "selectOriginalData": "Select data in Original view.",
+      "selectTargetField": "Select a target field.",
+      "selectValidReseller": "Select a valid reseller.",
+      "templateCreateFailed": "Template could not be created from Review.",
+      "templateCreated": "Template created. Reanalyze to apply it.",
+      "unknownError": "unknown error",
+      "visualLearningSaveFailed": "Visual learning could not be saved.",
+      "visualLearningSaved": "Visual learning saved to template."
+    },
+    "forceDuplicate": {
+      "title": "Duplicate PO — force push to ERP?",
+      "subtitle": "A synced order with this PO already exists",
+      "subtitleWithSo": "Already exists in ERP as {so}",
+      "description": "This PO number has already been sent to ERP. If you force it, a second Sales Order will be created in ERP with the same data, which may duplicate billing.",
+      "bullet1": "Use only if the original SO is incomplete or cancelled separately",
+      "bullet2": "Does not undo the existing SO — the new one is added",
+      "bullet3": "This action is logged in the audit trail",
+      "cancel": "Cancel",
+      "confirm": "Force push",
+      "forcing": "Sending…"
+    },
+    "autoReview": {
+      "title": "AI Gating",
+      "summary": "Confidence: {confidence} · Critical exceptions: {critical} · Warnings: {warning}",
+      "exceptions": "Review focus: {fields}",
+      "scopes": {
+        "header": "Header",
+        "shipping": "Shipping",
+        "billing": "Billing",
+        "line": "Lines"
+      }
+    },
+    "toolbar": {
+      "cancel": "Cancel",
+      "downloadOriginal": "Download original document",
+      "loading": "Loading…",
+      "mapStudio": "Map fields in Studio",
+      "openPartnerTemplate": "Open partner template",
+      "print": "Print",
+      "renderedDoc": "Rendered document",
+      "save": "Save"
+    }
+  },
+  "processed": {
+    "title": "Processed",
+    "header": {
+      "eyebrow": "Order history",
+      "subtitle": "Review approved, rejected, and ERP-synced orders."
+    },
+    "metrics": {
+      "processed": "Processed",
+      "synced": "Synced",
+      "pending": "Queued",
+      "issues": "Needs attention"
+    },
+    "empty": "No processed documents yet",
+    "emptySubtitle": "Approved documents will appear here once reviewed from the Inbox.",
+    "retrySync": "Retry sync",
+    "retrySyncSuccess": "Sync retried. ERP sync is queued.",
+    "retrySyncFailed": "Sync retry failed. Please try again.",
+    "fixAddresses": "Update addresses from DocFlow",
+    "fixAddressesSuccess": "Addresses updated in ERP.",
+    "fixAddressesFailed": "Could not update addresses",
+    "archive": "Archive",
+    "archiveSuccess": "Document archived.",
+    "archiveFailed": "Could not archive document.",
+    "delete": "Delete",
+    "deleteSuccess": "Document deleted.",
+    "deleteFailed": "Could not delete document.",
+    "deleteConfirm": "Delete {count, plural, one {# document} other {# documents}}?",
+    "deleteWarning": "This will permanently delete the selected documents and cannot be undone.",
+    "viewPdf": "View PDF",
+    "showArchived": "Show archived",
+    "hideArchived": "Hide archived",
+    "filters": {
+      "search": "Search",
+      "searchPlaceholder": "Search by PO, customer, file, or ERP SO…",
+      "syncState": "Sync state",
+      "all": "All states",
+      "synced": "Synced",
+      "pending": "Pending",
+      "inProgress": "In progress",
+      "failed": "Failed",
+      "rejected": "Rejected",
+      "results": "{count, plural, one {# result} other {# results}}"
+    },
+    "noResults": "No documents match the current filters.",
+    "columns": {
+      "document": "Document",
+      "customer": "Customer",
+      "poNumber": "PO Number",
+      "total": "Total",
+      "approvedAt": "Approved",
+      "syncStatus": "ERP",
+      "odooSo": "ERP SO",
+      "pdf": "PDF"
+    },
+    "table": {
+      "id": "ID",
+      "status": "Status",
+      "po": "PO #",
+      "customer": "Customer",
+      "odooSO": "ERP SO",
+      "total": "Total",
+      "approved": "Approved",
+      "aiCost": "AI cost",
+      "actions": "Actions",
+      "noData": "No data"
+    },
+    "tabs": {
+      "all": "All",
+      "synced": "Synced",
+      "pending": "Pending",
+      "failed": "Failed",
+      "rejected": "Rejected"
+    },
+    "manualSync": {
+      "label": "Sync to ERP",
+      "started": "ERP sync started",
+      "rateLimit": "Rate limit reached. Try again in ~{seconds}s.",
+      "failed": "ERP sync failed"
+    },
+    "alerts": {
+      "failedTitle": "{count, plural, one {# order failed} other {# orders failed}} to sync with ERP",
+      "failedDesc": "Verify your ERP connection and SKU mappings, then retry from the row menu.",
+      "showFailed": "Show failed",
+      "rejectedTitle": "{count, plural, one {# rejected order needs attention} other {# rejected orders need attention}}",
+      "rejectedDesc": "Rejected orders can be reprocessed from the Inbox if needed.",
+      "showRejected": "Show rejected"
+    },
+    "search": {
+      "placeholder": "Search by PO, customer, filename…",
+      "noResultsTitle": "No results",
+      "noResultsDesc": "Try a different filter or clear your search."
+    },
+    "deleteDialog": {
+      "title": "Delete order?",
+      "tip": "⚠ Tip: if you only want to hide this from the list, use <strong>Archive</strong> instead."
+    },
+    "metricsLabels": {
+      "totalVolume": "Total volume",
+      "successRate": "Success rate",
+      "totalOrders": "Total orders",
+      "aiConsumption": "AI consumption",
+      "allClear": "all clear",
+      "scans": "{count} scans"
+    },
+    "kpis": {
+      "totalVolume": "Total volume",
+      "successRate": "Success rate",
+      "totalOrders": "Total orders",
+      "aiConsumption": "AI consumption",
+      "needAttention": "{count} need attention",
+      "allClear": "all clear",
+      "scans": "{count} scans"
+    }
+  },
+  "selectTenant": {
+    "title": "DocFlow",
+    "heading": "Your account is ready.",
+    "message": "Contact your administrator to request access.",
+    "signOut": "Sign out",
+    "signingOut": "Signing out…"
+  },
+  "settings": {
+    "title": "Settings",
+    "general": {
+      "title": "General",
+      "description": "Company identity and regional defaults.",
+      "navDescription": "Company basics",
+      "tenantName": "Company name",
+      "slug": "Slug",
+      "locale": "Default locale",
+      "timezone": "Timezone",
+      "role": "Your role",
+      "profile": {
+        "title": "User profile",
+        "description": "Your personal account in this tenant.",
+        "email": "Email",
+        "name": "Name",
+        "tenantId": "Tenant ID"
+      },
+      "avatar": {
+        "change": "Change photo",
+        "uploading": "Uploading…",
+        "hint": "JPG, PNG, WebP · max 2MB",
+        "success": "Avatar updated",
+        "errorUpload": "Could not upload image",
+        "errorGeneric": "Upload error"
+      }
+    },
+    "odoo": {
+      "title": "ERP connection",
+      "description": "Connection details used to create draft sale orders.",
+      "navDescription": "ERP credentials",
+      "url": "Server URL",
+      "urlHint": "The base URL of your ERP instance, e.g. https://mycompany.odoo.com",
+      "database": "Database",
+      "databaseHint": "Found in ERP under Settings → Technical → Databases",
+      "username": "Username",
+      "usernameHint": "The ERP user email used to create sale orders",
+      "resellerDefault": "Default reseller / channel",
+      "resellerDefaultHint": "Used as the level-1 company when creating customer hierarchies in ERP.",
+      "resellerDefaultPlaceholder": "Example: Amazon",
+      "exportMode": "Export mode",
+      "exportModeHint": "Choose whether approved documents stay as quotations or are confirmed as sales orders.",
+      "exportModeOptions": {
+        "sales_order": "Sales order (confirm automatically)",
+        "quotation": "Quotation (leave as draft)"
+      },
+      "password": "Password",
+      "passwordHint": "Use an API key from ERP → Settings → API Keys for better security",
+      "passwordPlaceholder": "Enter ERP user password",
+      "test": "Test connection",
+      "save": "Save connection",
+      "testSuccess": "Connection verified successfully.",
+      "testFailed": "Connection test failed.",
+      "saveSuccess": "Connection saved.",
+      "saveFailed": "Connection could not be saved.",
+      "lastChecked": "Last checked",
+      "neverChecked": "Never",
+      "lastError": "Last error",
+      "status": {
+        "active": "Connected",
+        "error": "Error",
+        "unverified": "Not verified"
+      },
+      "contactSettings": "Contact Export",
+      "contactSettingsHint": "Controls how customers and addresses are created in ERP on each sync.",
+      "customerMatchField": "Match customer by",
+      "customerMatchFieldOptions": {
+        "name": "Name",
+        "email": "Email",
+        "vat": "Tax ID (VAT)"
+      },
+      "customerMatchScope": "Search scope",
+      "customerMatchScopeOptions": {
+        "under_reseller": "Under reseller only",
+        "global": "All ERP contacts"
+      },
+      "customerIsCompany": "Create customer as Company (not Person)",
+      "createIfNotFound": "Create customer if not found in ERP",
+      "syncBillingAddress": "Sync billing address",
+      "syncShippingAddress": "Sync shipping address",
+      "addressUpdateStrategy": "Address update behavior",
+      "addressUpdateStrategyOptions": {
+        "always": "Always update",
+        "create_only": "Create only (never update)",
+        "skip": "Skip (use customer as both invoice & delivery)"
+      },
+      "updateContactInfo": "Update email & phone on existing contacts"
+    },
+    "team": {
+      "title": "Team",
+      "description": "Members who can access this system.",
+      "navDescription": "Access control",
+      "currentUser": "Current user",
+      "userId": "User",
+      "searchLabel": "Search members",
+      "searchPlaceholder": "Search by email, user ID, or role",
+      "emptyTeam": "No team members yet.",
+      "emptySearch": "No team members match your search.",
+      "invites": {
+        "title": "Invite users",
+        "description": "Add an existing user by email.",
+        "email": "Email",
+        "role": "Role",
+        "submit": "Add member",
+        "success": "Member added successfully.",
+        "failed": "Could not add member.",
+        "userNotFound": "No user exists with that email."
+      },
+      "columns": {
+        "member": "Member",
+        "role": "Role",
+        "joined": "Joined"
+      },
+      "roles": {
+        "owner": "Owner",
+        "member": "Member"
+      },
+      "registrationNote": "The user must have an existing account. If not, they should sign up first.",
+      "you": "You",
+      "member": "Member",
+      "create": {
+        "title": "Create user",
+        "description": "Create a new account directly in Supabase and add it to this tenant.",
+        "email": "Email",
+        "name": "Full name (optional)",
+        "password": "Password",
+        "passwordHint": "Minimum 8 characters",
+        "role": "Role",
+        "submit": "Create user",
+        "creating": "Creating…",
+        "success": "User created and added to the tenant.",
+        "errorConflict": "A user with that email already exists.",
+        "errorGeneric": "Could not create user."
+      }
+    },
+    "credits": {
+      "title": "Credits",
+      "description": "Processing balance and recent usage events.",
+      "navDescription": "Usage balance",
+      "balance": "Current balance",
+      "empty": "No credit events yet.",
+      "columns": {
+        "date": "Date",
+        "kind": "Kind",
+        "amount": "Amount",
+        "note": "Note"
+      },
+      "kinds": {
+        "grant": "Grant",
+        "debit": "Debit",
+        "refund": "Refund",
+        "adjustment": "Adjustment"
+      }
+    },
+    "mappings": {
+      "title": "Mappings",
+      "description": "Rules that connect extracted names to ERP records.",
+      "navDescription": "Data matching",
+      "customers": "Customer mappings",
+      "products": "Product mappings",
+      "customersTitle": "Customer mappings",
+      "customersDescription": "Map extracted customer names to ERP partners to prevent duplicate records.",
+      "productsTitle": "Product mappings",
+      "productsDescription": "Map extracted SKUs and descriptions to ERP products for accurate line items.",
+      "emptyCustomers": "No customer mappings yet.",
+      "emptyProducts": "No product mappings yet.",
+      "columns": {
+        "extractedName": "Extracted name",
+        "partnerName": "ERP partner",
+        "partnerId": "Partner ID",
+        "extractedSku": "Extracted SKU",
+        "extractedDescription": "Extracted description",
+        "productName": "ERP product",
+        "productId": "Product ID",
+        "createdAt": "Created",
+        "actions": "Actions"
+      },
+      "form": {
+        "extractedName": "Extracted name",
+        "partnerName": "ERP partner name",
+        "partnerId": "ERP partner ID",
+        "add": "Add mapping",
+        "extractedSku": "Extracted SKU",
+        "extractedDescription": "Extracted description",
+        "productId": "ERP product ID",
+        "productName": "ERP product name",
+        "addProduct": "Add product mapping"
+      },
+      "addSuccess": "Customer mapping added.",
+      "addFailed": "Customer mapping could not be added.",
+      "deleteSuccess": "Customer mapping removed.",
+      "deleteFailed": "Customer mapping could not be removed.",
+      "addProductSuccess": "Product mapping added.",
+      "addProductFailed": "Product mapping could not be added.",
+      "deleteProductSuccess": "Product mapping removed.",
+      "deleteProductFailed": "Product mapping could not be removed."
+    },
+    "providers": {
+      "title": "Provider templates",
+      "description": "Register how each provider works so the system knows how to interpret orders that arrive by email, API, or another channel.",
+      "navDescription": "Provider rules",
+      "refresh": "Refresh",
+      "yes": "Yes",
+      "no": "No",
+      "active": "Active",
+      "inactive": "Inactive",
+      "system": "System",
+      "selectProvider": "Select a template to configure its rules.",
+      "providers": {
+        "title": "Templates",
+        "description": "Each template defines the SKUs, fields, and aliases the system should apply to that provider.",
+        "name": "Name",
+        "code": "Code",
+        "currency": "Currency",
+        "domains": "Email domains",
+        "search": "Search templates...",
+        "results": "{count, plural, one {# template} other {# templates}}",
+        "add": "Create template",
+        "addNew": "New template",
+        "addNewDescription": "Register a provider and its interpretation rules.",
+        "empty": "No templates yet.",
+        "emptySearch": "No templates match that search.",
+        "emptySearchDescription": "Try the provider name, code, or domain.",
+        "noDomains": "No domains",
+        "console": "Template center",
+        "total": "Total",
+        "readiness": "Readiness",
+        "fieldMappings": "Fields",
+        "skuMappings": "SKUs",
+        "templateRole": "Use",
+        "templateReady": "Provider rules",
+        "notConfigured": "Not configured",
+        "settings": "Settings",
+        "contactEmail": "Contact email",
+        "website": "Website",
+        "created": "Template created.",
+        "createFailed": "Template could not be created.",
+        "delete": "Delete template",
+        "deleteTitle": "Delete this template?",
+        "deleteWarning": "This will permanently delete \"{name}\" and all its field mappings, SKU mappings, and ERP reseller assignments. Documents that used this template will lose their provider link. This cannot be undone.",
+        "deleteConfirm": "Yes, delete",
+        "deleteCancel": "Cancel",
+        "deleted": "Template deleted.",
+        "deleteFailed": "Template could not be deleted."
+      },
+      "admin": {
+        "back": "Back to templates",
+        "configuration": "Configuration",
+        "configurationShort": "Core details",
+        "configurationDescription": "Core details, domains, and operating status for this provider.",
+        "sourceTarget": "Fields",
+        "sourceTargetDescription": "Define how provider fields become ERP target fields. This does not depend on coordinates; coordinates are visual only.",
+        "skuMapping": "SKU Mapping",
+        "skuMappingDescription": "Define how provider SKUs map to the ERP product catalog.",
+        "templateSignal": "Active template",
+        "templateSignalDescription": "These rules are applied when an order is identified as this provider.",
+        "documentHistory": "History",
+        "documentHistoryDescription": "All scanned documents from this provider",
+        "historialLabel": "Historial"
+      },
+      "providerConfig": {
+        "title": "{provider} settings"
+      },
+      "targetFields": {
+        "title": "Target fields",
+        "description": "ERP destination fields. Add fields and mark which ones are required.",
+        "templateDescription": "Destination fields for this template. Each one connects to a global source field.",
+        "key": "Key",
+        "label": "Label",
+        "scope": "Scope",
+        "model": "ERP model",
+        "field": "ERP field",
+        "type": "Type",
+        "required": "Required",
+        "requiredShort": "Req",
+        "destination": "Destination",
+        "status": "Status",
+        "add": "Add target field",
+        "remove": "Remove",
+        "created": "Target field added.",
+        "createFailed": "Target field could not be added.",
+        "updated": "Target field updated.",
+        "updateFailed": "Target field could not be updated.",
+        "deleted": "Target field disabled.",
+        "deleteFailed": "Target field could not be removed."
+      },
+      "fieldMappings": {
+        "title": "Source → Target",
+        "description": "Field rules for {provider}.",
+        "target": "Target field",
+        "sourceKey": "Source field key",
+        "sourceLabel": "Source label",
+        "source": "Source",
+        "customSource": "New source field",
+        "selectSource": "Select source field",
+        "unmapped": "No source field connected",
+        "save": "Save mapping",
+        "sourceRequired": "Select or enter a source field.",
+        "status": "Status",
+        "short": "fields",
+        "add": "Add mapping",
+        "created": "Mapping added.",
+        "createFailed": "Mapping could not be added.",
+        "connect": "Connect",
+        "cancel": "Cancel",
+        "newFieldTitle": "New target field",
+        "createField": "Create field",
+        "connectSource": "Connect source → {field}",
+        "existingField": "Existing field",
+        "customField": "Custom field",
+        "unmappedCount": "{count, plural, one {# field unmapped} other {# fields unmapped}}",
+        "keyPlaceholder": "Field key (e.g. po_number)",
+        "labelPlaceholder": "Label (optional)",
+        "deleteMappingTitle": "Remove mapping",
+        "deleted": "Mapping removed",
+        "deleteFailed": "Failed to remove mapping"
+      },
+      "sourceFields": {
+        "title": "Source fields",
+        "description": "Global fields extracted from the document. Each template connects them to ERP targets.",
+        "search": "Search source fields...",
+        "empty": "No global source fields are connected to this template yet. Enter one while mapping a target field or configure them from ERP."
+      },
+      "templateDocument": {
+        "title": "Template document",
+        "emptyBadge": "No file",
+        "previewBadge": "Preview",
+        "uploadTitle": "Add a real order",
+        "uploadDescription": "Reference PDF or image for visualizing fields over the customer's order document.",
+        "uploadAction": "Upload document",
+        "changeAction": "Change"
+      },
+      "productMappings": {
+        "title": "SKU mappings",
+        "description": "All products come from ERP. Aliases can be created manually or appear by auto-detection when an order includes both the provider SKU and the ERP SKU.",
+        "catalogTitle": "ERP catalog",
+        "autoHint": "Add the provider SKU to the matching ERP product. Auto-detected SKUs will also appear here.",
+        "providerSku": "Provider SKU",
+        "companySku": "Company SKU",
+        "descriptionField": "Source description",
+        "odooProduct": "ERP product",
+        "source": "Source",
+        "defaultCode": "Internal ref.",
+        "short": "SKUs",
+        "mapped": "Mapped",
+        "unmapped": "Unmapped",
+        "filters": {
+          "all": "All ({count})",
+          "mapped": "Mapped ({count})",
+          "unmapped": "Not mapped ({count})"
+        },
+        "addAlias": "Add alias",
+        "addProviderSku": "Add SKU",
+        "cancelAlias": "Cancel",
+        "saveAlias": "Save alias",
+        "saveProviderSku": "Save SKU",
+        "providerSkuPlaceholder": "Enter SKU",
+        "saving": "Saving",
+        "saved": "SKU saved.",
+        "noAlias": "No provider SKU",
+        "noAliasShort": "No SKU",
+        "searchProducts": "Search product or alias...",
+        "emptyTitle": "The ERP catalog has not been synced yet",
+        "emptyDescription": "Import active products from ERP so they appear here and you can add the provider SKU to each product.",
+        "syncProducts": "Sync products",
+        "syncSuccess": "Products synced: {count}.",
+        "syncFailed": "ERP products could not be synced.",
+        "noFilteredProducts": "No products match these filters.",
+        "noInternalRef": "No internal reference",
+        "sources": {
+          "manual": "Manual",
+          "auto": "Auto",
+          "imported": "Imported",
+          "odoo_catalog": "ERP"
+        },
+        "add": "Add SKU mapping",
+        "created": "SKU mapping added.",
+        "createFailed": "SKU mapping could not be added."
+      },
+      "configuration": {
+        "sectionTitle": "Provider information",
+        "fieldName": "Name",
+        "fieldCode": "Code",
+        "fieldCodeHint": "Read-only — used for auto-detection",
+        "fieldCurrency": "Currency",
+        "fieldDomains": "Email Domains",
+        "fieldContactEmail": "Contact Email",
+        "fieldWebsite": "Website",
+        "fieldDomainPlaceholder": "e.g. homedepot.com",
+        "noDomains": "No domains",
+        "addButton": "Add",
+        "updated": "{field} updated",
+        "updateFailed": "Failed to update {field}",
+        "billingNormalization": {
+          "sectionTitle": "ERP billing",
+          "label": "Use ERP partner as billing address",
+          "description": "When enabled, syncing to ERP will use this provider's linked ERP partner as the billing address (partner_invoice_id), ignoring whatever billing address the document provides.",
+          "activeHint": "ERP partner will be used as billing",
+          "ariaLabel": "Enable ERP partner billing normalization",
+          "enabledToast": "ERP partner billing enabled",
+          "disabledToast": "ERP partner billing disabled",
+          "errorToast": "Failed to update billing configuration"
+        }
+      },
+      "statusToggle": {
+        "active": "Active",
+        "paused": "Paused",
+        "activatedToast": "Provider activated",
+        "pausedToast": "Provider paused",
+        "errorToast": "Failed to update status",
+        "ariaLabel": "Toggle provider status",
+        "activeDescription": "Provider is active and will process incoming documents.",
+        "pausedDescription": "Provider is paused. Incoming documents won't be auto-assigned."
+      },
+      "kpis": {
+        "docs30d": "Documents (30d)",
+        "needsReview": "Needs Review",
+        "syncSuccess": "Sync Success",
+        "confidence": "Confidence",
+        "activity": "Activity (14d)",
+        "last30days": "last 30 days",
+        "needsAttention": "need attention",
+        "upToDate": "up to date",
+        "noAttempts": "no attempts",
+        "avg30d": "avg 30 days",
+        "documents": "documents",
+        "syncOf": "{synced} of {total}"
+      },
+      "aliases": {
+        "title": "Detection Aliases",
+        "description": "Alternative names the system uses to auto-detect this provider in documents. Add abbreviations, EDI codes, or alternate spellings.",
+        "empty": "No aliases yet",
+        "add": "Add",
+        "placeholder": "e.g. \"THD\", \"home depot\", \"HD\"",
+        "updated": "Aliases updated",
+        "updateFailed": "Failed to save aliases"
+      },
+      "documentHistory": {
+        "title": "Document History",
+        "description": "All scanned documents from {provider}. Click any row to open it in Review or Processed."
+      },
+      "documentLog": {
+        "loading": "Loading history…",
+        "colDocument": "Document",
+        "colReceived": "Received",
+        "colCustomer": "Customer",
+        "colTotal": "Total",
+        "colState": "State",
+        "colSync": "Sync",
+        "actionReview": "Review",
+        "actionOpen": "Open",
+        "actionMove": "Move",
+        "closeLabel": "Close",
+        "loadError": "Error loading document history",
+        "moveTitle": "Move document to another template",
+        "searchProvider": "Search template by name or code…",
+        "noProviders": "No other templates found",
+        "movedTo": "Moved to \"{name}\""
+      },
+      "deleteProvider": {
+        "trigger": "Delete template",
+        "dialogTitle": "Delete this provider template?",
+        "intro": "This action will permanently delete the \"{name}\" template and cannot be undone.",
+        "consequencesTitle": "What will happen:",
+        "consequence1": "All field mappings, SKU rules, and detection aliases for this provider will be deleted.",
+        "consequence2": "Documents already processed will lose their provider link. Future documents won't be auto-assigned to this provider.",
+        "consequence3": "The template cannot be recovered. You'll need to register the provider from scratch.",
+        "confirmCheckbox": "I understand this action is permanent and cannot be undone.",
+        "typeToConfirmLabel": "Type the provider name to confirm:",
+        "typeToConfirmPlaceholder": "Type \"{name}\"",
+        "typeMismatch": "The name does not match.",
+        "cancel": "Cancel",
+        "confirmDelete": "Delete template permanently",
+        "deleting": "Deleting…",
+        "successToast": "Template \"{name}\" deleted",
+        "errorToast": "Failed to delete the template"
+      },
+      "header": {
+        "eyebrow": "TEMPLATE CENTER",
+        "title": "Provider templates",
+        "description": "Record how each provider works so the system knows how to interpret their orders when they arrive via email, API, or any other channel.",
+        "total": "Total",
+        "active": "Active",
+        "fields": "Fields",
+        "skus": "SKUs"
+      },
+      "templateCount": "{count, plural, one {# template} other {# templates}}",
+      "card": {
+        "aiTitle": "AI extracts automatically",
+        "aiDescription": "The system reads and maps fields from documents of this provider without manual input. Studio corrections are only needed for fields the AI consistently gets wrong.",
+        "studioCorrections": "STUDIO CORRECTIONS SAVED",
+        "fieldRules": "field rules",
+        "skuRules": "SKU rules",
+        "noCorrections": "No corrections needed — AI handles everything",
+        "correctionsActive": "Corrections active — future docs auto-apply these",
+        "openStudio": "Open Studio to fix extraction errors"
+      },
+      "search": "Search templates…",
+      "newCard": {
+        "title": "New template",
+        "description": "Register a provider and its interpretation rules.",
+        "nameLabel": "NAME"
+      },
+      "templatesNav": {
+        "templatesLabel": "Templates",
+        "templatesDesc": "Providers & field mappings",
+        "profileStudioLabel": "Profile Studio",
+        "profileStudioDesc": "Review profiles & layout",
+        "providerDetection": "PROVIDER DETECTION",
+        "auto": "auto",
+        "manual": "manual",
+        "footer": "Methods run in order. The first match wins and applies all saved Studio corrections automatically.",
+        "methods": {
+          "emailDomain": {
+            "title": "Email domain",
+            "description": "Matches the sender's email domain to a configured provider automatically."
+          },
+          "subjectBody": {
+            "title": "Subject & body",
+            "description": "Reads the email subject line and body to identify the provider by name."
+          },
+          "documentContent": {
+            "title": "Document content",
+            "description": "AI reads the buyer name, bill-to company, and header fields to match a known provider."
+          },
+          "templateRules": {
+            "title": "Template rules",
+            "description": "Once matched, all saved Studio corrections apply instantly to the document."
+          },
+          "manualAssignment": {
+            "title": "Manual assignment",
+            "description": "User selects the provider in Review. Template rules fire automatically on assignment."
+          }
+        }
+      }
+    },
+    "ai": {
+      "title": "AI models",
+      "description": "Configure extraction provider, model, and API key used by the processing pipeline.",
+      "navDescription": "Model and API setup",
+      "configurableModels": "Configurable models",
+      "provider": "Provider",
+      "primaryModel": "Primary model",
+      "apiKey": "API key",
+      "apiKeyPlaceholder": "Paste your provider API key",
+      "apiKeyHint": "Stored encrypted. Required to test and save.",
+      "test": "Test connection",
+      "save": "Save configuration",
+      "testSuccess": "AI provider validated successfully.",
+      "testFailed": "AI provider test failed.",
+      "saveSuccess": "AI configuration saved.",
+      "saveFailed": "AI configuration could not be saved.",
+      "status": "Status",
+      "statusValues": {
+        "active": "Connected",
+        "error": "Error",
+        "unverified": "Not verified"
+      },
+      "lastChecked": "Last checked",
+      "neverChecked": "Never",
+      "lastError": "Last error",
+      "cost": {
+        "title": "AI cost manager",
+        "description": "Track processing consumption and translate it into real USD cost per run.",
+        "totalUsd": "Total cost (USD)",
+        "processed": "Processed runs",
+        "avgUsd": "Average per run",
+        "empty": "No processing runs yet.",
+        "columns": {
+          "date": "Date",
+          "document": "Document",
+          "provider": "Provider",
+          "model": "Model",
+          "tokens": "Input / Output tokens",
+          "usd": "Cost USD"
+        }
+      }
+    },
+    "prompts": {
+      "title": "AI prompts",
+      "navDescription": "View pipeline prompts"
+    },
+    "monitoring": {
+      "title": "Uptime monitoring",
+      "description": "Connect your UptimeRobot account to watch ERP and DocFlow. Alert channels are configured directly in UptimeRobot.",
+      "navDescription": "UptimeRobot",
+      "provider": "Provider",
+      "apiKey": "UptimeRobot API key",
+      "apiKeyPlaceholder": "Paste your Main API Key (uXXXXXXX-...)",
+      "apiKeyHint": "Get it from UptimeRobot → My Settings → API Settings. Stored encrypted.",
+      "save": "Connect",
+      "test": "Test connection",
+      "disconnect": "Disconnect",
+      "disconnectConfirm": "Disconnect UptimeRobot? You'll lose access from DocFlow until you paste the API key again.",
+      "testSuccess": "API key validated successfully.",
+      "testFailed": "API key validation failed.",
+      "saveSuccess": "UptimeRobot connected.",
+      "saveFailed": "Could not save the connection.",
+      "disconnectSuccess": "UptimeRobot disconnected.",
+      "disconnectFailed": "Could not disconnect.",
+      "status": "Status",
+      "statusValues": {
+        "active": "Connected",
+        "error": "Error",
+        "unverified": "Not verified"
+      },
+      "accountEmail": "Account",
+      "lastChecked": "Last checked",
+      "neverChecked": "Never",
+      "lastError": "Last error"
+    },
+    "notifications": {
+      "title": "Notifications",
+      "navDescription": "Email alerts and templates"
+    },
+    "diagnostics": {
+      "title": "Diagnostics",
+      "navDescription": "System health & tests",
+      "terminal": {
+        "title": "Diagnostic center",
+        "subtitle": "Real-time status of all system services.",
+        "run": "Run diagnostics",
+        "rerun": "Run again",
+        "running": "Running…",
+        "clear": "Clear",
+        "copyLog": "Copy log",
+        "idle": "Ready. Press Run diagnostics to start...",
+        "executing": "Executing tests...",
+        "filterAll": "All",
+        "filterErrors": "Errors",
+        "filterWarn": "Warn",
+        "filterOk": "OK",
+        "categoryStatus": "Status by category",
+        "history": "Run history",
+        "clearHistory": "Clear",
+        "legend": "Legend",
+        "passLabel": "Operational",
+        "failLabel": "Error",
+        "warnLabel": "Warning",
+        "passDesc": "Service working correctly",
+        "failDesc": "Requires immediate attention",
+        "warnDesc": "Functional but review recommended",
+        "statOperational": "Operational",
+        "statErrors": "Errors",
+        "statWarnings": "Warnings",
+        "latest": "latest",
+        "testsIn": "tests in"
+      }
+    },
+    "admin": {
+      "title": "Admin",
+      "navDescription": "App settings & admin",
+      "heading": "Admin Panel",
+      "subheading": "Advanced system configuration.",
+      "lockSession": "Lock session",
+      "sessionLocked": "Admin session closed. Reload the page to sign in again.",
+      "gate": {
+        "title": "Restricted area",
+        "subtitle": "Enter the 4-digit admin PIN to continue.",
+        "pinNote": "PIN is only valid for this browser session.",
+        "wrongPin": "Incorrect PIN",
+        "attempt": "attempt"
+      },
+      "icon": {
+        "change": "Change",
+        "description": "Used as favicon, iOS home screen and sidebar. Recommended: SVG 1:1 dark background.",
+        "invalidType": "Only SVG, PNG, or JPG images are allowed.",
+        "officialLabel": "Official DocFlow icon",
+        "restore": "Restore original",
+        "success": "Icon updated — applies on next deploy.",
+        "title": "App Icon",
+        "tooLarge": "Max 512KB for icons.",
+        "uploading": "Uploading…"
+      },
+      "ai": {
+        "title": "AI Model",
+        "edit": "Edit →",
+        "notConfigured": "Not configured.",
+        "configure": "Configure →",
+        "provider": "Provider",
+        "model": "Model",
+        "status": "Status"
+      },
+      "tenant": {
+        "title": "Tenant",
+        "noData": "No data.",
+        "name": "Name",
+        "slug": "Slug",
+        "locale": "Locale",
+        "autoApprove": "Auto-approve",
+        "enabled": "Enabled",
+        "disabled": "Disabled"
+      },
+      "team": {
+        "title": "Team",
+        "manage": "Manage →",
+        "member": "member",
+        "members": "members"
+      },
+      "diagnostics": {
+        "title": "Diagnostics",
+        "open": "Open →",
+        "description": "59 smoke tests to verify the complete system status in real time.",
+        "runButton": "Run diagnostics"
+      },
+      "passcodes": {
+        "title": "Access Passcodes",
+        "description": "Manage 4-digit codes for admin and login access. The master code (1987) cannot be removed.",
+        "add": "Add code",
+        "adding": "Adding…",
+        "placeholder": "Enter 4-digit code",
+        "master": "Master (default)",
+        "remove": "Remove",
+        "empty": "No additional codes. Only the master code is active.",
+        "successAdd": "Code added",
+        "successRemove": "Code removed",
+        "errorFormat": "Code must be exactly 4 digits"
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "header": {
+      "badge": "Overview",
+      "subtitle": "Activity, pipeline status, and recent documents at a glance."
+    },
+    "actions": {
+      "upload": "Upload"
+    },
+    "stats": {
+      "uploadedToday": "Uploaded today",
+      "uploadedTodaySub": "Documents received since midnight",
+      "needsReview": "Pending",
+      "needsReviewSub": "Waiting for your attention",
+      "processedWeek": "Processed (7d)",
+      "processedWeekSub": "Approved or rejected in 7 days",
+      "credits": "Credits",
+      "creditsSub": "Current processing balance"
+    },
+    "hero": {
+      "eyebrow": "Today",
+      "singular": "document uploaded today",
+      "plural": "documents uploaded today"
+    },
+    "chart": {
+      "title": "Activity",
+      "subtitle": "Documents uploaded in the last 7 days",
+      "totalDocs": "docs",
+      "docs": "documents"
+    },
+    "pipeline": {
+      "title": "Inbox pipeline",
+      "totalInbox": "active",
+      "viewInbox": "View inbox"
+    },
+    "recent": {
+      "title": "Recent documents",
+      "viewAll": "View all",
+      "review": "Review",
+      "empty": {
+        "title": "No documents yet",
+        "subtitle": "Upload your first PDF to get started."
+      }
+    },
+    "metrics": {
+      "successRate": "Success rate",
+      "successRateSub": "{ok}/{total} docs",
+      "dailyThroughput": "Daily throughput",
+      "dailyThroughputSub": "avg/day · peak {peak}",
+      "trend24h": "24h trend",
+      "trendUp": "+{n} vs yesterday",
+      "trendDown": "−{n} vs yesterday",
+      "trendFlat": "no change",
+      "currentBottleneck": "Current bottleneck",
+      "noBottleneck": "No bottleneck detected",
+      "noResults": "No results"
+    },
+    "states": {
+      "uploaded": "Uploaded",
+      "processing": "Processing",
+      "needsReview": "Needs review",
+      "failed": "Failed",
+      "reviewed": "Reviewed"
+    },
+    "time": {
+      "justNow": "just now",
+      "minutesAgo": "{n}m ago",
+      "hoursAgo": "{n}h ago",
+      "daysAgo": "{n}d ago"
+    },
+    "greeting": {
+      "morning": "Good morning, {name}",
+      "afternoon": "Good afternoon, {name}",
+      "evening": "Good evening, {name}"
+    },
+    "alerts": {
+      "failedTitle": "{count, plural, one {# document failed} other {# documents failed}} processing",
+      "failedDesc": "These files could not be processed by the AI pipeline. Retry or check the file format.",
+      "goToInbox": "Go to Inbox",
+      "needsReviewTitle": "{count, plural, one {# document needs} other {# documents need}} your review",
+      "needsReviewDesc": "Review extracted data and approve before syncing to ERP.",
+      "reviewNow": "Review Now"
+    }
+  },
+  "onboarding": {
+    "title": "Welcome to DocFlow",
+    "subtitle": "Process purchase orders in three steps — no manual data entry needed.",
+    "step1": "Upload a PDF",
+    "step2": "Review & correct",
+    "step3": "Approve → ERP",
+    "dismiss": "Dismiss"
+  },
+  "status": {
+    "uploaded": "Uploaded",
+    "processing": "Processing",
+    "needs_review": "Needs review",
+    "reviewed": "Reviewed",
+    "failed_processing": "Failed",
+    "rejected": "Rejected",
+    "archived": "Archived",
+    "none": "Not synced",
+    "pending": "Pending",
+    "in_progress": "Syncing",
+    "synced": "Synced",
+    "sync_failed": "Sync failed"
+  },
+  "landing": {
+    "nav": {
+      "solutions": "Solutions",
+      "teams": "Teams",
+      "developers": "Developers",
+      "resources": "Resources",
+      "signIn": "Sign in",
+      "start": "Start now"
+    },
+    "hero": {
+      "eyebrow": "PO automation for ERP teams",
+      "title": "Financial operations infrastructure for purchase orders.",
+      "subtitle": "DocFlow turns PDFs, images, and supplier emails into reviewed draft Sales Orders in ERP. Operators stay in control, audit trails stay complete, and manual entry stops owning the day.",
+      "primaryCta": "Get Started",
+      "secondaryCta": "Explore the platform",
+      "signals": [
+        {
+          "label": "Manual review",
+          "value": "required"
+        },
+        {
+          "label": "ERP target",
+          "value": "ERP 19"
+        },
+        {
+          "label": "Output",
+          "value": "draft SO"
+        }
+      ]
+    },
+    "stats": {
+      "items": [
+        {
+          "value": "15m -> 30s",
+          "label": "Typical review flow target"
+        },
+        {
+          "value": "90%+",
+          "label": "POs needing fewer than 3 edits"
+        },
+        {
+          "value": "99%+",
+          "label": "Approved drafts synced on first push"
+        }
+      ]
+    },
+    "integrations": {
+      "label": "Designed to fit the systems your back office already runs"
+    },
+    "solutions": {
+      "eyebrow": "Flexible order intake",
+      "title": "One pipeline for every way purchase orders arrive.",
+      "description": "Upload files, receive orders by email, connect supplier portals, review extracted data, and create ERP drafts from the same controlled workflow.",
+      "items": [
+        {
+          "title": "Upload purchase orders",
+          "description": "Drop PDFs and images into a queue built for operators who need to scan, filter, and move quickly."
+        },
+        {
+          "title": "Capture email orders",
+          "description": "Pull attachments and message context into the same ingestion layer without forwarding files by hand."
+        },
+        {
+          "title": "Connect provider portals",
+          "description": "Preserve evidence from supplier portals and route downloaded orders through provider-aware templates."
+        },
+        {
+          "title": "Review before ERP",
+          "description": "Compare extraction results with the source document, fix edge cases, and approve only what is ready."
+        },
+        {
+          "title": "Create draft Sales Orders",
+          "description": "Push approved lines to ERP as drafts, keeping confirmation and invoicing in your existing ERP process."
+        }
+      ]
+    },
+    "teams": {
+      "eyebrow": "Built for growing operations",
+      "title": "Built for high-volume order desks.",
+      "description": "Built for the people who handle real purchase orders all day: operations teams, admins, and systems owners.",
+      "items": [
+        {
+          "label": "Operations",
+          "title": "Give operators a faster review desk",
+          "description": "A compact view keeps source documents, extracted lines, provider mapping, and approval status in one place.",
+          "metric": "under 90s upload-to-draft target"
+        },
+        {
+          "label": "Administration",
+          "title": "Control mappings and exceptions",
+          "description": "Provider-aware field and SKU mapping helps teams handle known suppliers without blocking unknown ones.",
+          "metric": "audit trail from source to draft"
+        },
+        {
+          "label": "Systems",
+          "title": "Keep ERP as the source of truth",
+          "description": "Approved data lands in ERP as a draft Sales Order, so final commercial control stays inside the ERP.",
+          "metric": "draft-only sync by design"
+        }
+      ]
+    },
+    "infrastructure": {
+      "eyebrow": "Reliable infrastructure",
+      "title": "Extensible enough for complex order flows.",
+      "description": "A controlled layer between messy supplier documents and the ERP records your team depends on.",
+      "items": [
+        {
+          "title": "Integration-ready workflow",
+          "description": "The upload, review, and approval path is structured around clear states so automation can expand without hiding risk."
+        },
+        {
+          "title": "Secure boundaries",
+          "description": "Every document, draft, credit event, provider, and mapping is secured and isolated."
+        },
+        {
+          "title": "Human approval gate",
+          "description": "AI accelerates extraction, but ERP sync only happens after an operator approves the draft."
+        }
+      ]
+    },
+    "resources": {
+      "eyebrow": "Operating model",
+      "title": "The pieces teams expect before replacing manual entry.",
+      "items": [
+        {
+          "title": "Review quality",
+          "description": "Every PO keeps the original source beside extracted lines so mistakes are visible before approval."
+        },
+        {
+          "title": "Exception handling",
+          "description": "Missing SKUs, unknown providers, and sync errors surface as concrete work instead of silent retries."
+        },
+        {
+          "title": "ERP-native output",
+          "description": "Sales Orders are created as drafts, letting your existing ERP permissions and process finish the job."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Turn the next purchase order into a reviewed ERP draft.",
+      "subtitle": "Start with the workflow your operators already know, then let the system remove the repetitive typing around it.",
+      "button": "Get started"
+    }
+  },
+  "templates": {
+    "profileStudio": {
+      "title": "Profile Studio",
+      "description": "Review profiles by document type",
+      "longDescription": "Configure review profiles per document type and assign each target field to the right profile. This keeps extraction and review reusable across purchase orders, invoices, shipping documents, receipts, and custom flows.",
+      "createTitle": "Create profile",
+      "profilesTitle": "Profiles",
+      "fields": {
+        "name": "Name",
+        "documentKind": "Document type",
+        "description": "Description"
+      },
+      "kinds": {
+        "purchaseOrder": "Purchase Order",
+        "invoice": "Invoice",
+        "shipping": "Shipping",
+        "receipt": "Receipt",
+        "custom": "Custom"
+      },
+      "actions": {
+        "create": "Create profile",
+        "save": "Save profile",
+        "clone": "Clone",
+        "disable": "Disable",
+        "enable": "Enable",
+        "applyPreset": "Apply preset"
+      },
+      "presets": {
+        "default": "Balanced",
+        "fast": "Fast approval",
+        "shippingFocus": "Shipping focus"
+      },
+      "labels": {
+        "fields": "fields",
+        "selectProfile": "Select a review profile to configure it.",
+        "searchPlaceholder": "Search fields by key, label, or model…",
+        "unassigned": "Unassigned"
+      },
+      "columns": {
+        "field": "Field",
+        "scope": "Scope",
+        "profile": "Profile",
+        "section": "Section",
+        "target": "Target field"
+      },
+      "reviewSections": {
+        "header": "Header",
+        "shipping": "Shipping",
+        "lines": "Lines",
+        "notes": "Notes"
+      },
+      "layout": {
+        "title": "Review Layout",
+        "description": "Choose which tabs appear in Review, their labels, order, and default tab for this profile.",
+        "enabled": "Enabled",
+        "default": "Default"
+      },
+      "toasts": {
+        "profileCreated": "Review profile created.",
+        "profileUpdated": "Review profile updated.",
+        "profileCloned": "Review profile cloned.",
+        "profileEnabled": "Review profile enabled.",
+        "profileDisabled": "Review profile disabled."
+      },
+      "preview": {
+        "title": "Live Preview",
+        "description": "This preview reflects tabs and field placement for the selected profile.",
+        "emptySection": "No fields in this section yet.",
+        "total": "Total",
+        "currency": "Currency",
+        "lines": "Lines"
+      },
+      "dnd": {
+        "title": "Drag & Drop Fields",
+        "description": "Drag a field chip and drop it into the section where it should appear in Review.",
+        "dropHint": "Drop fields here"
+      },
+      "errors": {
+        "missingProfileData": "Profile name and document type are required.",
+        "profileCreateFailed": "Could not create review profile.",
+        "profileCloneFailed": "Could not clone review profile.",
+        "profileUpdateFailed": "Could not update review profile.",
+        "fieldAssignFailed": "Could not assign field to profile.",
+        "layoutNeedsSection": "Enable at least one review tab in this layout."
+      },
+      "list": {
+        "title": "Review Profiles",
+        "description": "Each profile defines how a document type appears in Review — sections, fields, and order.",
+        "newProfile": "New profile",
+        "search": "Search profiles…",
+        "results": "{count, plural, one {# profile} other {# profiles}}",
+        "empty": "No profiles yet.",
+        "fieldsAssigned": "{count, plural, one {# field} other {# fields}} assigned",
+        "sectionsEnabled": "{count, plural, one {# section} other {# sections}}",
+        "stats": {
+          "total": "Total",
+          "active": "Active",
+          "fields": "Target fields"
+        }
+      },
+      "frame": {
+        "back": "Back to profiles",
+        "configuration": "Configuration",
+        "layout": "Layout",
+        "active": "Active",
+        "paused": "Paused"
+      },
+      "configuration": {
+        "title": "Configuration",
+        "description": "Basic information and operating status.",
+        "name": "Name",
+        "documentKind": "Document type",
+        "documentKindHint": "Which document type this profile is used for.",
+        "documentKindLocked": "Cannot change for system profiles.",
+        "descriptionField": "Description",
+        "descriptionPlaceholder": "What this profile is for…",
+        "updated": "{field} updated",
+        "updateFailed": "Failed to update {field}",
+        "stats": {
+          "fields": "Fields assigned",
+          "sections": "Sections enabled",
+          "kind": "Document type"
+        },
+        "statusToggle": {
+          "active": "Active",
+          "paused": "Paused",
+          "activeDescription": "Profile is active and available in Review.",
+          "pausedDescription": "Profile is paused and won't be available in Review.",
+          "activatedToast": "Profile activated",
+          "pausedToast": "Profile paused",
+          "errorToast": "Failed to update status",
+          "ariaLabel": "Toggle profile status",
+          "systemLockedToast": "System profiles cannot be paused"
+        },
+        "billingNormalization": {
+          "label": "Normalize billing from ERP partner",
+          "description": "When enabled, syncing to ERP will use the reseller partner address as the billing address, overriding whatever the document provides.",
+          "activeHint": "ERP partner will be used as billing",
+          "ariaLabel": "Enable billing normalization from ERP",
+          "enabledToast": "Billing normalization enabled",
+          "disabledToast": "Billing normalization disabled",
+          "errorToast": "Failed to update billing configuration"
+        }
+      },
+      "layoutPage": {
+        "title": "Layout",
+        "description": "Configure sections, assign fields, and preview the result.",
+        "sectionsTitle": "Sections",
+        "sectionsDescription": "Enable, rename, and reorder sections.",
+        "fieldsTitle": "Field assignments",
+        "fieldsDescription": "Assign each field to a section.",
+        "fieldsSearch": "Search fields…",
+        "previewTitle": "Live preview",
+        "unassigned": "Unassigned",
+        "fieldUpdated": "Field assigned to {section}",
+        "fieldUnassigned": "Field unassigned",
+        "fieldUpdateFailed": "Failed to update field assignment"
+      },
+      "deleteProfile": {
+        "trigger": "Delete profile",
+        "dialogTitle": "Delete this profile?",
+        "intro": "This action will permanently delete the \"{name}\" profile and cannot be undone.",
+        "consequencesTitle": "What will happen:",
+        "consequence1": "All field assignments to this profile will be removed.",
+        "consequence2": "Documents that used this profile will lose their layout configuration and fall back to the default profile in Review.",
+        "consequence3": "The profile cannot be recovered. You'll need to recreate it from scratch.",
+        "confirmCheckbox": "I understand this action is permanent and cannot be undone.",
+        "typeToConfirmLabel": "Type the profile name to confirm:",
+        "typeToConfirmPlaceholder": "Type \"{name}\"",
+        "typeMismatch": "The name does not match.",
+        "cancel": "Cancel",
+        "confirmDelete": "Delete profile permanently",
+        "deleting": "Deleting…",
+        "successToast": "Profile \"{name}\" deleted",
+        "errorToast": "Failed to delete profile",
+        "systemToast": "System profiles cannot be deleted"
+      }
+    }
+  },
+  "help": {
+    "nav": {
+      "title": "Help Center",
+      "subtitle": "Quick guides, definitions, and troubleshooting to get the most out of DocFlow.",
+      "backToIndex": "Back to index",
+      "relatedArticles": "Related articles"
+    },
+    "search": {
+      "placeholder": "Search articles…",
+      "noResults": "No articles match your search."
+    },
+    "categories": {
+      "quickStart": "Quick start",
+      "setup": "Setup",
+      "concepts": "Concepts",
+      "workflow": "Workflow",
+      "troubleshooting": "Troubleshooting"
+    },
+    "smartEmptyState": {
+      "title": "Process purchase orders in 4 steps",
+      "step1Title": "Upload",
+      "step1Desc": "PDF, JPG, PNG, or WEBP up to 25 MB.",
+      "step2Title": "Extract",
+      "step2Desc": "AI reads the order and normalizes the fields.",
+      "step3Title": "Review",
+      "step3Desc": "Approve or correct the data before sending.",
+      "step4Title": "Sync",
+      "step4Desc": "The order is created in ERP automatically."
+    },
+    "articles": {
+      "getting-started": {
+        "title": "First 5 minutes",
+        "summary": "From zero to your first order in ERP in under 5 minutes.",
+        "body": "## Before you start\n\nYou need three things:\n\n1. An **Anthropic API key** (Claude) — without it the AI can't extract.\n2. An active **ERP connection** — the app syncs orders there.\n3. At least one **provider** registered so the system knows how to interpret the order.\n\n## Step 1 — Connect Anthropic\n\nGo to **Settings → AI** and paste your API key. If you don't have one, see the dedicated Anthropic setup guide.\n\n## Step 2 — Connect ERP\n\nGo to **Settings → ERP** and fill in: XML-RPC URL, database, user, API key. Press *Test* to verify.\n\n## Step 3 — Upload your first order\n\nGo to **Inbox** and drag a purchase-order PDF. In under 30 seconds you'll see the order in **Needs review** state. Open it, verify the fields, and press **Approve**. The order shows up in ERP as a *Sales Order* or *Quotation* (depending on your config).\n\n## Enable Auto-sync (optional)\n\nOnce you trust the extractions, flip the **Auto-sync** toggle in the Inbox header: \"clean\" orders will go straight to ERP without manual review."
+      },
+      "dashboard-tour": {
+        "title": "Dashboard tour",
+        "summary": "What each metric and section of the app means.",
+        "body": "## Dashboard\n\nSummary of the last period: orders processed, success rate, AI spend, recent errors.\n\n## Inbox\n\nDocuments in process or waiting for review. The orange badge shows how many need your attention.\n\n## Review\n\nFocused view to approve/reject one by one. Equivalent to opening a document from Inbox.\n\n## Processed\n\nHistory of approved/rejected orders. Here you see ERP sync status and can manually retry if anything failed.\n\n## Templates\n\nManage **providers** and **review profiles**. Define how each PDF field maps to ERP.\n\n## Settings\n\nYour ERP connection, API keys, team, credits, and tenant preferences."
+      },
+      "anthropic-key": {
+        "title": "Configure Anthropic API key",
+        "summary": "How to obtain an Anthropic API key, paste it into DocFlow, and understand the cost.",
+        "body": "## Why Anthropic?\n\nIntake uses **Claude Sonnet 4.6** to extract data from purchase orders. It's the only AI provider supported.\n\n## Get an API key\n\n1. Go to [console.anthropic.com](https://console.anthropic.com).\n2. Create an account or sign in.\n3. Under **Settings → API keys**, click **Create key**. Give it a name like `intake-prod`.\n4. **Copy the key immediately** — it's shown only once.\n5. Add credit under **Billing** (recommended minimum: $20 USD to start).\n\n## Paste it into DocFlow\n\n1. Go to **Settings → AI** in DocFlow.\n2. Paste the API key into the field.\n3. Click **Test connection** to verify.\n4. Click **Save**.\n\n## Approximate cost\n\nA typical 1-3 page purchase order costs between **$0.01 and $0.05** USD in Claude tokens. Complex multi-line invoices may reach $0.10. Actual cost shows up per document (column *AI cost*).\n\n## Common errors\n\n- **401 Unauthorized**: the key is mistyped or was revoked.\n- **529 Overloaded**: Anthropic is saturated; the system retries automatically up to 3 times.\n- **Insufficient credits**: you need to top up your Anthropic balance."
+      },
+      "odoo-setup": {
+        "title": "Configure ERP connection",
+        "summary": "Steps to connect your ERP instance via XML-RPC.",
+        "body": "## What you need\n\n- **Base URL**: e.g. `https://erp.yourcompany.com`.\n- **Database**: the ERP database name (e.g. `production`).\n- **Username**: an ERP user with permissions to create *Sales Orders*.\n- **API key**: generated in ERP from *My Profile → Account → API Keys*.\n\n## Generate an ERP API key\n\n1. In ERP, open your profile (top-right corner).\n2. Go to the **Account** tab → **API Keys** → **New API Key**.\n3. Name it (`intake-integration`) and copy the key.\n4. Paste that key into DocFlow — **don't use your password**, it won't work if you have 2FA.\n\n## Test the connection\n\n1. **Settings → ERP** in DocFlow.\n2. Fill in the 4 fields.\n3. Click **Test connection**.\n4. If everything's OK, click **Save**.\n\n## Export mode\n\nChoose how orders are created in ERP:\n\n- **Quotation**: order is created as draft; a human must confirm it in ERP.\n- **Sales order**: order is auto-confirmed on sync.\n\n## Common errors\n\n- **Connection refused**: verify the URL (must include `https://`) and that no firewall is blocking.\n- **Invalid login/password**: make sure you're using the API key, not the password.\n- **Access denied**: the ERP user lacks permissions for `sale.order` or `res.partner`."
+      },
+      "email-ingest": {
+        "title": "Email ingestion",
+        "summary": "Receive orders automatically from Email provider, Mailgun, or Resend.",
+        "body": "## What is it?\n\nIntake can read a mailbox and automatically process any PDF attachment received. Ideal when your suppliers email you orders.\n\n## Email provider (Outlook / Email provider)\n\n1. Register an **App** in Azure AD with `Mail.Read` and `Mail.ReadBasic.All` permissions (delegated or application).\n2. Generate a **client secret** in the app.\n3. Create a **subscription** pointing to `https://<your-domain>/api/email-ingest?source_id=<ID>` with a random `clientState` (save it, you'll need it).\n4. In DocFlow **Ingest Hub → Email sources**, create a new source with adapter `microsoft_graph` and paste: tenant ID, client ID, client secret, graph subscription ID, graph client state.\n\n## Mailgun\n\n1. Configure a **route** in Mailgun forwarding to `https://<your-domain>/api/email-ingest?adapter=mailgun&source_id=<ID>`.\n2. Copy your Mailgun **signing key** and expose it as env var `MAILGUN_SIGNING_KEY` in your Supabase project.\n3. In DocFlow create the source with adapter `mailgun` and the destination email address.\n\n## Resend\n\n1. Configure an **inbound webhook** in Resend pointing to the same endpoint with `adapter=resend`.\n2. Copy the **webhook secret** and store it in the source's `webhook_secret` field in DocFlow.\n\n## Verify\n\nSend a test email with a PDF attachment. Within seconds you should see the document appear in **Inbox**.\n\n## Security\n\nIntake rejects webhooks whose timestamp is more than 15 minutes old (replay protection)."
+      },
+      "browser-scrape": {
+        "title": "Browser scrape connections",
+        "summary": "Configure a crawler that downloads orders from supplier web portals.",
+        "body": "## When to use scraping\n\nWhen a supplier publishes orders on their web portal (no email or API). The crawler periodically logs in, downloads new PDFs, and feeds them to DocFlow.\n\n## Setup\n\n1. **Ingest Hub → Browser connections → New connection**.\n2. Fill in: name, login URL, credentials (encrypted with AES-256).\n3. Define a **download selector** (CSS or XPath for the \"Download PDF\" button).\n4. Set the **cadence**: hourly, every 4 hours, or daily.\n\n## Diagnostics\n\nEach run is logged at **Ingest Hub → Runs**. If a run fails:\n\n- **Login failed**: the page changed or the password expired.\n- **No new orders**: the selector no longer finds new orders (typical when the portal is redesigned).\n- **Download error**: the PDF didn't download (could be timeout or dynamic JS).\n\n## Limitations\n\n- Doesn't support CAPTCHAs.\n- Doesn't support MFA — use dedicated accounts without 2FA where possible.\n- The portal may detect the bot and block; not the most stable option. Email-ingest is better when available."
+      },
+      "cleo-webedi": {
+        "title": "Supplier Portal",
+        "summary": "How DocFlow automatically receives 850 Purchase Orders from Marketplace, Retailer B, Retailer C and other EDI partners.",
+        "body": "## What is Supplier Portal?\n\nSupplier Portal (`portal.example.com`) is the EDI portal large retailers (Marketplace, Retailer B, Retailer C, Retailer D, etc.) use to send **850 Purchase Orders in X12 format**. DocFlow's account is **DocFlow**.\n\nWhen a new order arrives, Supplier Portal sends a notification email to `orders@example.com` containing an HTML table with Supplier Portal's internal `Message ID`. DocFlow uses that ID to download the PDF directly from the portal and feed it to the AI pipeline.\n\n## Why email as trigger?\n\nA cron-based alternative would poll Supplier Portal for unread messages every N minutes. Problem: if another user opens an order in the portal, Supplier Portal marks it as read and the cron loses it. Using **email as the trigger** guarantees each notification is processed exactly once, regardless of who else accesses the portal.\n\n## End-to-end flow\n\n1. Marketplace/Retailer C/etc. publishes an 850 in Supplier Portal.\n2. Supplier Portal sends an email to `orders@example.com` with a metadata table.\n3. DocFlow receives the email (Email provider webhook), detects it's a Supplier Portal notification, parses the table.\n4. For each row with `Document = 850`, dispatches to the Playwright runner.\n5. The runner logs into Supplier Portal, calls `portal.printDocument(messageId)`, downloads the PDF.\n6. The PDF goes through the AI pipeline — lines, quantities, prices extracted.\n7. It appears in the Inbox as `needs_review`.\n\n## Important filters\n\n- **850s only**: any other message type (855 ack, 856 ASN, 997 functional ack, etc.) is ignored.\n- **Notifications no longer appear as HTML docs**: previously the notification email generated a junk HTML document in the Inbox; now it's discarded.\n- **Idempotency**: the `cleo_orders` table has unique on `(tenant_id, cleo_message_id)` — no duplicate downloads.\n\n## If something fails\n\n- Open **Ingest Hub → Supplier Portal**.\n- Run the **smoke test** — checks env vars, portal connectivity, runner endpoint.\n- Failed orders show with a **Retry** button.\n- If the account password changes, update `CLEO_PASSWORD` in Vercel.\n\n## Limitations\n\n- Only DocFlow (account ). For more Supplier Portal accounts, multi-tenant changes are needed in `cleo_orders`.\n- If Supplier Portal changes its internal JS API (`portal.printDocument`), the runner fails. The smoke test would catch this.\n- Playwright cold start on Vercel: ~5-10 s. The runner has `maxDuration=300` so there's plenty of margin.\n\n## Endpoints (audit trail)\n\n- `POST /api/ingest/cleo/process` — runner protected by `INTAKE_CLEO_INTERNAL_TOKEN`.\n- `POST /api/ingest/cleo/smoke` — health check.\n- `POST /api/ingest/cleo/orders/[id]/retry` — retry a failed order."
+      },
+      "provider-templates": {
+        "title": "Provider templates",
+        "summary": "When to create a provider template and how it's used.",
+        "body": "## What is a template?\n\nA **provider** represents who sends you the order (e.g., Home Depot, Retailer D). The **template** defines how to extract and map the document's fields into DocFlow's data model.\n\n## Auto-detection\n\nWhen you upload a PDF, DocFlow tries to identify the provider via:\n\n1. **Email domain** (if it came in via email-ingest).\n2. **Provider name/code** detected in the PDF text.\n3. **Fuzzy match** against already-registered providers.\n\n## When to create a template manually\n\n- If detection repeatedly fails for a provider.\n- If the provider uses a non-standard format (e.g., dual SKU codes, unusual columns).\n- If you want to assign a specific **reseller mapping** (which ERP partner to use as customer).\n\n## Steps\n\n1. **Templates → Create template**.\n2. Assign name, code, and email domain (optional).\n3. Configure **field annotations**: visually mark on a sample PDF where each field is (PO number, customer, etc).\n4. Associate a **reseller mapping** if applicable.\n\n## Field annotations vs Target fields\n\n- **Target fields**: global list of fields ERP needs (e.g., `partner_id`, `client_order_ref`).\n- **Field annotations**: visual marks that teach the AI where to find each field on a specific provider's documents."
+      },
+      "glossary": {
+        "title": "Glossary",
+        "summary": "Key terms used in DocFlow and what each one means.",
+        "body": "## Review Profile\n\nConfiguration per **document type** (PO, invoice, packing slip). Defines which fields are required and how each one is validated before approval.\n\n## Provider Template\n\nRule per **provider** (Home Depot, etc). Defines how to identify the provider and which `field annotations` to apply to their documents.\n\n## Target Field\n\nA **destination** field in ERP. Examples: `partner_id`, `client_order_ref`, `date_order`, `currency_id`, `name` (line), `product_id`, `product_uom_qty`, `price_unit`. Those marked `required` must be present for auto-sync to fire.\n\n## Reseller Mapping\n\nMaps a **provider** (e.g., Home Depot) to a **specific ERP partner** (e.g., the customer \"Retailer D\"). Without this, the system doesn't know whose name to create the order under.\n\n## Auto-sync\n\nPer-tenant toggle. When **ON**, \"clean\" documents (all required fields OK) are auto-approved and synced to ERP without human review.\n\n## Field Annotation\n\nA visual mark per provider that teaches the AI where each field is. Learned when a human corrects an extraction.\n\n## Document states\n\n| State | Means |\n|---|---|\n| `uploaded` | Just uploaded, queued |\n| `processing` | The AI is extracting |\n| `needs_review` | Ready for human approval |\n| `reviewed` | Approved |\n| `rejected` | Rejected |\n| `failed_processing` | Extraction failed |\n| `archived` | Moved to archive |\n| `split` | Was a multi-order PDF; each child is processed separately |\n\n## Order draft (sync) states\n\n| State | Means |\n|---|---|\n| `none` | No draft |\n| `pending` | Approved, waiting to sync |\n| `in_progress` | Syncing to ERP right now |\n| `synced` | Reached ERP (SO exists) |\n| `sync_failed` | ERP rejected the order |"
+      },
+      "upload-review-approve-sync": {
+        "title": "The flow: Upload → Review → Approve → Sync",
+        "summary": "DocFlow's canonical happy path explained step by step.",
+        "body": "## 1. Upload\n\nDrag a PDF (or JPG/PNG/WEBP, max 25 MB) into the **Inbox**. Automatic ingestion via email or scraping is also supported.\n\nThe document moves through `uploaded` → `processing` (~5-30 seconds).\n\n## 2. Extract (automatic)\n\nClaude Sonnet 4.6 reads the PDF and produces a normalized object: PO number, date, customer, lines with SKU/quantity/price, totals. If multiple orders are detected in one PDF, it splits into children.\n\n## 3. Review\n\nThe document moves to `needs_review`. Open it in **Review** and verify:\n\n- Header: PO number, date, customer, currency.\n- Shipping/Billing: shipping and billing addresses.\n- Lines: SKU, description, quantity, unit price.\n- Notes: special instructions.\n\nIf something's wrong, edit the field. If you want the AI to learn from the correction, mark a new *field annotation*.\n\n## 4. Approve\n\nClick **Approve**. The document moves to `reviewed` and the ERP sync fires.\n\n## 5. Sync\n\nThe order is created in ERP (Quotation or Sales Order based on your config). State moves to `synced` and the SO link appears. If it fails, go to **Processed** and use the manual retry button.\n\n## Auto-sync\n\nIf the Auto-sync toggle is on and all gates pass (resolved template, mapped reseller, all required fields present), steps 3-5 happen automatically without human intervention."
+      },
+      "auto-sync": {
+        "title": "Auto-sync explained",
+        "summary": "What the Auto-sync toggle does and when it decides to skip review.",
+        "body": "## What does it do?\n\nWhen on, documents whose extraction is \"perfect\" are auto-approved and synced to ERP without a human ever opening **Review**. Reduces processing time to ~30 seconds per order.\n\n## When does it fire\n\nMust pass **4 gates**:\n\n1. **Resolved template**: the system identified the provider (`provider_id` is not null).\n2. **Reseller mapping**: a provider → ERP partner mapping exists for this tenant.\n3. **Complete header**: all `target_fields` with `scope=header` and `required=true` are present in the extraction.\n4. **Complete lines**: each line has `name`, `quantity > 0`, and `unit_price` not null (if marked required).\n\nIf any gate fails, the document stays in `needs_review` for a human to check.\n\n## Why does a \"clean\" doc still land in review?\n\nUse the telemetry: every decision emits an `auto_approve` event with `outcome` and `meta.reason`. Query `workflow_events` filtered by `stage=auto_approve` to see the exact reason (`template_not_resolved`, `no_reseller_mapping`, `missing_header_fields`, `incomplete_line_fields`).\n\n## Enable / disable\n\nIn the Inbox header, click the **Auto-sync** chip and flip the toggle. Only tenant **owners** can change it (RLS enforces this).\n\n## Documents that never auto-approve\n\n- Orders without unit price on lines (typical for Home Depot school POs).\n- New providers without a configured reseller mapping.\n- Documents the AI had to split into children: each child evaluates the gates separately."
+      },
+      "failed-extraction": {
+        "title": "Documents that fail extraction",
+        "summary": "How to diagnose and resolve errors in the AI extraction phase.",
+        "body": "## Symptoms\n\n- The document appears as **Failed** in the Inbox.\n- Red banner up top: *\"AI provider unavailable\"* or similar.\n- The document's `last_error` field has the detail.\n\n## Common causes\n\n### 1. Anthropic 529 Overloaded\n\nClaude is saturated. The system retries automatically up to 3 times with backoff (4s, 8s). If all 3 fail, the doc is marked failed with tag `ai_provider_unavailable`.\n\n**Fix**: wait 5-10 minutes and click **Retry All**.\n\n### 2. Corrupt or encrypted PDF\n\nIf the PDF is password-protected, the AI can't read it.\n\n**Fix**: decrypt the PDF before uploading (Adobe Acrobat → Remove security).\n\n### 3. Low image quality\n\nVery blurry or rotated scans can produce low-confidence extractions.\n\n**Fix**: rescan at 300 DPI minimum, in correct orientation.\n\n### 4. Invalid API key or no credit\n\nGo to **Settings → AI** and verify the key is active and the Anthropic account has balance.\n\n## Retry\n\n- **Retry All** in the Failed banner: reprocesses all failed Inbox docs.\n- **Individual retry**: hover the row → retry button.\n\n## Prevention\n\nIf one provider fails repeatedly:\n\n1. Create a **provider template** with precise field annotations.\n2. Make sure the PDF format is consistent across orders."
+      },
+      "retry-sync": {
+        "title": "Retry ERP sync",
+        "summary": "Common errors when syncing to ERP and how to resolve them.",
+        "body": "## When do I need this?\n\nWhen an approved order didn't reach ERP. Draft state: `pending` (stuck) or `sync_failed`.\n\n## Manual sync button\n\nOn the **Processed** page, hover over any Pending/Failed row → green refresh icon appears. Click → odoo-sync fires again.\n\nProtected by rate limit: max **30 retries per hour per tenant**.\n\n## Common ERP errors\n\n### `Partner not found`\n\nThe reseller mapping points to an ERP partner that no longer exists (was deleted).\n\n**Fix**: go to **Templates → Provider** for the affected provider and reconfigure the reseller mapping.\n\n### `Product not found`\n\nA SKU on the order isn't in the ERP catalog.\n\n**Fix**:\n\n1. Sync the ERP catalog (**Settings → ERP → Sync products**).\n2. Create a product mapping for that specific SKU.\n\n### `Cross-tenant product violation`\n\nThe order references an `odoo_product_id` that doesn't belong to your catalog. This is a security check.\n\n**Fix**: verify the draft doesn't have product IDs from another tenant (rare; usually from manual DB edits).\n\n### `Insufficient stock`\n\nOdoo is configured to reject orders without available stock.\n\n**Fix**: either add stock in ERP, or change export mode to **Quotation** (which doesn't check stock).\n\n## Network errors\n\n- **Timeout**: ERP didn't respond in 60s. Verify the server is up.\n- **Connection refused**: URL/port changed. Update **Settings → ERP**.\n\n## When all else fails\n\nOpen the document from Processed, verify the extracted data, and manually create the order in ERP. Then mark the document as `archived` to remove it from active flow."
+      },
+      "pipeline": {
+        "title": "Processing pipeline",
+        "summary": "Full interactive flow: from a PDF to an ERP order in 6 stages.",
+        "body": "See the interactive pipeline page."
+      },
+      "tech-stack": {
+        "title": "Tech stack",
+        "summary": "Anthropic, Supabase, Vercel, and ERP: what each component contributes.",
+        "body": "See the tech stack page."
+      }
+    },
+    "pipeline_page": {
+      "header": {
+        "title": "Processing pipeline",
+        "subtitle": "From a PDF to an ERP order. Click each stage to see exactly what happens, which tool does it, and what comes out the other side.",
+        "categoryTag": "workflow"
+      },
+      "autosync": {
+        "label": "Simulate Auto-sync",
+        "onDesc": "Clean docs go straight to ERP without human review",
+        "offDesc": "Every document goes through manual review in the Inbox",
+        "autoBadge": "Auto"
+      },
+      "labels": {
+        "howItWorks": "How it works",
+        "outputs": "Outputs",
+        "ifFails": "If it fails:",
+        "lifecycleTitle": "Document lifecycle",
+        "lifecycleNote": "+ sync states in order_drafts: <code>none → pending → in_progress → synced</code> (or <code>sync_failed</code>)",
+        "screenshotsTitle": "The UI at each stage",
+        "screenshotInbox": "Inbox — documents in review",
+        "screenshotProcessed": "Processed — orders in ERP"
+      },
+      "costs": {
+        "perDoc": "Per typical document",
+        "splitExtract": "Split + extraction",
+        "odooSync": "ERP sync",
+        "free": "Free (your VPS)"
+      },
+      "stages": {
+        "upload": {
+          "label": "Upload",
+          "sublabel": "PDF enters the system",
+          "duration": "< 1 s",
+          "actor": "User / Email / Scraper",
+          "what": "The document arrives at DocFlow via one of three channels: manual upload from the Inbox, email attachment (email-ingest), or automatic download from a supplier portal (browser scrape).",
+          "step1": "File is validated: MIME type (PDF/JPG/PNG/WEBP) and max 25 MB size",
+          "step2": "Uploaded to Supabase Storage 'documents' bucket at {tenant}/{year-month}/{uuid}.pdf",
+          "step3": "Row is created in documents table with state = 'uploaded'",
+          "step4": "Edge Function 'ingest' is triggered with document_id and tenant_id",
+          "out1": "File in Storage",
+          "out2": "documents.state = 'uploaded'"
+        },
+        "split": {
+          "label": "Split (optional)",
+          "sublabel": "Multi-order PDFs",
+          "duration": "2–5 s",
+          "actor": "Claude Haiku",
+          "what": "If the PDF contains multiple purchase orders, a lightweight model (Haiku) detects page boundaries between orders and splits the file into independent children.",
+          "step1": "Claude Haiku scans the full PDF for PO headers, order numbers, and customer changes",
+          "step2": "If > 1 order is detected, each page range is extracted with pdf-lib and child PDFs are uploaded to Storage",
+          "step3": "Parent document moves to state = 'split' and disappears from Inbox",
+          "step4": "Each child starts its own pipeline from scratch",
+          "out1": "N child documents with state = 'uploaded'",
+          "out2": "Parent with state = 'split'"
+        },
+        "extract": {
+          "label": "AI Extraction",
+          "sublabel": "Claude reads the PO",
+          "duration": "5–25 s",
+          "actor": "Claude Sonnet 4.6",
+          "what": "Claude Sonnet 4.6 receives the PDF as an image (multimodal vision) and produces a normalized JSON object with every order field. Retries up to 3 times if Anthropic returns 529 (overload).",
+          "step1": "PDF is converted to base64 and sent to the Anthropic API as a document block",
+          "step2": "Prompt instructs Claude to produce JSON with: PO number, date, customer, address, lines (SKU, description, quantity, price), totals",
+          "step3": "Response is validated by a Zod schema: ISO dates, 3-char currency code, numeric totals",
+          "step4": "If confidence is low, issues are evaluated and we decide if the doc qualifies for auto-approve",
+          "out1": "NormalizedOrder JSON",
+          "out2": "detected_fields with coordinates",
+          "out3": "confidence 0–1",
+          "fail": "If all 3 retries fail → documents.state = 'failed_processing' with last_error = 'ai_provider_unavailable'"
+        },
+        "template": {
+          "label": "Provider detection",
+          "sublabel": "Who sent the order?",
+          "duration": "< 1 s",
+          "actor": "DB + fuzzy match",
+          "what": "The system identifies the provider via three cascading methods. Critical step for auto-sync: without a resolved provider, auto-approve fails.",
+          "step1": "1. Domain match: if it came via email, the sender's domain is checked against providers.email_domains",
+          "step2": "2. Code match: the slugified provider code detected in the text vs. providers.code",
+          "step3": "3. Fuzzy name match: if the AI-extracted name overlaps ≥ 4 characters with a registered provider",
+          "step4": "If resolved, the matching review_profile for the document type is loaded",
+          "out1": "documents.provider_id",
+          "out2": "autoTemplate.detectionStatus = 'resolved' | 'unresolved'"
+        },
+        "review": {
+          "label": "Review",
+          "sublabel": "Human or Auto-sync",
+          "duration": "Variable",
+          "actor": "User or Auto-sync",
+          "what": "Document arrives at 'needs_review'. If Auto-sync is ON and all gates pass, it's auto-approved. Otherwise it waits in the Inbox for human review.",
+          "step1": "Gate 1: template resolved (provider_id is not null)",
+          "step2": "Gate 2: reseller mapping exists (provider → ERP partner)",
+          "step3": "Gate 3: all required header target_fields are present",
+          "step4": "Gate 4: every line has name, quantity > 0, and price_unit if required",
+          "step5": "If all 4 gates pass → auto-approve. Otherwise → human reviews in the UI",
+          "out1": "documents.state = 'reviewed'",
+          "out2": "order_drafts.approved_at",
+          "out3": "sync_state = 'pending'"
+        },
+        "sync": {
+          "label": "Sync to ERP",
+          "sublabel": "Sales Order in ERP",
+          "duration": "2–5 s",
+          "actor": "Edge Function odoo-sync",
+          "what": "The odoo-sync Edge Function calls ERP's XML-RPC API to create the sale. It looks up or creates the partner, maps products by SKU, and returns the SO number.",
+          "step1": "Resolves the ERP partner: searches by name/email, creates if missing (per contact_settings)",
+          "step2": "For each line, resolves odoo_product_id: first via provider_product_mappings, then by catalog code search",
+          "step3": "Calls sale.order.create() via XML-RPC with all fields",
+          "step4": "If exportMode = 'sales_order', confirms with action_confirm()",
+          "step5": "Stores odoo_so_id and odoo_so_name in order_drafts and marks sync_state = 'synced'",
+          "out1": "ERP Sales Order created",
+          "out2": "order_drafts.sync_state = 'synced'",
+          "out3": "odoo_so_name = 'S09XXX'",
+          "fail": "sync_state = 'sync_failed' with last_sync_error. Manual retry from Processed."
+        }
+      }
+    },
+    "tech_stack_page": {
+      "header": {
+        "title": "Tech stack",
+        "subtitle": "DocFlow is built on top-tier cloud infrastructure. Each layer has a clear responsibility, and together they form a robust and scalable pipeline.",
+        "categoryTag": "concepts"
+      },
+      "diagram": {
+        "title": "Architecture"
+      },
+      "labels": {
+        "readMore": "Read more",
+        "pipelineLink": "Processing pipeline",
+        "pipelineDesc": "Full interactive flow",
+        "glossaryLink": "Glossary",
+        "glossaryDesc": "Key terms defined"
+      },
+      "anthropic": {
+        "name": "Anthropic Claude",
+        "tagline": "The brain of the system",
+        "stat1Label": "Primary model",
+        "stat2Label": "Split model",
+        "stat3Label": "Typical cost",
+        "stat4Label": "529 retries",
+        "stat4Value": "3× with backoff",
+        "c1Title": "Multimodal extraction",
+        "c1Desc": "Claude Sonnet 4.6 receives the PDF as a base64 image (vision + documents) and extracts every PO field in one call. No OCR pre-step needed.",
+        "c2Title": "Structured JSON",
+        "c2Desc": "The model produces JSON with a strict schema: po_number, ISO date, 3-char currency, lines with SKU/qty/price. Zod validates the output.",
+        "c3Title": "Boundary detection",
+        "c3Desc": "Claude Haiku detects how many orders are in a multi-order PDF and returns page ranges for the split. Cheaper model = minimal cost for this task.",
+        "c4Title": "Confidence and quality",
+        "c4Desc": "Each response includes a confidence field (0–1). The system evaluates issues (malformed dates, totals that don't add up) and decides whether the doc qualifies for auto-approve."
+      },
+      "supabase": {
+        "name": "Supabase",
+        "tagline": "Backend-as-a-service — database, auth, storage, and Edge Functions",
+        "stat1Label": "Database",
+        "stat2Label": "EF Runtime",
+        "stat3Label": "Auth",
+        "stat3Value": "JWT + RLS",
+        "stat4Label": "Realtime",
+        "stat4Value": "WebSocket",
+        "c1Title": "PostgreSQL + RLS",
+        "c1Desc": "All tables have Row Level Security. Users only see data from their tenant. Policies guarantee isolation without extra backend logic.",
+        "c2Title": "Edge Functions (Deno)",
+        "c2Desc": "ai-process, ingest, odoo-sync, and email-ingest run as serverless functions on Supabase's edge. No servers to maintain — they scale automatically.",
+        "c3Title": "Realtime",
+        "c3Desc": "The Inbox uses Supabase Realtime to update the document list without polling. When a doc moves to 'needs_review', the user sees it in < 1 second.",
+        "c4Title": "Storage",
+        "c4Desc": "Private 'documents' bucket with storage policies per tenant_id. No user can read another tenant's files by guessing the path.",
+        "c5Title": "Auth",
+        "c5Desc": "Auth with magic links and email/password. JWTs include tenant claims. The service role key never reaches the client."
+      },
+      "vercel": {
+        "name": "Vercel + Next.js 16",
+        "tagline": "Frontend and API routes with React's most modern framework",
+        "stat1Label": "Framework",
+        "stat2Label": "React",
+        "stat3Label": "Tailwind",
+        "stat4Label": "Runtime",
+        "stat4Value": "Node.js 22 / Edge",
+        "c1Title": "App Router (React 19)",
+        "c1Desc": "Pages are Server Components by default. Only interactive components (Inbox table, review workspace) are Client Components. Less JS shipped to the browser.",
+        "c2Title": "Serverless API Routes",
+        "c2Desc": "Every /api/* route is a serverless function running on Vercel Edge or Node.js as needed. Auth, tenant authorization, and input validation on every endpoint.",
+        "c3Title": "i18n with next-intl",
+        "c3Desc": "Spanish and English UI. Routes use the /[locale]/ prefix. Help Center articles are 100% translated in both languages.",
+        "c4Title": "Shadcn + Tailwind v4",
+        "c4Desc": "Design system with oklch CSS variables. Accessible Radix UI components. Dark sidebar, light content area, full dark mode support.",
+        "c5Title": "Streaming and Suspense",
+        "c5Desc": "Heavy pages (Templates, Settings) use Suspense boundaries to show skeleton loaders while Supabase queries resolve."
+      },
+      "odoo": {
+        "name": "ERP 19",
+        "tagline": "Destination ERP — where Sales Orders live",
+        "stat1Label": "Protocol",
+        "stat2Label": "Version",
+        "stat3Label": "Typical URL",
+        "stat4Label": "Auth",
+        "stat4Value": "API key (no password)",
+        "c1Title": "XML-RPC API",
+        "c1Desc": "DocFlow calls ERP via XML-RPC (ERP's native protocol). API key authentication. Creates sale.order, res.partner, and attaches ir.attachment with the original PDF.",
+        "c2Title": "Product catalog",
+        "c2Desc": "The catalog sync downloads product.product from ERP and stores them in odoo_products. PO SKUs are mapped against this catalog to resolve odoo_product_id.",
+        "c3Title": "Export modes",
+        "c3Desc": "Quotation: the order remains in draft, a human confirms it in ERP. Sales Order: auto-confirmed on sync. Configurable per tenant.",
+        "c4Title": "Multi-company",
+        "c4Desc": "Reseller mapping allows a Home Depot order to create the SO in the correct ERP company with the correct partner, even in multi-company setups."
+      }
+    },
+    "indexFeatured": {
+      "pipelineTitle": "Interactive pipeline",
+      "pipelineDesc": "Explore every processing stage — click and see exactly what the system does.",
+      "pipelineCta": "Explore pipeline",
+      "techStackTitle": "Tech stack",
+      "techStackDesc": "Anthropic, Supabase, Vercel, and ERP — what each component contributes and how they integrate.",
+      "techStackCta": "View the stack"
+    },
+    "indexCount": "{count, plural, one {# article} other {# articles}}",
+    "readArticle": "Read article",
+    "tocTitle": "On this page",
+    "resultsCount": "{count, plural, one {# result} other {# results}}"
+  },
+  "appHeader": {
+    "autoSync": "Auto-sync",
+    "commands": "Commands",
+    "publicScanner": "Public scanner",
+    "approvedOrders": "Approved orders → ERP",
+    "publicScannerTooltip": "Public scanner (QR)",
+    "syncCatalog": "Sync catalog",
+    "syncCatalogTooltip": "Sync ERP catalog",
+    "diagnostics": "Diagnostics",
+    "diagnosticsTooltip": "Integrations diagnostics"
+  },
+  "notificationsSettings": {
+    "pageTitle": "Notifications and email alerts",
+    "pageSubtitle": "Central hub to configure every automatic email DocFlow sends — recipients, templates, and schedules. Emails go out from orders@example.com via Email provider.",
+    "loading": "Loading settings…",
+    "recipientsTitle": "Recipients",
+    "noRecipients": "No recipients configured yet",
+    "addRecipient": "Add recipient",
+    "emailPlaceholder": "email@company.com",
+    "namePlaceholder": "Name (optional)",
+    "typeAll": "All emails",
+    "typeOrderApproved": "Approved orders",
+    "typeDailyDigest": "Daily digest",
+    "recipientAdded": "Recipient added",
+    "recipientDeleted": "Recipient deleted",
+    "addError": "Could not add recipient",
+    "templatesTitle": "Templates",
+    "subjectLabel": "Subject",
+    "introLabel": "Introduction",
+    "varsHint": {
+      "order_approved": "Variables: {{po_number}}, {{partner}}, {{total}}, {{odoo_so}}",
+      "daily_digest": "Variables: {{period}}, {{approved_count}}, {{pending_count}}, {{error_count}}"
+    },
+    "save": "Save",
+    "resetDefaults": "Restore defaults",
+    "templateSaved": "Template saved",
+    "templateReset": "Template restored to defaults",
+    "templateSaveError": "Could not save template"
+  },
+  "integrationsDiagnostics": {
+    "title": "Integrations diagnostics",
+    "subtitle": "Real-time status of the 4 ingest sources",
+    "runAll": "Run all diagnostics",
+    "refresh": "Refresh",
+    "loading": "Loading status…",
+    "loadError": "Could not load status",
+    "runDiagnostic": "Run diagnostic",
+    "smokeSuccess": "{name}: diagnostic passed",
+    "smokeFail": "{name}: diagnostic failed",
+    "smokeError": "Diagnostic failed to run",
+    "allSmokeSuccess": "All diagnostics completed",
+    "close": "Close",
+    "notConfigured": "not configured",
+    "noData": "No data",
+    "lastHealthcheck": "Last healthcheck",
+    "lastOrder": "Last order",
+    "orders24h": "Orders 24h",
+    "session": "Session",
+    "integration": {
+      "rithum": "Supplier Portal",
+      "cleo": "Supplier Portal",
+      "walmart": "Marketplace",
+      "m365": "Email provider"
+    },
+    "sessionState": {
+      "ok": "active",
+      "stale": "expired",
+      "unknown": "unknown"
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "bellLabel": "Notifications",
+    "viewAll": "View all",
+    "markAllRead": "Mark all read",
+    "empty": "No notifications",
+    "pageTitle": "Notifications",
+    "pageSubtitle": "{count, plural, =0 {All read} one {# unread} other {# unread}}",
+    "loading": "Loading…",
+    "loadMore": "Load more",
+    "searchPlaceholder": "Search…",
+    "apply": "Apply",
+    "severity": "Severity",
+    "source": "Source",
+    "severityValues": {
+      "info": "Info",
+      "success": "Success",
+      "warning": "Warning",
+      "error": "Error"
+    },
+    "sourceValues": {
+      "workflow_event": "Workflow",
+      "odoo_sync": "ERP sync",
+      "healthcheck": "Healthcheck",
+      "admin": "Admin"
+    }
+  },
+  "odooCatalogSync": {
+    "title": "Sync from ERP",
+    "subtitle": "Pick what to pull — each block refreshes a different cache layer",
+    "sync": "Sync",
+    "syncing": "Syncing…",
+    "synced": "Synced",
+    "close": "Close",
+    "countDetail": "{count} records pulled · {deactivated} deactivated",
+    "products": {
+      "title": "Products",
+      "summary": "Active product catalog from ERP (SKU, code, barcode, UoM)",
+      "detail1": "Source: product.product where active=true",
+      "detail2": "Auto-deactivates entries ERP no longer returns (reaper)",
+      "detail3": "Nightly cron runs at 3am local time",
+      "duration": "~30 s to 2 min",
+      "success": "Products synced",
+      "error": "Products sync failed"
+    },
+    "catalog": {
+      "title": "Customers & references",
+      "summary": "Partners (companies), taxes, currencies, payment terms, warehouses, carriers, sales teams, UoMs",
+      "detail1": "Needed to resolve the customer when approving an order",
+      "detail2": "Only top-level partners (companies or individuals without a parent)",
+      "detail3": "Refreshes currencies, taxes, and warehouses for ERP selects",
+      "duration": "~1 to 3 min",
+      "success": "Customers & references synced",
+      "error": "Customers/references sync failed"
+    },
+    "schema": {
+      "title": "Model schema",
+      "summary": "Field and type metadata for key ERP models (sale.order, res.partner, etc.)",
+      "detail1": "Only needed for advanced template creation or field-type inspection",
+      "detail2": "Does not affect product or order syncs",
+      "detail3": "Changes infrequently — no need to run it often",
+      "duration": "~30 s",
+      "success": "Schema synced",
+      "error": "Schema sync failed"
+    },
+    "all": {
+      "title": "Sync everything",
+      "summary": "Runs all 3 syncs in order: customers/references → products → schema",
+      "detail1": "Takes as long as the three combined (customers is usually the slowest)",
+      "detail2": "If one fails, earlier ones stay applied; you can retry the failed one",
+      "detail3": "Uses ERP API quota — avoid during peak activity hours",
+      "duration": "~3 to 5 min",
+      "confirm": "Sync everything",
+      "success": "All syncs completed"
+    },
+    "timer": {
+      "lastSyncOk": "Last sync: {time} ago",
+      "lastSyncOkWithCount": "Last sync: {time} ago · {count} records",
+      "failedAgo": "Failed {time} ago",
+      "neverSynced": "Never synced",
+      "nextRun": "Next run: in {time}",
+      "nextRunOverdue": "Overdue: was scheduled {time} ago",
+      "running": "Syncing now…",
+      "loadError": "Could not load status"
+    }
+  },
+  "breadcrumbs": {
+    "detail": "Detail",
+    "dashboard": "Dashboard",
+    "inbox": "Inbox",
+    "ingest": "Ingest Hub",
+    "email": "Email",
+    "portals": "Portals",
+    "browser": "Browser",
+    "review": "Review",
+    "processed": "Processed",
+    "providers": "Templates",
+    "templates": "Templates",
+    "profile-studio": "Profile Studio",
+    "integrations": "Integrations",
+    "odoo": "ERP",
+    "settings": "Settings",
+    "general": "General",
+    "team": "Team",
+    "mappings": "Mappings",
+    "credits": "Credits",
+    "ai": "AI",
+    "configuration": "Configuration",
+    "source-target": "Field Mapping",
+    "sku-mapping": "SKU Mapping",
+    "microsoft-365": "Email provider",
+    "help": "Help",
+    "pipeline": "Pipeline",
+    "tech-stack": "Tech stack"
+  },
+  "emailInbound": {
+    "title": "Email Inbound",
+    "subtitle": "Historical view of all emails received at orders@example.com (Email provider). Read-only.",
+    "inbox": "Inbox",
+    "unreads": "Unread",
+    "search": "Search...",
+    "empty": "No emails.",
+    "messages": "{count, plural, =0 {No messages} one {# message} other {# messages}}",
+    "processingCount": "{count} processing",
+    "noSubject": "(no subject)",
+    "selectEmail": "Select an email",
+    "loadError": "Error loading email",
+    "to": "To:",
+    "html": "HTML",
+    "text": "Text",
+    "noBody": "No message body",
+    "attachments": "{count, plural, one {# attachment} other {# attachments}}",
+    "errorLoadingHtml": "(error loading HTML)",
+    "relativeNow": "now",
+    "relativeMin": "{n}m",
+    "relativeHour": "{n}h",
+    "relativeDay": "{n}d"
+  }
+}

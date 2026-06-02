@@ -1,0 +1,2661 @@
+{
+  "common": {
+    "loading": "Cargando…",
+    "retry": "Reintentar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "yes": "Sí",
+    "no": "No",
+    "back": "Atrás",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "clearFilters": "Limpiar filtros",
+    "search": "Buscar",
+    "noResults": "Sin resultados",
+    "or": "o",
+    "bulkSelected": "{count, plural, one {# seleccionado} other {# seleccionados}}",
+    "bulkActions": "Acciones",
+    "clearSelection": "Quitar selección"
+  },
+  "nav": {
+    "brand": "DocFlow",
+    "dashboard": "Inicio",
+    "inbox": "Bandeja",
+    "ingestHub": "Centro de Ingesta",
+    "email": "Email",
+    "portals": "Portales",
+    "browser": "Navegador",
+    "review": "Revisión",
+    "processed": "Procesados",
+    "providers": "Plantillas",
+    "integrations": "Integraciones",
+    "settings": "Configuración",
+    "help": "Ayuda",
+    "configuration": "Configuración",
+    "odoo19": "ERP 19",
+    "emailInbound": "Email Inbound",
+    "processingCosts": "Costos de procesamiento"
+  },
+  "sidebar": {
+    "processingCostTemp": "Costo de procesamiento (Temp)"
+  },
+  "userMenu": {
+    "signOut": "Cerrar sesión",
+    "switchLocale": "English",
+    "account": "Cuenta",
+    "openMenu": "Abrir menú de usuario",
+    "openCommand": "Comandos",
+    "theme": "Tema",
+    "themeLight": "Claro",
+    "themeDark": "Oscuro",
+    "themeSystem": "Sistema"
+  },
+  "auth": {
+    "title": "Inicia sesión en DocFlow",
+    "subtitle": "Usa la cuenta que tu equipo invitó.",
+    "signIn": "Iniciar sesión",
+    "signOut": "Cerrar sesión",
+    "email": "Correo",
+    "password": "Contraseña",
+    "signingIn": "Iniciando sesión…",
+    "errors": {
+      "invalidCredentials": "El correo o la contraseña no son correctos."
+    },
+    "brand": "DocFlow",
+    "appName": "AI Document Processing",
+    "appTagline": "Procesamiento inteligente de órdenes de compra",
+    "poweredBy": "Un producto de DocFlow",
+    "disclaimer": "Acceso restringido a personal autorizado. Toda actividad es monitoreada y registrada.",
+    "confidential": "Sistema confidencial",
+    "passcode": {
+      "title": "Código de acceso requerido",
+      "subtitle": "Ingresá tu código de acceso de 4 dígitos para continuar.",
+      "wrong": "Código inválido",
+      "attempt": "intento"
+    },
+    "copyright": "© {} DocFlow. Todos los derechos reservados."
+  },
+  "inbox": {
+    "title": "Bandeja",
+    "header": {
+      "reviewNext": "Revisar siguiente",
+      "deleteSelected": "Eliminar {count}",
+      "search": "Buscar…",
+      "clearSearch": "Limpiar",
+      "uploadButton": "Subir"
+    },
+    "metrics": {
+      "total": "Total"
+    },
+    "empty": {
+      "title": "Sin documentos en espera",
+      "subtitle": "Sube un PDF de orden de compra para comenzar.",
+      "cta": "Subir archivo"
+    },
+    "dropzone": {
+      "title": "Arrastra archivos PDF aquí",
+      "subtitle": "Hasta 25 MB por archivo",
+      "button": "Elegir archivos"
+    },
+    "columns": {
+      "document": "Documento",
+      "type": "Tipo",
+      "pages": "Páginas",
+      "size": "Tamaño",
+      "source": "Origen",
+      "status": "Estado",
+      "uploaded": "Subido",
+      "credits": "Créditos"
+    },
+    "actions": {
+      "review": "Revisar",
+      "retry": "Reintentar",
+      "upload": "Subir",
+      "delete": "Eliminar",
+      "deleteConfirm": "¿Eliminar documento?",
+      "deleteWarning": "Esto eliminará el archivo de forma permanente y no se puede deshacer.",
+      "deleteSuccess": "Documento eliminado.",
+      "deleteFailed": "No se pudo eliminar el documento."
+    },
+    "filters": {
+      "search": "Buscar",
+      "searchPlaceholder": "Buscar por nombre de archivo…",
+      "state": "Estado",
+      "all": "Todos los estados",
+      "results": "{count, plural, one {# resultado} other {# resultados}}",
+      "noResults": "No hay documentos que coincidan con los filtros actuales."
+    },
+    "errors": {
+      "failedBanner": "{count, plural, one {# documento falló al procesar} other {# documentos fallaron al procesar}}",
+      "uploadFailed": "Error al subir. Inténtalo de nuevo.",
+      "insufficientCredits": "No quedan créditos. Contacta a tu administrador.",
+      "invalidType": "Solo se aceptan archivos PDF, JPG, PNG, WEBP, XLSX o XLS.",
+      "tooLarge": "El archivo excede el límite de 25 MB."
+    },
+    "tabs": {
+      "toReview": "Por revisar",
+      "processing": "Procesando",
+      "failed": "Fallidos",
+      "allLabel": "Todos"
+    },
+    "noData": "Sin datos",
+    "rowsPerPage": "Filas por página",
+    "pageRange": "{from} – {to} de {count}",
+    "welcome": {
+      "title": "Bienvenido a {tenantName}",
+      "subtitle": "Procesa órdenes de compra en tres pasos — sin captura manual de datos.",
+      "step1": "Sube un PDF",
+      "step2": "Revisa y corrige",
+      "step3": "Aprueba → ERP",
+      "dismiss": "Cerrar"
+    },
+    "docType": {
+      "title": "¿Qué tipo de documento es?",
+      "subtitle": "Elige cómo procesar lo que estás subiendo.",
+      "auto": "Detectar automáticamente",
+      "autoHint": "Órdenes, facturas, recibos (flujo estándar)",
+      "payment": "Documento de pago / settlement",
+      "paymentHint": "Se envía al buzón de conciliación de ERP",
+      "confirm": "Procesar"
+    }
+  },
+  "command": {
+    "title": "Comandos",
+    "placeholder": "Escribe un comando o busca…",
+    "empty": "Sin resultados",
+    "section": {
+      "navigate": "Navegar",
+      "help": "Ayuda"
+    },
+    "action": {
+      "inbox": "Ir a Bandeja",
+      "ingestHub": "Ir a Ingest Hub",
+      "review": "Ir a Revisión",
+      "processed": "Ir a Procesados",
+      "providers": "Ir a Plantillas de Proveedores",
+      "integrations": "Ir a Integraciones",
+      "settings": "Ir a Configuración"
+    },
+    "help": {
+      "open": "Abrir paleta de comandos",
+      "inbox": "Ir a Bandeja",
+      "ingestHub": "Ir a Ingest Hub",
+      "review": "Ir a Revisión",
+      "processed": "Ir a Procesados",
+      "providers": "Ir a Plantillas de Proveedores",
+      "integrations": "Ir a Integraciones",
+      "settings": "Ir a Configuración"
+    }
+  },
+  "integrations": {
+    "title": "Integraciones",
+    "marketplace": {
+      "eyebrow": "CONECTA TU STACK",
+      "subtitle": "Conecta DocFlow con tu ERP, tienda y marketplaces. Cada conector sincroniza datos hacia tus revisiones.",
+      "search": "Buscar integraciones…",
+      "categories": {
+        "all": "Todas",
+        "erp": "ERP",
+        "ecommerce": "Ecommerce",
+        "marketplace": "Marketplace",
+        "accounting": "Contabilidad"
+      },
+      "status": {
+        "connected": "Conectado",
+        "available": "Conectar",
+        "comingSoon": "Próximamente"
+      },
+      "summary": {
+        "connected": "{count} conectada(s)",
+        "available": "{count} disponible(s)"
+      },
+      "open": "Abrir",
+      "notifyMe": "Avisarme",
+      "emptyTitle": "Sin integraciones que coincidan",
+      "emptyDescription": "Prueba a limpiar los filtros o la búsqueda.",
+      "clearFilters": "Limpiar filtros"
+    },
+    "catalog": {
+      "odoo": {
+        "name": "ERP",
+        "tagline": "ERP open source",
+        "description": "Sincronización bidireccional de productos, contactos, órdenes y facturas con ERP 19."
+      },
+      "sap-business-one": {
+        "name": "SAP Business One",
+        "tagline": "ERP para empresas en crecimiento",
+        "description": "Envía órdenes, facturas y POs aprobadas a SAP Business One."
+      },
+      "netsuite": {
+        "name": "NetSuite",
+        "tagline": "ERP en la nube",
+        "description": "Sincroniza ítems, clientes y transacciones con Oracle NetSuite."
+      },
+      "quickbooks": {
+        "name": "QuickBooks",
+        "tagline": "Contabilidad",
+        "description": "Envía facturas y bills aprobadas a QuickBooks Online."
+      },
+      "xero": {
+        "name": "Xero",
+        "tagline": "Contabilidad",
+        "description": "Empuja facturas y bills a Xero en un clic."
+      },
+      "shopify": {
+        "name": "Shopify",
+        "tagline": "Ecommerce",
+        "description": "Importa órdenes, clientes y productos desde tu tienda Shopify."
+      },
+      "tiendanube": {
+        "name": "Tiendanube",
+        "tagline": "Ecommerce LATAM",
+        "description": "Conecta tu tienda Tiendanube e importa pedidos."
+      },
+      "mercadolibre": {
+        "name": "MercadoLibre",
+        "tagline": "Marketplace LATAM",
+        "description": "Importa pedidos de MercadoLibre y sincroniza inventario."
+      }
+    },
+    "detail": {
+      "back": "Volver a integraciones",
+      "tabs": {
+        "overview": "Resumen",
+        "connection": "Conexión",
+        "sync": "Sincronización",
+        "mappings": "Mapeos",
+        "profiles": "Perfiles",
+        "runs": "Ejecuciones"
+      },
+      "actions": {
+        "syncNow": "Sincronizar",
+        "testConnection": "Probar conexión",
+        "disconnect": "Desconectar",
+        "viewDocs": "Ver documentación"
+      },
+      "comingSoon": {
+        "title": "Próximamente",
+        "description": "Estamos trabajando en este conector. Cuéntanos si lo necesitas pronto y le daremos prioridad.",
+        "notify": "Avísame cuando esté listo",
+        "emailPlaceholder": "tu@empresa.com",
+        "thanks": "¡Gracias! Te avisaremos."
+      }
+    },
+    "odoo": {
+      "title": "ERP",
+      "description": "Conector ERP 19",
+      "longDescription": "Núcleo Multi-ERP con ERP 19 como conector de primera clase. Sincroniza modelos, importa catálogos, gestiona mapeos, perfiles de exportación y monitorea corridas.",
+      "sections": {
+        "connection": "Conexión",
+        "schema": "Esquema",
+        "catalog": "Catálogo",
+        "sku": "Mapeo de SKU",
+        "profiles": "Perfiles de exportación",
+        "runs": "Corridas"
+      },
+      "ui": {
+        "showHelp": "Mostrar ayuda"
+      },
+      "help": {
+        "connection": "Guarda y prueba la conexión con tu instancia ERP 19. Sin esta conexión, no se pueden sincronizar modelos, catálogos ni exportar documentos.",
+        "schema": "Sincroniza modelos y campos reales desde ERP (por ejemplo: sale.order, purchase.order, account.move). Esto define qué campos son requeridos y escribibles al exportar.",
+        "schemaField": "Nombre técnico del campo en ERP.",
+        "schemaType": "Tipo de dato del campo (char, many2one, float, etc).",
+        "schemaRequired": "Si está en Yes, ERP exige valor para crear o actualizar el registro.",
+        "schemaWritable": "Si está en Yes, el sistema puede escribir este campo durante la exportación.",
+        "catalog": "Importa catálogos vivos desde ERP: productos/SKUs, partners y referencias (impuestos, monedas, UoM, almacenes, carriers, términos de pago). Se usan para mapping y validación.",
+        "sku": "Une el SKU que llega en el documento con el producto correcto de ERP. Esto reduce errores de línea y acelera aprobaciones.",
+        "skuSource": "SKU detectado en el documento del proveedor.",
+        "skuCompany": "SKU interno de tu empresa cuando aplica.",
+        "skuProduct": "Producto destino en ERP para esa línea.",
+        "profiles": "Un perfil de exportación define a qué modelo de ERP se enviará el documento (sales_order, purchase_order, invoice, shipping o custom), y con qué mapeo de campos. Puedes tener varios perfiles para distintos flujos.",
+        "profilesFlow": "Flow indica el tipo de documento destino: venta, compra, factura, shipping o custom.",
+        "profilesRun": "Run export crea el registro en ERP en modo borrador (draft). No confirma documentos automáticamente.",
+        "runs": "Historial de ejecuciones de exportación. Aquí ves éxito/error, referencia externa creada en ERP y motivo de fallo cuando aplica.",
+        "runsDate": "Fecha y hora en que se lanzó la corrida.",
+        "runsStatus": "Estado final de la corrida: success, failed, pending, etc.",
+        "runsExternal": "ID o nombre del registro creado en ERP.",
+        "runsDraft": "Borrador interno usado para esa exportación.",
+        "runsError": "Mensaje técnico del fallo para depuración."
+      },
+      "toasts": {
+        "catalogKindLoadFailed": "No se pudo cargar {kind}.",
+        "catalogSyncFailed": "Error al sincronizar el catálogo.",
+        "catalogSynced": "Catálogo sincronizado.",
+        "exportCompleted": "Exportación completada.",
+        "exportFailed": "Error al exportar.",
+        "exportRunFailed": "La exportación falló.",
+        "fieldsLoadFailed": "No se pudieron cargar los campos.",
+        "pickDraftFirst": "Selecciona un borrador primero.",
+        "profileCreateFailed": "No se pudo crear el perfil.",
+        "profileCreated": "Perfil {flow} creado.",
+        "schemaSyncFailed": "Error al sincronizar el esquema.",
+        "schemaSynced": "Esquema de ERP sincronizado."
+      }
+    }
+  },
+  "ingestHub": {
+    "title": "Centro de Ingesta",
+    "description": "Centraliza todos los canales por donde llegan órdenes: carga manual, email, API y portales de proveedor.",
+    "console": {
+      "eyebrow": "Consola operativa",
+      "network": "Red de captura"
+    },
+    "hero": {
+      "eyebrow": "Control de entrada",
+      "title": "Una torre de control para cada orden que entra al negocio",
+      "description": "Monitorea canales, plantillas y rutas de captura desde un solo lugar. Cada método alimenta el mismo pipeline de revisión y sincronización.",
+      "signalLive": "Canales listos",
+      "signalEvidence": "Evidencia preservada",
+      "signalRouting": "Ruteo inteligente"
+    },
+    "metrics": {
+      "system": "Sistema",
+      "channels": "Canales",
+      "templates": "Plantillas",
+      "sources": "Fuentes"
+    },
+    "status": {
+      "active": "Activo",
+      "ready": "Listo",
+      "planned": "Próximo"
+    },
+    "manual": {
+      "title": "Carga manual",
+      "status": "Activo",
+      "description": "Carga PDFs e imágenes desde la Bandeja.",
+      "metric": "Canal principal actual"
+    },
+    "email": {
+      "title": "Ingesta por email",
+      "description": "Recibe órdenes desde correo, adjuntos y cuerpos HTML.",
+      "metric": "{count, plural, one {# fuente activa} other {# fuentes activas}}"
+    },
+    "api": {
+      "title": "Ingesta por API",
+      "description": "Entrada programática para integraciones externas.",
+      "metric": "Webhooks y API keys después"
+    },
+    "portal": {
+      "title": "Supplier Portal",
+      "description": "Recibe órdenes 850 (Purchase Orders) automáticamente desde Marketplace, Retailer B, Retailer C y otros via Supplier Portal.",
+      "metric": "{count, plural, one {# integración activa} other {# integraciones activas}}"
+    },
+    "rithum": {
+      "title": "Supplier Portal OrderStream",
+      "description": "Descarga automática de PO de Home Depot y Marketplace Marketplace desde CommerceHub OrderStream.",
+      "metric": "Integración activa"
+    },
+    "walmart": {
+      "title": "Marketplace Marketplace",
+      "description": "Integración directa via API con Marketplace Seller Center: órdenes, catálogo, inventario, performance, Buy Box, returns y financiero.",
+      "metric": "API directa · webhook + cron"
+    },
+    "routing": {
+      "title": "Enrutamiento",
+      "description": "Cada canal puede asignar una plantilla de proveedor, reglas de detección y metadata de origen.",
+      "providers": "Plantillas",
+      "emailSources": "Fuentes email",
+      "browserSources": "Portales",
+      "live": "Operativo",
+      "next": "Siguiente canal",
+      "nextValue": "Email"
+    },
+    "next": {
+      "title": "Siguiente movimiento",
+      "description": "Configura primero el canal que ya usan tus proveedores y luego conecta sus plantillas para que el sistema interprete cada orden correctamente.",
+      "email": "Configurar email",
+      "portal": "Configurar portales"
+    },
+    "browserIngest": {
+      "title": "Ingesta por Portal",
+      "description": "Captura órdenes desde portales de proveedores, descarga documentos y conserva evidencia visual para auditoría.",
+      "backToHub": "Volver a Ingest Hub",
+      "eyebrow": "Inteligencia de portal",
+      "heroTitle": "Un centro de captura para portales complejos",
+      "heroText": "Registra un portal, ejecútalo bajo demanda y deja que el sistema detecte documentos descargables, evidencias y señales de estado.",
+      "readySignal": "Motor listo",
+      "evidenceSignal": "Evidencia guardada",
+      "pipelineSignal": "Pipeline conectado",
+      "newConnection": "Nuevo portal",
+      "name": "Nombre",
+      "portalUrl": "URL del portal",
+      "loginUrl": "URL de login",
+      "provider": "Plantilla",
+      "autoDetect": "Autodetectar",
+      "create": "Crear portal",
+      "created": "Portal creado.",
+      "createFailed": "No se pudo crear el portal.",
+      "connections": "Portales",
+      "emptyConnections": "Aún no hay portales configurados.",
+      "status": "Estado",
+      "lastRun": "Última ejecución",
+      "actions": "Acciones",
+      "runNow": "Ejecutar",
+      "runComplete": "Ejecución terminada.",
+      "runFailed": "La ejecución falló.",
+      "needsAttention": "El portal requiere atención.",
+      "attentionRequired": "Revisar ejecución",
+      "activePortals": "Portales activos",
+      "documentsCaptured": "Documentos capturados",
+      "evidenceCaptured": "Evidencias",
+      "systemState": "Estado del sistema",
+      "runs": "Ejecuciones",
+      "emptyRuns": "Todavía no hay ejecuciones.",
+      "connection": "Portal",
+      "state": "Estado",
+      "documents": "Docs",
+      "artifacts": "Artefactos",
+      "error": "Error",
+      "createdAt": "Creado",
+      "stateLabels": {
+        "active": "Activo",
+        "paused": "Pausado",
+        "archived": "Archivado",
+        "needs_attention": "Requiere atención",
+        "queued": "En cola",
+        "running": "Ejecutando",
+        "processed": "Procesado",
+        "failed": "Fallido"
+      }
+    },
+    "emailIngest": {
+      "title": "Ingesta por email",
+      "description": "Recibe órdenes por webhook, guarda el correo original, procesa adjuntos PDF/imagen y crea documentos desde HTML o texto cuando el pedido viene en el cuerpo del email.",
+      "backToHub": "Volver a Ingest Hub",
+      "webhookTitle": "Webhook de entrada",
+      "webhookDescription": "Conecta esta URL a tu buzón de Email provider Exchange Online mediante notificaciones de Email provider. El secreto del webhook se envía como parámetro de consulta.",
+      "webhookUrl": "URL del webhook",
+      "copyWebhook": "Copiar webhook",
+      "copy": "Copiar",
+      "copied": "Webhook copiado.",
+      "connect": "Conectar",
+      "renew": "Renovar",
+      "subscribed": "Suscripción creada.",
+      "subscribeFailed": "No se pudo crear la suscripción.",
+      "methods": {
+        "label": "Métodos de ingesta por email",
+        "microsoft-365": "Email provider",
+        "imap": "IMAP"
+      },
+      "mailgunBadge": "Mailgun listo",
+      "mailgunTitle": "Configura recepción de órdenes con Mailgun",
+      "mailgunDescription": "Crea una fuente de email, copia su webhook y úsalo como destino Forward en una ruta de Mailgun. Cada fuente tiene su propio secreto.",
+      "mailgunStepDomain": "Dominio",
+      "mailgunStepDomainText": "Agrega y verifica tu dominio receptor en Mailgun.",
+      "mailgunExpression": "Expresión",
+      "mailgunAction": "Acción",
+      "microsoftBadge": "Email provider enterprise",
+      "microsoftTitle": "Conecta Outlook con Email provider",
+      "microsoftDescription": "Usa un buzón compartido de Exchange Online y notificaciones de Email provider. El sistema recibe el aviso, descarga el mensaje y procesa adjuntos o HTML con el mismo pipeline.",
+      "microsoftApp": "App Entra",
+      "microsoftAppText": "Registra una app con client secret guardado como variable de entorno.",
+      "microsoftPermissions": "Permisos",
+      "microsoftSubscription": "Suscripción",
+      "graphTenantId": "Tenant ID",
+      "graphClientId": "Client ID",
+      "graphMailbox": "Buzón de correo",
+      "graphFolder": "Carpeta",
+      "newSource": "Nueva fuente de email",
+      "address": "Dirección",
+      "provider": "Plantilla",
+      "adapter": "Adaptador",
+      "allowedSenders": "Remitentes permitidos",
+      "autoDetect": "Autodetectar",
+      "anySender": "Cualquier remitente",
+      "create": "Crear fuente",
+      "created": "Fuente de email creada.",
+      "createFailed": "No se pudo crear la fuente de email.",
+      "updated": "Fuente actualizada.",
+      "updateFailed": "No se pudo actualizar la fuente.",
+      "sources": "Fuentes de email",
+      "emptySources": "Aún no hay fuentes de email configuradas.",
+      "status": "Estado",
+      "active": "Activa",
+      "paused": "Pausada",
+      "pause": "Pausar",
+      "activate": "Activar",
+      "recent": "Correos recientes",
+      "emptyRecent": "Todavía no han llegado correos.",
+      "from": "Remitente",
+      "subject": "Asunto",
+      "state": "Estado",
+      "received": "Recibido",
+      "unknown": "Sin detectar",
+      "quality": {
+        "security": "Seguridad",
+        "securityText": "Cada webhook exige secreto propio y las fuentes pueden limitar remitentes por email o dominio.",
+        "idempotency": "Idempotencia",
+        "idempotencyText": "El Message-ID evita duplicados aunque el proveedor reintente el webhook.",
+        "adapters": "Adaptadores",
+        "adaptersText": "El núcleo soporta Email provider, Mailgun, Resend, SendGrid y payloads genéricos sin amarrar la app a un solo proveedor."
+      }
+    }
+  },
+  "review": {
+    "title": "Revisión",
+    "lockedBanner": "Bloqueado — este documento ya fue procesado y es solo lectura.",
+    "backToInbox": "Bandeja",
+    "summary": "Resumen",
+    "syncState": "ERP",
+    "mockBanner": "Extracción mock. Conecta Anthropic antes de usar esto con clientes.",
+    "pdfPreview": "PDF de la orden de compra",
+    "pdfUnavailable": "La vista del PDF no está disponible.",
+    "approve": "Aprobar",
+    "reject": "Rechazar",
+    "reanalyze": "Re-analizar",
+    "reanalyzing": "Re-analizando…",
+    "reanalyzeQueued": "Reanálisis iniciado. Regresando a Bandeja.",
+    "approving": "Aprobando…",
+    "rejecting": "Rechazando…",
+    "rejectConfirm": "¿Rechazar este documento?",
+    "rejectConfirmDescription": "Esto moverá el documento a Procesados como rechazado. Esta acción no se puede deshacer.",
+    "noLines": "Agrega al menos una línea antes de aprobar",
+    "emptyTitle": "Todo está al día",
+    "emptySubtitle": "No hay documentos esperando revisión. Sube una orden de compra desde la Bandeja para comenzar.",
+    "emptyBadge": "Cola limpia",
+    "goToInbox": "Ir a Bandeja",
+    "blockedApprovalBanner": "La aprobación está bloqueada hasta resolver proveedor/template y el mapeo reseller de ERP.",
+    "signals": {
+      "review": "Por revisar",
+      "inbox": "Bandeja",
+      "status": "Estado",
+      "ready": "Lista",
+      "clear": "Al día"
+    },
+    "errors": {
+      "approveFailed": "No se pudo aprobar. Inténtalo de nuevo.",
+      "rejectFailed": "No se pudo rechazar. Inténtalo de nuevo.",
+      "saveFailed": "No se pudieron guardar los cambios.",
+      "reanalyzeFailed": "No se pudo iniciar el reanálisis."
+    },
+    "saveState": {
+      "saved": "Guardado",
+      "saving": "Guardando",
+      "unsaved": "Sin guardar"
+    },
+    "shortcuts": {
+      "next": "⌘⇧N siguiente"
+    },
+    "layoutEmpty": "No hay campos asignados a esta sección para el perfil actual.",
+    "header": {
+      "title": "Cabecera"
+    },
+    "shipping": {
+      "title": "Envío"
+    },
+    "details": {
+      "title": "Detalles",
+      "headerHint": "Confirma los datos principales antes de aprobar.",
+      "shippingHint": "Verifica direcciones de entrega y facturación antes de sincronizar con ERP.",
+      "linesHint": "Abre solo la línea que necesitas corregir.",
+      "notesHint": "Notas internas para el equipo y la sincronización.",
+      "customerAddressHint": "Se usa para encontrar o crear el cliente correcto en ERP.",
+      "deliveryAddressHint": "Se usa como dirección de entrega en ERP.",
+      "billingAddressHint": "Se usa como dirección de facturación en ERP.",
+      "saveError": "No se guardaron los últimos cambios."
+    },
+    "document": {
+      "pages": "Páginas"
+    },
+    "viewer": {
+      "thumbnails": "Páginas",
+      "detectedFields": "Campos detectados",
+      "viewOriginal": "Original",
+      "viewJson": "JSON",
+      "viewStudio": "Studio",
+      "viewRendered": "Renderizado",
+      "previousPage": "Página anterior",
+      "nextPage": "Página siguiente",
+      "zoomOut": "Alejar",
+      "zoomIn": "Acercar",
+      "fitPage": "Ajustar",
+      "flowVertical": "Flujo vertical",
+      "flowHorizontal": "Flujo horizontal",
+      "page": "Pág.",
+      "of": "de",
+      "loading": "Cargando PDF",
+      "clearSelection": "Limpiar selección",
+      "openRail": "Mostrar miniaturas",
+      "closeRail": "Ocultar miniaturas",
+      "openFields": "Mostrar campos detectados",
+      "closeFields": "Ocultar campos detectados"
+    },
+    "sidebarTabs": {
+      "order": "Orden de Compra",
+      "template": "Plantilla"
+    },
+    "template": {
+      "providerSection": "Proveedor",
+      "providerResolved": "Reseller asignado",
+      "providerPending": "Sin reseller asignado",
+      "changeReseller": "Cambiar",
+      "searchPlaceholder": "Buscar empresa en ERP...",
+      "searchButton": "Buscar",
+      "searching": "Buscando partners en ERP...",
+      "searchHint": "Escribe al menos 2 letras para buscar el partner correcto.",
+      "predictiveHint": "Selecciona una sugerencia. Mostramos resultados deduplicados y priorizados.",
+      "partnerSelected": "Partner seleccionado. Ya puedes asignarlo a este provider.",
+      "noResults": "Sin resultados.",
+      "saveReseller": "Asignar",
+      "createTemplate": "Crear template",
+      "teachTitle": "Enseña al AI",
+      "teachDescription": "Solo corrige lo que el AI hace mal — no necesitas mapear todos los campos. Haz click en un valor resaltado del PDF, dile a qué campo de ERP pertenece, y guarda. Esa corrección se aplica automáticamente a todos los documentos futuros de este proveedor.",
+      "stepPdf": "Paso 1 — Selecciona un texto en el PDF",
+      "stepField": "Paso 2 — ¿A qué campo corresponde?",
+      "stepFieldLabel": "Selecciona el campo de ERP que representa este texto.",
+      "fieldSearchPlaceholder": "Buscar campo (ej: número de orden, cliente...)",
+      "noHighlightSelected": "Sin texto seleccionado",
+      "highlightReady": "Texto seleccionado",
+      "save": "Guardar",
+      "goToOriginal": "Ver PDF",
+      "reanalyze": "Reanalizar",
+      "providerRequired": "Asigna un proveedor primero.",
+      "mappingsTitle": "Lo que ya aprendió",
+      "noMappings": "Aún no hay nada guardado. Completa el paso de arriba para entrenar al AI.",
+      "pdfField": "en el PDF",
+      "odooField": "campo en ERP",
+      "unresolved": {
+        "provider": "No se detectó proveedor.",
+        "template": "Falta template.",
+        "mapping": "Asigna un reseller de ERP.",
+        "detected": "Todo listo."
+      }
+    },
+    "studio": {
+      "badge": "Studio",
+      "title": "Aprendizaje de plantilla",
+      "subtitle": "Selecciona un target field en el panel derecho y luego el campo extraído correcto para enseñarle al sistema cómo debe mapearlo.",
+      "targetSelected": "Campo destino",
+      "pickTargetHint": "Primero selecciona un campo destino del sidebar para empezar a mapear.",
+      "pickSourceHint": "Ahora selecciona el campo extraído que corresponde en esta vista.",
+      "sidebarTitle": "Target fields aprendibles",
+      "sidebarDescription": "Estos cambios se guardan en la plantilla del provider y se reutilizan automáticamente en futuros documentos.",
+      "groups": {
+        "header": "Cabecera",
+        "addresses": "Direcciones",
+        "terms": "Términos",
+        "totals": "Totales",
+        "lines": "Líneas",
+        "other": "Otros"
+      },
+      "mapped": "Mapeado",
+      "currentMapping": "Mapeado desde: {source}",
+      "noMapping": "Sin mapeo guardado todavía.",
+      "replaceSku": "Reemplazar SKU",
+      "replaceSkuHint": "Guarda la equivalencia entre el SKU del proveedor y el SKU/producto interno.",
+      "confidence": "Confianza {value}%",
+      "page": "Pág. {page}",
+      "modal": {
+        "title": "Mapear \"{target}\" con \"{source}\"",
+        "description": "Confirma el aprendizaje que se guardará en la plantilla del provider.",
+        "target": "Campo destino",
+        "source": "Campo extraído",
+        "effect": "En la plantilla de {provider} se va a guardar este mapeo. La próxima vez que se escanee un documento de este provider, este cambio se aplicará automáticamente.",
+        "replaceWarning": "Este campo ya tenía un mapeo guardado desde \"{source}\". Si confirmas, ese mapeo será reemplazado.",
+        "confirm": "Confirmar mapeo"
+      },
+      "skuModal": {
+        "title": "Reemplazo de SKU",
+        "description": "Asocia este SKU del provider con el producto correcto para futuras extracciones automáticas de {provider}.",
+        "providerSku": "SKU del provider",
+        "currentMapping": "Mapeo actual",
+        "noCurrentMapping": "Sin mapeo guardado",
+        "suggestions": "Sugerencias",
+        "searchPlaceholder": "Buscar producto interno u ERP...",
+        "unresolved": "Producto sin resolver",
+        "clickToResolve": "Haz clic para resolver",
+        "reasons": {
+          "mapping": "Mapeo guardado",
+          "exact": "SKU exacto",
+          "rule": "Regla del provider",
+          "prefix": "Quitar prefijo {value}",
+          "suffix": "Quitar sufijo {value}",
+          "separators": "Ignorar separadores",
+          "description": "Nombre similar"
+        },
+        "effect": "En la plantilla de {provider} se va a guardar que este SKU corresponde al producto seleccionado. Los próximos documentos aplicarán este reemplazo automáticamente.",
+        "confirm": "Guardar reemplazo"
+      },
+      "toasts": {
+        "pickTargetFirst": "Primero selecciona un target field en el sidebar.",
+        "providerRequired": "Primero resuelve el provider antes de enseñar mapeos.",
+        "mappingSaved": "Mapeo guardado para {field}.",
+        "mappingFailed": "No se pudo guardar el mapeo en la plantilla.",
+        "skuMappingSaved": "Reemplazo de SKU guardado correctamente.",
+        "skuMappingFailed": "No se pudo guardar el reemplazo de SKU."
+      }
+    },
+    "rendered": {
+      "sections": {
+        "header": "Encabezado",
+        "addresses": "Direcciones",
+        "totals": "Totales",
+        "lines": "Líneas"
+      },
+      "rows": {
+        "detectedProvider": "Proveedor detectado",
+        "po": "PO",
+        "date": "Fecha",
+        "currency": "Moneda",
+        "customer": "Cliente",
+        "billing": "Facturación",
+        "shipping": "Envío",
+        "customerText": "Cliente (texto)",
+        "subtotal": "Subtotal",
+        "tax": "Impuestos",
+        "total": "Total"
+      },
+      "lineSummary": "SKU: {sku} | Cant.: {qty} | Precio: {price}"
+    },
+    "fields": {
+      "poNumber": "Número de OC",
+      "poDate": "Fecha de OC",
+      "deliveryDate": "Fecha de entrega",
+      "currency": "Moneda",
+      "paymentTerms": "Términos de pago",
+      "paymentTermsPlaceholder": "ej. Net 30",
+      "customer": "Cliente",
+      "customerAddress": "Dirección del cliente",
+      "contactPerson": "Persona de contacto",
+      "deliveryAddress": "Dirección de entrega",
+      "billingAddress": "Dirección de facturación",
+      "odooSo": "SO de ERP",
+      "notes": "Notas",
+      "subtotal": "Subtotal",
+      "tax": "Impuesto",
+      "total": "Total"
+    },
+    "lines": {
+      "title": "Líneas de pedido",
+      "shortTitle": "Líneas",
+      "count": "{count, plural, one {# línea} other {# líneas}}",
+      "addLine": "Agregar línea",
+      "description": "Descripción",
+      "descriptionRequired": "La descripción es obligatoria",
+      "sku": "SKU",
+      "qty": "Cant.",
+      "unit": "Unidad",
+      "unitPrice": "Precio unitario",
+      "taxRate": "Impuesto",
+      "total": "Total",
+      "actions": "Acciones",
+      "newLine": "Nueva línea",
+      "removeLine": "Quitar",
+      "incomplete": "{count, plural, one {# línea tiene campos requeridos pendientes} other {# líneas tienen campos requeridos pendientes}}",
+      "emptyTitle": "Sin líneas todavía",
+      "emptySubtitle": "Agrega una línea para que la orden pueda aprobarse."
+    },
+    "required": {
+      "requiredShort": "Req",
+      "missingTitle": "Faltan datos requeridos",
+      "missingList": "Hace falta: {fields}.",
+      "missingField": "Hace falta {field}.",
+      "missingInline": "Hace falta: {fields}",
+      "missingToast": "{count, plural, one {Falta un campo requerido: {fields}} other {Faltan campos requeridos: {fields}}}"
+    },
+    "toasts": {
+      "annotationDeleteFailed": "No se pudo eliminar el mapeo.",
+      "annotationDeleted": "Mapeo eliminado.",
+      "approveErrorWithReason": "Error al aprobar: {reason}",
+      "autoSyncOff": "Auto-sync desactivado",
+      "autoSyncOffDescription": "La orden se aprobará y quedará en Procesados → Pendiente.",
+      "buyerUnresolved": "El cliente no pudo resolverse automáticamente. Asigná el cliente de ERP manualmente en el panel.",
+      "duplicatePo": "Este PO ya fue procesado. Es un duplicado — recházalo.",
+      "duplicatePoWithSo": "Esta orden ya fue aprobada (ERP: {so}). Duplicado — recházala.",
+      "odooConnectionInactive": "Conexión con ERP inactiva. Verificá la configuración.",
+      "odooSyncFailed": "Error al sincronizar con ERP: {detail}",
+      "providerResolutionLoadFailed": "No se pudo cargar la resolución de proveedor.",
+      "providerUnresolvedBeforeApprove": "Debes resolver proveedor/template y mapear reseller ERP antes de aprobar.",
+      "resellerAssignFailed": "No se pudo asignar el reseller.",
+      "resellerAssigned": "Reseller asignado correctamente.",
+      "resolveProviderFirst": "Primero resuelve el proveedor.",
+      "selectOriginalData": "Selecciona un dato en la vista Original.",
+      "selectTargetField": "Selecciona un campo destino.",
+      "selectValidReseller": "Selecciona un reseller válido.",
+      "templateCreateFailed": "No se pudo crear el template desde review.",
+      "templateCreated": "Template creado. Reanaliza para aplicar el template.",
+      "unknownError": "error desconocido",
+      "visualLearningSaveFailed": "No se pudo guardar el aprendizaje.",
+      "visualLearningSaved": "Aprendizaje guardado en template."
+    },
+    "forceDuplicate": {
+      "title": "PO duplicado — ¿forzar envío a ERP?",
+      "subtitle": "Ya existe una orden con este PO sincronizada",
+      "subtitleWithSo": "Ya existe en ERP como {so}",
+      "description": "El número de PO ya fue enviado a ERP. Si forzás, se creará una segunda Sales Order en ERP con los mismos datos, lo que puede duplicar la facturación.",
+      "bullet1": "Usalo solo si la SO original quedó incompleta o se cancela aparte",
+      "bullet2": "No deshace la SO existente — la nueva se suma",
+      "bullet3": "La acción queda registrada en el log de auditoría",
+      "cancel": "Cancelar",
+      "confirm": "Forzar envío",
+      "forcing": "Enviando…"
+    },
+    "autoReview": {
+      "title": "Gating IA",
+      "summary": "Confianza: {confidence} · Excepciones críticas: {critical} · Alertas: {warning}",
+      "exceptions": "Foco de revisión: {fields}",
+      "scopes": {
+        "header": "Cabecera",
+        "shipping": "Envío",
+        "billing": "Facturación",
+        "line": "Líneas"
+      }
+    },
+    "toolbar": {
+      "cancel": "Cancelar",
+      "downloadOriginal": "Descargar documento original",
+      "loading": "Cargando…",
+      "mapStudio": "Mapear campos en Studio",
+      "openPartnerTemplate": "Abrir plantilla del partner",
+      "print": "Imprimir",
+      "renderedDoc": "Documento renderizado",
+      "save": "Guardar"
+    }
+  },
+  "processed": {
+    "title": "Procesados",
+    "header": {
+      "eyebrow": "Historial de órdenes",
+      "subtitle": "Consulta las órdenes aprobadas, rechazadas y sincronizadas con ERP."
+    },
+    "metrics": {
+      "processed": "Procesados",
+      "synced": "Sincronizados",
+      "pending": "En cola",
+      "issues": "Con atención"
+    },
+    "empty": "Aún no hay documentos procesados",
+    "emptySubtitle": "Los documentos aprobados aparecerán aquí una vez revisados desde la Bandeja.",
+    "retrySync": "Reintentar sync",
+    "retrySyncSuccess": "Sync reintentado. La sincronización con ERP quedó en cola.",
+    "retrySyncFailed": "Falló el reintento de sync. Inténtalo de nuevo.",
+    "fixAddresses": "Actualizar direcciones desde DocFlow",
+    "fixAddressesSuccess": "Direcciones actualizadas en ERP.",
+    "fixAddressesFailed": "No se pudieron actualizar las direcciones",
+    "filters": {
+      "search": "Buscar",
+      "searchPlaceholder": "Buscar por OC, cliente, archivo o SO de ERP…",
+      "syncState": "Estado de sync",
+      "all": "Todos los estados",
+      "synced": "Sincronizado",
+      "pending": "Pendiente",
+      "inProgress": "En progreso",
+      "failed": "Fallido",
+      "rejected": "Rechazado",
+      "results": "{count, plural, one {# resultado} other {# resultados}}"
+    },
+    "noResults": "No hay documentos que coincidan con los filtros actuales.",
+    "archive": "Archivar",
+    "archiveSuccess": "Documento archivado.",
+    "archiveFailed": "No se pudo archivar el documento.",
+    "delete": "Eliminar",
+    "deleteSuccess": "Documento eliminado.",
+    "deleteFailed": "No se pudo eliminar el documento.",
+    "deleteConfirm": "¿Eliminar {count, plural, one {# documento} other {# documentos}}?",
+    "deleteWarning": "Esto eliminará permanentemente los documentos seleccionados y no se puede deshacer.",
+    "viewPdf": "Ver PDF",
+    "showArchived": "Mostrar archivados",
+    "hideArchived": "Ocultar archivados",
+    "columns": {
+      "document": "Documento",
+      "customer": "Cliente",
+      "poNumber": "Número de OC",
+      "total": "Total",
+      "approvedAt": "Aprobado",
+      "syncStatus": "ERP",
+      "odooSo": "SO de ERP",
+      "pdf": "PDF"
+    },
+    "table": {
+      "id": "ID",
+      "status": "Estado",
+      "po": "OC #",
+      "customer": "Cliente",
+      "odooSO": "OO ERP",
+      "total": "Total",
+      "approved": "Aprobado",
+      "aiCost": "Costo IA",
+      "actions": "Acciones",
+      "noData": "Sin datos"
+    },
+    "tabs": {
+      "all": "Todas",
+      "synced": "Sincronizadas",
+      "pending": "Pendientes",
+      "failed": "Fallidas",
+      "rejected": "Rechazadas"
+    },
+    "manualSync": {
+      "label": "Sincronizar a ERP",
+      "started": "Sincronización con ERP iniciada",
+      "rateLimit": "Límite de intentos alcanzado. Reintenta en ~{seconds}s.",
+      "failed": "Falló la sincronización con ERP"
+    },
+    "alerts": {
+      "failedTitle": "{count, plural, one {# orden falló} other {# órdenes fallaron}} al sincronizar con ERP",
+      "failedDesc": "Verifica tu conexión a ERP y los mapeos de SKU, luego reintenta desde el menú de cada fila.",
+      "showFailed": "Mostrar fallidas",
+      "rejectedTitle": "{count, plural, one {# orden rechazada necesita atención} other {# órdenes rechazadas necesitan atención}}",
+      "rejectedDesc": "Las órdenes rechazadas se pueden reprocesar desde la Bandeja si es necesario.",
+      "showRejected": "Mostrar rechazadas"
+    },
+    "search": {
+      "placeholder": "Buscar por OC, cliente, archivo…",
+      "noResultsTitle": "Sin resultados",
+      "noResultsDesc": "Prueba con otro filtro o limpia la búsqueda."
+    },
+    "deleteDialog": {
+      "title": "¿Eliminar orden?",
+      "tip": "⚠ Sugerencia: si solo quieres ocultarla de la lista, usa <strong>Archivar</strong>."
+    },
+    "metricsLabels": {
+      "totalVolume": "Volumen total",
+      "successRate": "Tasa de éxito",
+      "totalOrders": "Total órdenes",
+      "aiConsumption": "Consumo IA",
+      "allClear": "todo OK",
+      "scans": "{count} escaneos"
+    },
+    "kpis": {
+      "totalVolume": "Volumen total",
+      "successRate": "Tasa de éxito",
+      "totalOrders": "Total de órdenes",
+      "aiConsumption": "Consumo de IA",
+      "needAttention": "{count} necesitan atención",
+      "allClear": "todo OK",
+      "scans": "{count} extracciones"
+    }
+  },
+  "selectTenant": {
+    "title": "DocFlow",
+    "heading": "Tu cuenta está lista.",
+    "message": "Contacta a tu administrador para solicitar acceso.",
+    "signOut": "Cerrar sesión",
+    "signingOut": "Cerrando sesión…"
+  },
+  "settings": {
+    "title": "Configuración",
+    "general": {
+      "title": "General",
+      "description": "Identidad de la empresa y valores regionales.",
+      "navDescription": "Datos básicos",
+      "tenantName": "Nombre de la empresa",
+      "slug": "Slug",
+      "locale": "Idioma predeterminado",
+      "timezone": "Zona horaria",
+      "role": "Tu rol",
+      "profile": {
+        "title": "Perfil de usuario",
+        "description": "Tu cuenta personal en este tenant.",
+        "email": "Email",
+        "name": "Nombre",
+        "tenantId": "Tenant ID"
+      },
+      "avatar": {
+        "change": "Cambiar foto",
+        "uploading": "Subiendo…",
+        "hint": "JPG, PNG, WebP · máx 2MB",
+        "success": "Avatar actualizado",
+        "errorUpload": "No se pudo subir la imagen",
+        "errorGeneric": "Error al subir"
+      }
+    },
+    "odoo": {
+      "title": "Conexión a ERP",
+      "description": "Datos usados para crear borradores de órdenes de venta.",
+      "navDescription": "Credenciales ERP",
+      "url": "URL del servidor",
+      "urlHint": "La URL base de tu instancia de ERP, ej. https://miempresa.odoo.com",
+      "database": "Base de datos",
+      "databaseHint": "Se encuentra en ERP en Configuración → Técnico → Bases de datos",
+      "username": "Usuario",
+      "usernameHint": "El correo del usuario ERP usado para crear órdenes de venta",
+      "resellerDefault": "Reseller / canal por defecto",
+      "resellerDefaultHint": "Se usa como empresa de nivel 1 al crear jerarquías de clientes en ERP.",
+      "resellerDefaultPlaceholder": "Ejemplo: Amazon",
+      "exportMode": "Modo de exportación",
+      "exportModeHint": "Elige si los documentos aprobados quedan como cotizaciones o se confirman como órdenes de venta.",
+      "exportModeOptions": {
+        "sales_order": "Orden de venta (confirmar automáticamente)",
+        "quotation": "Cotización (dejar en borrador)"
+      },
+      "password": "Contraseña",
+      "passwordHint": "Usa una API key de ERP → Configuración → Claves API para mayor seguridad",
+      "passwordPlaceholder": "Ingresa la contraseña del usuario ERP",
+      "test": "Probar conexión",
+      "save": "Guardar conexión",
+      "testSuccess": "Conexión verificada correctamente.",
+      "testFailed": "No se pudo probar la conexión.",
+      "saveSuccess": "Conexión guardada.",
+      "saveFailed": "No se pudo guardar la conexión.",
+      "lastChecked": "Última prueba",
+      "neverChecked": "Nunca",
+      "lastError": "Último error",
+      "status": {
+        "active": "Conectado",
+        "error": "Error",
+        "unverified": "Sin verificar"
+      },
+      "contactSettings": "Exportación de Contactos",
+      "contactSettingsHint": "Controla cómo se crean clientes y direcciones en ERP en cada sincronización.",
+      "customerMatchField": "Buscar cliente por",
+      "customerMatchFieldOptions": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "vat": "RFC / Tax ID"
+      },
+      "customerMatchScope": "Alcance de búsqueda",
+      "customerMatchScopeOptions": {
+        "under_reseller": "Solo bajo el reseller",
+        "global": "Todos los contactos de ERP"
+      },
+      "customerIsCompany": "Crear cliente como Empresa (no Persona)",
+      "createIfNotFound": "Crear cliente si no existe en ERP",
+      "syncBillingAddress": "Sincronizar dirección de facturación",
+      "syncShippingAddress": "Sincronizar dirección de envío",
+      "addressUpdateStrategy": "Comportamiento al actualizar dirección",
+      "addressUpdateStrategyOptions": {
+        "always": "Siempre actualizar",
+        "create_only": "Solo crear (nunca actualizar)",
+        "skip": "No crear (usar el contacto del cliente)"
+      },
+      "updateContactInfo": "Actualizar correo y teléfono en contactos existentes"
+    },
+    "team": {
+      "title": "Equipo",
+      "description": "Miembros que pueden acceder al sistema.",
+      "navDescription": "Control de acceso",
+      "currentUser": "Usuario actual",
+      "userId": "Usuario",
+      "searchLabel": "Buscar miembros",
+      "searchPlaceholder": "Buscar por correo, ID de usuario o rol",
+      "emptyTeam": "Aún no hay miembros en el equipo.",
+      "emptySearch": "Ningún miembro coincide con la búsqueda.",
+      "invites": {
+        "title": "Invitar usuarios",
+        "description": "Agrega a un usuario existente por correo.",
+        "email": "Correo",
+        "role": "Rol",
+        "submit": "Agregar miembro",
+        "success": "Miembro agregado exitosamente.",
+        "failed": "No se pudo agregar el miembro.",
+        "userNotFound": "No existe un usuario con ese correo."
+      },
+      "columns": {
+        "member": "Miembro",
+        "role": "Rol",
+        "joined": "Se unió"
+      },
+      "roles": {
+        "owner": "Owner",
+        "member": "Miembro"
+      },
+      "registrationNote": "El usuario debe tener una cuenta existente. Si no la tiene, primero debe registrarse.",
+      "you": "Tú",
+      "member": "Miembro",
+      "create": {
+        "title": "Crear usuario",
+        "description": "Crea una cuenta nueva directamente en Supabase y agrégala a este tenant.",
+        "email": "Correo",
+        "name": "Nombre completo (opcional)",
+        "password": "Contraseña",
+        "passwordHint": "Mínimo 8 caracteres",
+        "role": "Rol",
+        "submit": "Crear usuario",
+        "creating": "Creando…",
+        "success": "Usuario creado y agregado al tenant.",
+        "errorConflict": "Ya existe un usuario con ese correo.",
+        "errorGeneric": "No se pudo crear el usuario."
+      }
+    },
+    "credits": {
+      "title": "Créditos",
+      "description": "Balance de procesamiento y movimientos recientes.",
+      "navDescription": "Uso y balance",
+      "balance": "Balance actual",
+      "empty": "Aún no hay movimientos de créditos.",
+      "columns": {
+        "date": "Fecha",
+        "kind": "Tipo",
+        "amount": "Cantidad",
+        "note": "Nota"
+      },
+      "kinds": {
+        "grant": "Crédito",
+        "debit": "Débito",
+        "refund": "Reembolso",
+        "adjustment": "Ajuste"
+      }
+    },
+    "mappings": {
+      "title": "Mapeos",
+      "description": "Reglas que conectan nombres extraídos con registros de ERP.",
+      "navDescription": "Coincidencias",
+      "customers": "Mappings de clientes",
+      "products": "Mappings de productos",
+      "customersTitle": "Mappings de clientes",
+      "customersDescription": "Asocia nombres de clientes extraídos a partners de ERP para evitar duplicados.",
+      "productsTitle": "Mappings de productos",
+      "productsDescription": "Asocia SKUs y descripciones extraídas a productos de ERP para líneas de pedido precisas.",
+      "emptyCustomers": "Aún no hay mappings de clientes.",
+      "emptyProducts": "Aún no hay mappings de productos.",
+      "columns": {
+        "extractedName": "Nombre extraído",
+        "partnerName": "Partner de ERP",
+        "partnerId": "ID del partner",
+        "extractedSku": "SKU extraído",
+        "extractedDescription": "Descripción extraída",
+        "productName": "Producto en ERP",
+        "productId": "ID del producto",
+        "createdAt": "Creado",
+        "actions": "Acciones"
+      },
+      "form": {
+        "extractedName": "Nombre extraído",
+        "partnerName": "Nombre del partner en ERP",
+        "partnerId": "ID del partner en ERP",
+        "add": "Agregar mapping",
+        "extractedSku": "SKU extraído",
+        "extractedDescription": "Descripción extraída",
+        "productId": "ID del producto en ERP",
+        "productName": "Nombre del producto en ERP",
+        "addProduct": "Agregar mapping de producto"
+      },
+      "addSuccess": "Mapping de cliente agregado.",
+      "addFailed": "No se pudo agregar el mapping de cliente.",
+      "deleteSuccess": "Mapping de cliente eliminado.",
+      "deleteFailed": "No se pudo eliminar el mapping de cliente.",
+      "addProductSuccess": "Mapping de producto agregado.",
+      "addProductFailed": "No se pudo agregar el mapping de producto.",
+      "deleteProductSuccess": "Mapping de producto eliminado.",
+      "deleteProductFailed": "No se pudo eliminar el mapping de producto."
+    },
+    "providers": {
+      "title": "Plantillas de proveedor",
+      "description": "Registra cómo trabaja cada proveedor para que el sistema sepa interpretar sus órdenes cuando lleguen por email, API u otro canal.",
+      "navDescription": "Reglas por proveedor",
+      "refresh": "Actualizar",
+      "yes": "Sí",
+      "no": "No",
+      "active": "Activo",
+      "inactive": "Inactivo",
+      "system": "Sistema",
+      "selectProvider": "Selecciona una plantilla para configurar sus reglas.",
+      "providers": {
+        "title": "Plantillas",
+        "description": "Cada plantilla define los SKUs, campos y aliases que el sistema debe aplicar a ese proveedor.",
+        "name": "Nombre",
+        "code": "Código",
+        "currency": "Moneda",
+        "domains": "Dominios de email",
+        "search": "Buscar plantillas...",
+        "results": "{count, plural, one {# plantilla} other {# plantillas}}",
+        "add": "Crear plantilla",
+        "addNew": "Nueva plantilla",
+        "addNewDescription": "Registra un proveedor y sus reglas de interpretación.",
+        "empty": "Aún no hay plantillas.",
+        "emptySearch": "No encontramos plantillas con esa búsqueda.",
+        "emptySearchDescription": "Prueba con el nombre, código o dominio del proveedor.",
+        "noDomains": "Sin dominios",
+        "console": "Centro de plantillas",
+        "total": "Total",
+        "readiness": "Preparación",
+        "fieldMappings": "Campos",
+        "skuMappings": "SKUs",
+        "templateRole": "Uso",
+        "templateReady": "Reglas del proveedor",
+        "notConfigured": "Sin configurar",
+        "settings": "Configuración",
+        "contactEmail": "Email de contacto",
+        "website": "Sitio web",
+        "created": "Plantilla creada.",
+        "createFailed": "No se pudo crear la plantilla.",
+        "delete": "Eliminar plantilla",
+        "deleteTitle": "¿Eliminar esta plantilla?",
+        "deleteWarning": "Esto eliminará permanentemente \"{name}\" junto con todos sus mapeos de campos, mapeos de SKUs y la asignación de reseller de ERP. Los documentos que usaban esta plantilla perderán el vínculo con el proveedor. Esta acción no se puede deshacer.",
+        "deleteConfirm": "Sí, eliminar",
+        "deleteCancel": "Cancelar",
+        "deleted": "Plantilla eliminada.",
+        "deleteFailed": "No se pudo eliminar la plantilla."
+      },
+      "admin": {
+        "back": "Volver a plantillas",
+        "configuration": "Configuración",
+        "configurationShort": "Datos base",
+        "configurationDescription": "Datos base, dominios y estado operativo de este proveedor.",
+        "sourceTarget": "Campos",
+        "sourceTargetDescription": "Define cómo los campos del proveedor se convierten en campos destino de ERP. Esto no depende de coordenadas; las coordenadas son solo visuales.",
+        "skuMapping": "Mapeo de SKU",
+        "skuMappingDescription": "Define cómo los SKUs del proveedor se relacionan con el catálogo de ERP.",
+        "templateSignal": "Plantilla activa",
+        "templateSignalDescription": "Estas reglas se aplican cuando una orden se identifica como este proveedor.",
+        "documentHistory": "Historial",
+        "documentHistoryDescription": "Todos los documentos escaneados de este proveedor",
+        "historialLabel": "Historial"
+      },
+      "providerConfig": {
+        "title": "Configuración de {provider}"
+      },
+      "targetFields": {
+        "title": "Campos destino",
+        "description": "Campos destino de ERP. Puedes agregar campos y marcar cuáles son requeridos.",
+        "templateDescription": "Campos destino de esta plantilla. Cada uno se conecta a un source field global.",
+        "key": "Key",
+        "label": "Etiqueta",
+        "scope": "Scope",
+        "model": "Modelo ERP",
+        "field": "Campo ERP",
+        "type": "Tipo",
+        "required": "Requerido",
+        "requiredShort": "Req",
+        "destination": "Destino",
+        "status": "Estado",
+        "add": "Agregar target field",
+        "remove": "Quitar",
+        "created": "Target field agregado.",
+        "createFailed": "No se pudo agregar el target field.",
+        "updated": "Target field actualizado.",
+        "updateFailed": "No se pudo actualizar el target field.",
+        "deleted": "Target field desactivado.",
+        "deleteFailed": "No se pudo quitar el target field."
+      },
+      "fieldMappings": {
+        "title": "Origen → Destino",
+        "description": "Reglas de campos para {provider}.",
+        "target": "Campo destino",
+        "sourceKey": "Clave del campo origen",
+        "sourceLabel": "Etiqueta origen",
+        "source": "Origen",
+        "customSource": "Source field nuevo",
+        "selectSource": "Seleccionar source field",
+        "unmapped": "Sin source field conectado",
+        "save": "Guardar mapping",
+        "sourceRequired": "Selecciona o escribe un source field.",
+        "status": "Estado",
+        "short": "campos",
+        "add": "Agregar mapping",
+        "created": "Mapping agregado.",
+        "createFailed": "No se pudo agregar el mapping.",
+        "connect": "Conectar",
+        "cancel": "Cancelar",
+        "newFieldTitle": "Nuevo campo destino",
+        "createField": "Crear campo",
+        "connectSource": "Conectar fuente → {field}",
+        "existingField": "Campo existente",
+        "customField": "Campo personalizado",
+        "unmappedCount": "{count, plural, one {# campo sin mapear} other {# campos sin mapear}}",
+        "keyPlaceholder": "Clave del campo (ej. po_number)",
+        "labelPlaceholder": "Etiqueta (opcional)",
+        "deleteMappingTitle": "Eliminar mapping",
+        "deleted": "Mapping eliminado",
+        "deleteFailed": "Error al eliminar mapping"
+      },
+      "sourceFields": {
+        "title": "Campos origen",
+        "description": "Campos globales extraídos del documento. Se conectan a los targets de ERP por cada plantilla.",
+        "search": "Buscar source fields...",
+        "empty": "Aún no hay source fields globales conectados a esta plantilla. Escribe uno al mapear un target field o configúralos desde ERP."
+      },
+      "templateDocument": {
+        "title": "Documento plantilla",
+        "emptyBadge": "Sin archivo",
+        "previewBadge": "Vista previa",
+        "uploadTitle": "Agrega una orden real",
+        "uploadDescription": "PDF o imagen de referencia para visualizar los campos sobre el documento del cliente.",
+        "uploadAction": "Subir documento",
+        "changeAction": "Cambiar"
+      },
+      "productMappings": {
+        "title": "Mapeos de SKU",
+        "description": "Todos los productos vienen de ERP. Los aliases pueden crearse manualmente o aparecer por autodetección cuando una orden trae SKU del proveedor y SKU de ERP.",
+        "catalogTitle": "Catálogo ERP",
+        "autoHint": "Agrega el SKU del proveedor al producto de ERP correspondiente. Los SKUs autodetectados también aparecerán aquí.",
+        "providerSku": "SKU del proveedor",
+        "companySku": "SKU empresa",
+        "descriptionField": "Descripción fuente",
+        "odooProduct": "Producto ERP",
+        "source": "Origen",
+        "defaultCode": "Ref. interna",
+        "short": "SKUs",
+        "mapped": "Mapeado",
+        "unmapped": "Sin mapear",
+        "filters": {
+          "all": "Todos ({count})",
+          "mapped": "Mapeados ({count})",
+          "unmapped": "Sin mapping ({count})"
+        },
+        "addAlias": "Agregar alias",
+        "addProviderSku": "Agregar SKU",
+        "cancelAlias": "Cancelar",
+        "saveAlias": "Guardar alias",
+        "saveProviderSku": "Guardar SKU",
+        "providerSkuPlaceholder": "Escribe el SKU",
+        "saving": "Guardando",
+        "saved": "SKU guardado.",
+        "noAlias": "Sin SKU del proveedor",
+        "noAliasShort": "Sin SKU",
+        "searchProducts": "Buscar producto o alias...",
+        "emptyTitle": "El catálogo de ERP todavía no está sincronizado",
+        "emptyDescription": "Importa los productos activos desde ERP para poder verlos aquí y agregar el SKU del proveedor a cada producto.",
+        "syncProducts": "Sincronizar productos",
+        "syncSuccess": "Productos sincronizados: {count}.",
+        "syncFailed": "No se pudieron sincronizar los productos de ERP.",
+        "noFilteredProducts": "No hay productos que coincidan con estos filtros.",
+        "noInternalRef": "Sin referencia interna",
+        "sources": {
+          "manual": "Manual",
+          "auto": "Auto",
+          "imported": "Importado",
+          "odoo_catalog": "ERP"
+        },
+        "add": "Agregar SKU mapping",
+        "created": "SKU mapping agregado.",
+        "createFailed": "No se pudo agregar el SKU mapping."
+      },
+      "configuration": {
+        "sectionTitle": "Información del proveedor",
+        "fieldName": "Nombre",
+        "fieldCode": "Código",
+        "fieldCodeHint": "Solo lectura — usado en detección automática",
+        "fieldCurrency": "Moneda",
+        "fieldDomains": "Dominios de correo",
+        "fieldContactEmail": "Email de contacto",
+        "fieldWebsite": "Sitio web",
+        "fieldDomainPlaceholder": "ej. homedepot.com",
+        "noDomains": "Sin dominios",
+        "addButton": "Agregar",
+        "updated": "{field} actualizado",
+        "updateFailed": "Error al actualizar {field}",
+        "billingNormalization": {
+          "sectionTitle": "Facturacion en ERP",
+          "label": "Usar partner de ERP como facturacion",
+          "description": "Cuando esta activo, al sincronizar con ERP se usa el partner asociado a este proveedor como direccion de facturacion. Ignora el billing address que traiga el documento.",
+          "activeHint": "El partner de ERP se usara como facturacion",
+          "ariaLabel": "Activar normalizacion de billing desde ERP",
+          "enabledToast": "Facturacion con partner de ERP activada",
+          "disabledToast": "Facturacion con partner de ERP desactivada",
+          "errorToast": "Error al actualizar la configuracion de facturacion"
+        }
+      },
+      "statusToggle": {
+        "active": "Activo",
+        "paused": "Pausado",
+        "activatedToast": "Proveedor activado",
+        "pausedToast": "Proveedor pausado",
+        "errorToast": "Error al actualizar el estado",
+        "ariaLabel": "Cambiar estado del proveedor",
+        "activeDescription": "El proveedor está activo y procesará los documentos entrantes.",
+        "pausedDescription": "El proveedor está pausado. Los documentos no se asignarán automáticamente."
+      },
+      "kpis": {
+        "docs30d": "Documentos (30d)",
+        "needsReview": "En Revisión",
+        "syncSuccess": "Sync Exitoso",
+        "confidence": "Confianza",
+        "activity": "Actividad (14d)",
+        "last30days": "últimos 30 días",
+        "needsAttention": "requieren atención",
+        "upToDate": "todo al día",
+        "noAttempts": "sin intentos",
+        "avg30d": "promedio 30d",
+        "documents": "documentos",
+        "syncOf": "{synced} de {total}"
+      },
+      "aliases": {
+        "title": "Aliases de detección",
+        "description": "Nombres alternativos que el sistema usa para detectar este proveedor. Agrega abreviaturas, códigos EDI o variaciones del nombre.",
+        "empty": "Sin aliases aún",
+        "add": "Agregar",
+        "placeholder": "ej. \"THD\", \"home depot\", \"HD\"",
+        "updated": "Aliases actualizados",
+        "updateFailed": "Error al guardar aliases"
+      },
+      "documentHistory": {
+        "title": "Historial de Documentos",
+        "description": "Todos los documentos escaneados de {provider}. Haz clic en cualquier fila para abrirlo en Revisión o Procesados."
+      },
+      "documentLog": {
+        "loading": "Cargando historial…",
+        "colDocument": "Documento",
+        "colReceived": "Recibido",
+        "colCustomer": "Cliente",
+        "colTotal": "Total",
+        "colState": "Estado",
+        "colSync": "Sync",
+        "actionReview": "Revisar",
+        "actionOpen": "Abrir",
+        "actionMove": "Mover",
+        "closeLabel": "Cerrar",
+        "loadError": "Error al cargar el historial de documentos",
+        "moveTitle": "Mover documento a otro template",
+        "searchProvider": "Buscar template por nombre o código…",
+        "noProviders": "No hay otros templates disponibles",
+        "movedTo": "Movido a \"{name}\""
+      },
+      "deleteProvider": {
+        "trigger": "Eliminar plantilla",
+        "dialogTitle": "¿Eliminar esta plantilla de proveedor?",
+        "intro": "Esta acción eliminará permanentemente la plantilla \"{name}\" y no se puede deshacer.",
+        "consequencesTitle": "Qué sucederá:",
+        "consequence1": "Todos los mapeos de campos, reglas de SKU y aliases de detección de este proveedor serán eliminados.",
+        "consequence2": "Los documentos ya procesados perderán el vínculo con este proveedor. Los documentos futuros no se asignarán automáticamente.",
+        "consequence3": "La plantilla no se podrá recuperar. Tendrás que registrar el proveedor desde cero.",
+        "confirmCheckbox": "Entiendo que esta acción es permanente y no se puede deshacer.",
+        "typeToConfirmLabel": "Escribe el nombre del proveedor para confirmar:",
+        "typeToConfirmPlaceholder": "Escribe \"{name}\"",
+        "typeMismatch": "El nombre no coincide.",
+        "cancel": "Cancelar",
+        "confirmDelete": "Eliminar plantilla permanentemente",
+        "deleting": "Eliminando…",
+        "successToast": "Plantilla \"{name}\" eliminada",
+        "errorToast": "Error al eliminar la plantilla"
+      },
+      "header": {
+        "eyebrow": "CENTRO DE PLANTILLAS",
+        "title": "Plantillas de proveedor",
+        "description": "Registra cómo trabaja cada proveedor para que el sistema sepa interpretar sus órdenes cuando lleguen por email, API u otro canal.",
+        "total": "Total",
+        "active": "Activo",
+        "fields": "Campos",
+        "skus": "SKUs"
+      },
+      "templateCount": "{count, plural, one {# plantilla} other {# plantillas}}",
+      "card": {
+        "aiTitle": "Extracción AI automática",
+        "aiDescription": "El sistema lee y mapea los campos de los documentos de este proveedor sin intervención manual. Solo se necesitan correcciones del Studio para los campos que la IA falla consistentemente.",
+        "studioCorrections": "CORRECCIONES DEL STUDIO",
+        "fieldRules": "reglas de campos",
+        "skuRules": "reglas de SKU",
+        "noCorrections": "No se necesitan correcciones — la IA lo maneja todo",
+        "correctionsActive": "Correcciones activas — se aplicarán a documentos futuros",
+        "openStudio": "Abre el Studio para corregir errores de extracción"
+      },
+      "search": "Buscar plantillas…",
+      "newCard": {
+        "title": "Nueva plantilla",
+        "description": "Registra un proveedor y sus reglas de interpretación.",
+        "nameLabel": "NOMBRE"
+      },
+      "templatesNav": {
+        "templatesLabel": "Plantillas",
+        "templatesDesc": "Proveedores y mapeo de campos",
+        "profileStudioLabel": "Profile Studio",
+        "profileStudioDesc": "Perfiles de revisión y diseño",
+        "providerDetection": "DETECCIÓN DE PROVEEDOR",
+        "auto": "auto",
+        "manual": "manual",
+        "footer": "Los métodos se ejecutan en orden. La primera coincidencia gana y aplica todas las correcciones del Studio guardadas automáticamente.",
+        "methods": {
+          "emailDomain": {
+            "title": "Dominio de email",
+            "description": "Empareja el dominio del email del remitente con un proveedor configurado automáticamente."
+          },
+          "subjectBody": {
+            "title": "Asunto y cuerpo",
+            "description": "Lee la línea del asunto y el cuerpo del email para identificar al proveedor por nombre."
+          },
+          "documentContent": {
+            "title": "Contenido del documento",
+            "description": "La IA lee el nombre del comprador, la empresa de facturación y los campos del header para coincidir con un proveedor conocido."
+          },
+          "templateRules": {
+            "title": "Reglas de plantilla",
+            "description": "Una vez emparejado, todas las correcciones guardadas en Studio se aplican al documento al instante."
+          },
+          "manualAssignment": {
+            "title": "Asignación manual",
+            "description": "El usuario selecciona el proveedor en Revisión. Las reglas de plantilla se disparan automáticamente al asignar."
+          }
+        }
+      }
+    },
+    "ai": {
+      "title": "Modelos de IA",
+      "description": "Configura proveedor de extracción, modelo y API key usados por el pipeline de procesamiento.",
+      "navDescription": "Modelo y API",
+      "configurableModels": "Modelos configurables",
+      "provider": "Proveedor",
+      "primaryModel": "Modelo primario",
+      "apiKey": "Clave API",
+      "apiKeyPlaceholder": "Pega la API key del proveedor",
+      "apiKeyHint": "Se guarda cifrada. Requerida para probar y guardar.",
+      "test": "Probar conexión",
+      "save": "Guardar configuración",
+      "testSuccess": "Proveedor de IA validado correctamente.",
+      "testFailed": "Falló la validación del proveedor de IA.",
+      "saveSuccess": "Configuración de IA guardada.",
+      "saveFailed": "No se pudo guardar la configuración de IA.",
+      "status": "Estado",
+      "statusValues": {
+        "active": "Conectado",
+        "error": "Error",
+        "unverified": "Sin verificar"
+      },
+      "lastChecked": "Última prueba",
+      "neverChecked": "Nunca",
+      "lastError": "Último error",
+      "cost": {
+        "title": "Gestor de gastos IA",
+        "description": "Monitorea consumo por procesamiento y tradúcelo a costo real en USD por corrida.",
+        "totalUsd": "Costo total (USD)",
+        "processed": "Corridas procesadas",
+        "avgUsd": "Promedio por corrida",
+        "empty": "Aún no hay corridas procesadas.",
+        "columns": {
+          "date": "Fecha",
+          "document": "Documento",
+          "provider": "Proveedor",
+          "model": "Modelo",
+          "tokens": "Tokens entrada / salida",
+          "usd": "Costo USD"
+        }
+      }
+    },
+    "prompts": {
+      "title": "Prompts IA",
+      "navDescription": "Ver prompts del pipeline"
+    },
+    "monitoring": {
+      "title": "Monitoreo de uptime",
+      "description": "Conecta tu cuenta de UptimeRobot para vigilar ERP y DocFlow. Las alertas se configuran directamente en UptimeRobot.",
+      "navDescription": "UptimeRobot",
+      "provider": "Proveedor",
+      "apiKey": "API key de UptimeRobot",
+      "apiKeyPlaceholder": "Pega la Main API Key (uXXXXXXX-...)",
+      "apiKeyHint": "La sacás en UptimeRobot → My Settings → API Settings. Se guarda cifrada.",
+      "save": "Conectar",
+      "test": "Probar conexión",
+      "disconnect": "Desconectar",
+      "disconnectConfirm": "¿Seguro que querés desconectar UptimeRobot? Vas a perder el acceso desde DocFlow hasta volver a pegar la API key.",
+      "testSuccess": "API key validada correctamente.",
+      "testFailed": "Falló la validación de la API key.",
+      "saveSuccess": "UptimeRobot conectado.",
+      "saveFailed": "No se pudo guardar la conexión.",
+      "disconnectSuccess": "UptimeRobot desconectado.",
+      "disconnectFailed": "No se pudo desconectar.",
+      "status": "Estado",
+      "statusValues": {
+        "active": "Conectado",
+        "error": "Error",
+        "unverified": "Sin verificar"
+      },
+      "accountEmail": "Cuenta",
+      "lastChecked": "Última prueba",
+      "neverChecked": "Nunca",
+      "lastError": "Último error"
+    },
+    "notifications": {
+      "title": "Notificaciones",
+      "navDescription": "Alertas por email y plantillas"
+    },
+    "diagnostics": {
+      "title": "Diagnósticos",
+      "navDescription": "Estado del sistema y tests",
+      "terminal": {
+        "title": "Centro de diagnóstico",
+        "subtitle": "Estado en tiempo real de todos los servicios del sistema.",
+        "run": "Run diagnostics",
+        "rerun": "Volver a correr",
+        "running": "Ejecutando…",
+        "clear": "Limpiar",
+        "copyLog": "Copiar log",
+        "idle": "Listo. Presioná Run diagnostics para comenzar...",
+        "executing": "Ejecutando tests...",
+        "filterAll": "Todos",
+        "filterErrors": "Errores",
+        "filterWarn": "Warn",
+        "filterOk": "OK",
+        "categoryStatus": "Estado por categoría",
+        "history": "Historial",
+        "clearHistory": "Borrar",
+        "legend": "Leyenda",
+        "passLabel": "Operativo",
+        "failLabel": "Error",
+        "warnLabel": "Advertencia",
+        "passDesc": "Servicio funcionando correctamente",
+        "failDesc": "Requiere atención inmediata",
+        "warnDesc": "Funcional pero revisar",
+        "statOperational": "Operativos",
+        "statErrors": "Errores",
+        "statWarnings": "Advertencias",
+        "latest": "último",
+        "testsIn": "tests en"
+      }
+    },
+    "admin": {
+      "title": "Administración",
+      "navDescription": "Config. avanzada del app",
+      "heading": "Panel de Administración",
+      "subheading": "Configuración avanzada y estado del sistema.",
+      "lockSession": "Cerrar sesión",
+      "sessionLocked": "Sesión admin cerrada. Recargá la página para volver a ingresar.",
+      "gate": {
+        "title": "Área restringida",
+        "subtitle": "Ingresá el PIN de 4 dígitos para acceder.",
+        "pinNote": "PIN solo válido en esta sesión del navegador.",
+        "wrongPin": "PIN incorrecto",
+        "attempt": "intento"
+      },
+      "icon": {
+        "change": "Cambiar",
+        "description": "Favicon, iOS home screen y sidebar. Recomendado: SVG 1:1 fondo oscuro.",
+        "invalidType": "Solo imágenes SVG, PNG o JPG.",
+        "officialLabel": "Ícono oficial DocFlow",
+        "restore": "Restaurar original",
+        "success": "Ícono actualizado — se aplica en el próximo deploy.",
+        "title": "Ícono de la App",
+        "tooLarge": "Máx 512KB para íconos.",
+        "uploading": "Subiendo…"
+      },
+      "ai": {
+        "title": "Modelo de IA",
+        "edit": "Editar →",
+        "notConfigured": "Sin configurar.",
+        "configure": "Configurar →",
+        "provider": "Proveedor",
+        "model": "Modelo",
+        "status": "Estado"
+      },
+      "tenant": {
+        "title": "Tenant",
+        "noData": "Sin datos.",
+        "name": "Nombre",
+        "slug": "Slug",
+        "locale": "Locale",
+        "autoApprove": "Auto-approve",
+        "enabled": "Activado",
+        "disabled": "Desactivado"
+      },
+      "team": {
+        "title": "Equipo",
+        "manage": "Gestionar →",
+        "member": "miembro",
+        "members": "miembros"
+      },
+      "diagnostics": {
+        "title": "Diagnósticos",
+        "open": "Abrir →",
+        "description": "59 smoke tests para verificar el estado completo del sistema en tiempo real.",
+        "runButton": "Run diagnostics"
+      },
+      "passcodes": {
+        "title": "Códigos de acceso",
+        "description": "Administrá los códigos de 4 dígitos para el acceso admin y login. El código maestro (1987) no se puede eliminar.",
+        "add": "Agregar código",
+        "adding": "Agregando…",
+        "placeholder": "Ingresá 4 dígitos",
+        "master": "Maestro (predeterminado)",
+        "remove": "Eliminar",
+        "empty": "Sin códigos adicionales. Solo el código maestro está activo.",
+        "successAdd": "Código agregado",
+        "successRemove": "Código eliminado",
+        "errorFormat": "El código debe ser de exactamente 4 dígitos"
+      }
+    }
+  },
+  "dashboard": {
+    "title": "Inicio",
+    "header": {
+      "badge": "Resumen",
+      "subtitle": "Actividad, estado del pipeline y documentos recientes de un vistazo."
+    },
+    "actions": {
+      "upload": "Subir"
+    },
+    "stats": {
+      "uploadedToday": "Subidos hoy",
+      "uploadedTodaySub": "Documentos recibidos desde medianoche",
+      "needsReview": "Pendientes",
+      "needsReviewSub": "Esperando tu atención",
+      "processedWeek": "Procesados (7d)",
+      "processedWeekSub": "Aprobados o rechazados en 7 días",
+      "credits": "Créditos",
+      "creditsSub": "Saldo de procesamiento actual"
+    },
+    "hero": {
+      "eyebrow": "Hoy",
+      "singular": "documento cargado hoy",
+      "plural": "documentos cargados hoy"
+    },
+    "chart": {
+      "title": "Actividad",
+      "subtitle": "Documentos subidos en los últimos 7 días",
+      "totalDocs": "docs",
+      "docs": "documentos"
+    },
+    "pipeline": {
+      "title": "Pipeline de bandeja",
+      "totalInbox": "activos",
+      "viewInbox": "Ver bandeja"
+    },
+    "recent": {
+      "title": "Documentos recientes",
+      "viewAll": "Ver todos",
+      "review": "Revisar",
+      "empty": {
+        "title": "Sin documentos aún",
+        "subtitle": "Sube tu primer PDF para comenzar."
+      }
+    },
+    "metrics": {
+      "successRate": "Tasa de éxito",
+      "successRateSub": "{ok}/{total} docs",
+      "dailyThroughput": "Producción diaria",
+      "dailyThroughputSub": "promedio/día · pico {peak}",
+      "trend24h": "Tendencia 24h",
+      "trendUp": "+{n} vs ayer",
+      "trendDown": "−{n} vs ayer",
+      "trendFlat": "sin cambio",
+      "currentBottleneck": "Cuello de botella actual",
+      "noBottleneck": "Sin cuellos de botella detectados",
+      "noResults": "Sin resultados"
+    },
+    "states": {
+      "uploaded": "Subido",
+      "processing": "Procesando",
+      "needsReview": "Necesita revisión",
+      "failed": "Fallido",
+      "reviewed": "Revisado"
+    },
+    "time": {
+      "justNow": "ahora mismo",
+      "minutesAgo": "hace {n}min",
+      "hoursAgo": "hace {n}h",
+      "daysAgo": "hace {n}d"
+    },
+    "greeting": {
+      "morning": "Buenos días, {name}",
+      "afternoon": "Buenas tardes, {name}",
+      "evening": "Buenas noches, {name}"
+    },
+    "alerts": {
+      "failedTitle": "{count, plural, one {# documento falló} other {# documentos fallaron}} en el procesamiento",
+      "failedDesc": "Estos archivos no pudieron ser procesados por el pipeline de IA. Reintenta o verifica el formato del archivo.",
+      "goToInbox": "Ir a Bandeja",
+      "needsReviewTitle": "{count, plural, one {# documento necesita} other {# documentos necesitan}} tu revisión",
+      "needsReviewDesc": "Revisa los datos extraídos y aprueba antes de sincronizar con ERP.",
+      "reviewNow": "Revisar ahora"
+    }
+  },
+  "onboarding": {
+    "title": "Bienvenido a DocFlow",
+    "subtitle": "Procesa órdenes de compra en tres pasos — sin captura manual de datos.",
+    "step1": "Sube un PDF",
+    "step2": "Revisa y corrige",
+    "step3": "Aprueba → ERP",
+    "dismiss": "Cerrar"
+  },
+  "status": {
+    "uploaded": "Subido",
+    "processing": "Procesando",
+    "needs_review": "Necesita revisión",
+    "reviewed": "Revisado",
+    "failed_processing": "Falló",
+    "rejected": "Rechazado",
+    "archived": "Archivado",
+    "none": "Sin sincronizar",
+    "pending": "Pendiente",
+    "in_progress": "Sincronizando",
+    "synced": "Sincronizado",
+    "sync_failed": "Error de sync"
+  },
+  "landing": {
+    "nav": {
+      "solutions": "Soluciones",
+      "teams": "Equipos",
+      "developers": "Desarrolladores",
+      "resources": "Recursos",
+      "signIn": "Iniciar sesión",
+      "start": "Empezar"
+    },
+    "hero": {
+      "eyebrow": "Automatización de OC para equipos ERP",
+      "title": "Infraestructura operativa para órdenes de compra.",
+      "subtitle": "DocFlow convierte PDFs, imágenes y correos de proveedores en borradores revisados de Órdenes de Venta en ERP. Los operadores mantienen el control, la auditoría queda completa y la digitación manual deja de dominar el día.",
+      "primaryCta": "Comenzar",
+      "secondaryCta": "Explorar la plataforma",
+      "signals": [
+        {
+          "label": "Revisión humana",
+          "value": "requerida"
+        },
+        {
+          "label": "ERP destino",
+          "value": "ERP 19"
+        },
+        {
+          "label": "Salida",
+          "value": "SO borrador"
+        }
+      ]
+    },
+    "stats": {
+      "items": [
+        {
+          "value": "15m -> 30s",
+          "label": "Meta típica de revisión"
+        },
+        {
+          "value": "90%+",
+          "label": "OC con menos de 3 ediciones"
+        },
+        {
+          "value": "99%+",
+          "label": "Borradores aprobados sincronizados al primer intento"
+        }
+      ]
+    },
+    "integrations": {
+      "label": "Diseñado para encajar con los sistemas que tu back office ya usa"
+    },
+    "solutions": {
+      "eyebrow": "Entrada flexible de órdenes",
+      "title": "Un solo pipeline para cada forma en que llegan las órdenes.",
+      "description": "Carga archivos, recibe órdenes por correo, conecta portales de proveedor, revisa datos extraídos y crea borradores en ERP desde el mismo flujo controlado.",
+      "items": [
+        {
+          "title": "Carga órdenes de compra",
+          "description": "Arrastra PDFs e imágenes a una cola pensada para operadores que necesitan escanear, filtrar y avanzar rápido."
+        },
+        {
+          "title": "Captura órdenes por email",
+          "description": "Lleva adjuntos y contexto del mensaje a la misma capa de ingesta sin reenviar archivos manualmente."
+        },
+        {
+          "title": "Conecta portales de proveedor",
+          "description": "Preserva evidencia desde portales de proveedores y enruta documentos descargados con plantillas conscientes del proveedor."
+        },
+        {
+          "title": "Revisa antes de ERP",
+          "description": "Compara la extracción con el documento fuente, corrige casos borde y aprueba solo lo que está listo."
+        },
+        {
+          "title": "Crea Órdenes de Venta borrador",
+          "description": "Envía líneas aprobadas a ERP como borradores, manteniendo confirmación y facturación en tu proceso ERP actual."
+        }
+      ]
+    },
+    "teams": {
+      "eyebrow": "Hecho para operaciones en crecimiento",
+      "title": "Diseñado para mesas de órdenes de alto volumen.",
+      "description": "Diseñado para quienes manejan órdenes reales todo el día: operaciones, administradores y responsables de sistemas.",
+      "items": [
+        {
+          "label": "Operaciones",
+          "title": "Dale al operador una mesa de revisión más rápida",
+          "description": "Un espacio compacto mantiene documento fuente, líneas extraídas, mapeo de proveedor y estado de aprobación en un solo lugar.",
+          "metric": "meta menor a 90s de carga a borrador"
+        },
+        {
+          "label": "Administración",
+          "title": "Controla mapeos y excepciones",
+          "description": "El mapeo de campos y SKUs por proveedor ayuda a manejar proveedores conocidos sin bloquear a los desconocidos.",
+          "metric": "auditoría completa desde fuente a borrador"
+        },
+        {
+          "label": "Sistemas",
+          "title": "Mantén ERP como fuente de verdad",
+          "description": "La data aprobada llega a ERP como Orden de Venta borrador, así el control comercial final sigue dentro del ERP.",
+          "metric": "sync solo a borrador por diseño"
+        }
+      ]
+    },
+    "infrastructure": {
+      "eyebrow": "Infraestructura confiable",
+      "title": "Extensible para flujos complejos de órdenes.",
+      "description": "Una capa controlada entre documentos desordenados de proveedores y los registros ERP de los que depende tu equipo.",
+      "items": [
+        {
+          "title": "Flujo listo para integración",
+          "description": "La carga, revisión y aprobación están organizadas por estados claros para que la automatización crezca sin esconder riesgo."
+        },
+        {
+          "title": "Límites seguros",
+          "description": "Cada documento, borrador, evento de crédito, proveedor y mapeo está asegurado y aislado."
+        },
+        {
+          "title": "Aprobación humana obligatoria",
+          "description": "La IA acelera la extracción, pero la sincronización con ERP solo ocurre después de que un operador aprueba el borrador."
+        }
+      ]
+    },
+    "resources": {
+      "eyebrow": "Modelo operativo",
+      "title": "Las piezas que un equipo espera antes de reemplazar la digitación manual.",
+      "items": [
+        {
+          "title": "Calidad de revisión",
+          "description": "Cada OC mantiene la fuente original junto a las líneas extraídas para que los errores sean visibles antes de aprobar."
+        },
+        {
+          "title": "Manejo de excepciones",
+          "description": "SKUs faltantes, proveedores desconocidos y errores de sincronización aparecen como trabajo concreto, no como reintentos silenciosos."
+        },
+        {
+          "title": "Salida nativa a ERP",
+          "description": "Las Órdenes de Venta se crean como borradores, dejando que permisos y procesos existentes del ERP terminen el trabajo."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Convierte la próxima orden de compra en un borrador revisado en ERP.",
+      "subtitle": "Empieza con el flujo que tus operadores ya conocen y deja que el sistema elimine la digitación repetitiva alrededor de él.",
+      "button": "Empezar"
+    }
+  },
+  "templates": {
+    "profileStudio": {
+      "title": "Estudio de Perfiles",
+      "description": "Perfiles de revisión por tipo documental",
+      "longDescription": "Configura perfiles de revisión por tipo de documento y asigna cada campo destino al perfil correcto. Así el flujo sirve para órdenes de compra, facturas, shipping, recibos y casos custom.",
+      "createTitle": "Crear perfil",
+      "profilesTitle": "Perfiles",
+      "fields": {
+        "name": "Nombre",
+        "documentKind": "Tipo de documento",
+        "description": "Descripción"
+      },
+      "kinds": {
+        "purchaseOrder": "Orden de compra",
+        "invoice": "Factura",
+        "shipping": "Envío",
+        "receipt": "Recibo",
+        "custom": "Personalizado"
+      },
+      "actions": {
+        "create": "Crear perfil",
+        "save": "Guardar perfil",
+        "clone": "Clonar",
+        "disable": "Desactivar",
+        "enable": "Activar",
+        "applyPreset": "Aplicar preset"
+      },
+      "presets": {
+        "default": "Balanceado",
+        "fast": "Aprobación rápida",
+        "shippingFocus": "Enfoque shipping"
+      },
+      "labels": {
+        "fields": "campos",
+        "selectProfile": "Selecciona un perfil de revisión para configurarlo.",
+        "searchPlaceholder": "Buscar campos por key, etiqueta o modelo…",
+        "unassigned": "Sin asignar"
+      },
+      "columns": {
+        "field": "Campo",
+        "scope": "Alcance",
+        "profile": "Perfil",
+        "section": "Sección",
+        "target": "Campo destino"
+      },
+      "reviewSections": {
+        "header": "Cabecera",
+        "shipping": "Envío",
+        "lines": "Líneas",
+        "notes": "Notas"
+      },
+      "layout": {
+        "title": "Layout de Review",
+        "description": "Define qué tabs aparecen en Review, su nombre, orden y cuál abre por defecto en este perfil.",
+        "enabled": "Activo",
+        "default": "Por defecto"
+      },
+      "toasts": {
+        "profileCreated": "Perfil de revisión creado.",
+        "profileUpdated": "Perfil de revisión actualizado.",
+        "profileCloned": "Perfil de revisión clonado.",
+        "profileEnabled": "Perfil de revisión activado.",
+        "profileDisabled": "Perfil de revisión desactivado."
+      },
+      "preview": {
+        "title": "Vista previa",
+        "description": "Esta vista refleja los tabs y la ubicación de campos del perfil seleccionado.",
+        "emptySection": "Todavía no hay campos en esta sección.",
+        "total": "Total",
+        "currency": "Moneda",
+        "lines": "Líneas"
+      },
+      "dnd": {
+        "title": "Drag & Drop de Campos",
+        "description": "Arrastra un campo y suéltalo en la sección donde debe aparecer en Review.",
+        "dropHint": "Suelta campos aquí"
+      },
+      "errors": {
+        "missingProfileData": "Nombre y tipo de documento son requeridos.",
+        "profileCreateFailed": "No se pudo crear el perfil de revisión.",
+        "profileCloneFailed": "No se pudo clonar el perfil de revisión.",
+        "profileUpdateFailed": "No se pudo actualizar el perfil de revisión.",
+        "fieldAssignFailed": "No se pudo asignar el campo al perfil.",
+        "layoutNeedsSection": "Activa al menos un tab en el layout."
+      },
+      "list": {
+        "title": "Perfiles de Revisión",
+        "description": "Cada perfil define cómo aparece un tipo de documento en Revisión — secciones, campos y orden.",
+        "newProfile": "Nuevo perfil",
+        "search": "Buscar perfiles…",
+        "results": "{count, plural, one {# perfil} other {# perfiles}}",
+        "empty": "Sin perfiles aún.",
+        "fieldsAssigned": "{count, plural, one {# campo} other {# campos}} asignado(s)",
+        "sectionsEnabled": "{count, plural, one {# sección} other {# secciones}}",
+        "stats": {
+          "total": "Total",
+          "active": "Activos",
+          "fields": "Campos destino"
+        }
+      },
+      "frame": {
+        "back": "Volver a perfiles",
+        "configuration": "Configuración",
+        "layout": "Diseño",
+        "active": "Activo",
+        "paused": "Pausado"
+      },
+      "configuration": {
+        "title": "Configuración",
+        "description": "Información básica y estado operativo.",
+        "name": "Nombre",
+        "documentKind": "Tipo de documento",
+        "documentKindHint": "Para qué tipo de documento se usa este perfil.",
+        "documentKindLocked": "No se puede cambiar en perfiles del sistema.",
+        "descriptionField": "Descripción",
+        "descriptionPlaceholder": "Para qué sirve este perfil…",
+        "updated": "{field} actualizado",
+        "updateFailed": "Error al actualizar {field}",
+        "stats": {
+          "fields": "Campos asignados",
+          "sections": "Secciones activas",
+          "kind": "Tipo de documento"
+        },
+        "statusToggle": {
+          "active": "Activo",
+          "paused": "Pausado",
+          "activeDescription": "El perfil está activo y disponible en Revisión.",
+          "pausedDescription": "El perfil está pausado y no estará disponible en Revisión.",
+          "activatedToast": "Perfil activado",
+          "pausedToast": "Perfil pausado",
+          "errorToast": "Error al actualizar el estado",
+          "ariaLabel": "Cambiar estado del perfil",
+          "systemLockedToast": "Los perfiles del sistema no pueden pausarse"
+        },
+        "billingNormalization": {
+          "label": "Normalizar billing con partner de ERP",
+          "description": "Cuando esta activo, al sincronizar con ERP se usara la direccion del partner asociado a este proveedor como direccion de facturacion, ignorando lo que traiga el documento.",
+          "activeHint": "Se usara el partner de ERP como facturacion",
+          "ariaLabel": "Activar normalizacion de billing desde ERP",
+          "enabledToast": "Normalizacion de billing activada",
+          "disabledToast": "Normalizacion de billing desactivada",
+          "errorToast": "Error al actualizar la configuracion de billing"
+        }
+      },
+      "layoutPage": {
+        "title": "Diseño",
+        "description": "Configura secciones, asigna campos y previsualiza el resultado.",
+        "sectionsTitle": "Secciones",
+        "sectionsDescription": "Activa, renombra y reordena secciones.",
+        "fieldsTitle": "Asignación de campos",
+        "fieldsDescription": "Asigna cada campo a una sección.",
+        "fieldsSearch": "Buscar campos…",
+        "previewTitle": "Vista previa en vivo",
+        "unassigned": "Sin asignar",
+        "fieldUpdated": "Campo asignado a {section}",
+        "fieldUnassigned": "Campo sin asignar",
+        "fieldUpdateFailed": "Error al actualizar la asignación del campo"
+      },
+      "deleteProfile": {
+        "trigger": "Eliminar perfil",
+        "dialogTitle": "¿Eliminar este perfil?",
+        "intro": "Esta acción eliminará permanentemente el perfil \"{name}\" y no se puede deshacer.",
+        "consequencesTitle": "Qué sucederá:",
+        "consequence1": "Todas las asignaciones de campos a este perfil se eliminarán.",
+        "consequence2": "Los documentos que usaban este perfil perderán su configuración de diseño y volverán al perfil predeterminado en Revisión.",
+        "consequence3": "El perfil no se podrá recuperar. Tendrás que crearlo de nuevo desde cero.",
+        "confirmCheckbox": "Entiendo que esta acción es permanente y no se puede deshacer.",
+        "typeToConfirmLabel": "Escribe el nombre del perfil para confirmar:",
+        "typeToConfirmPlaceholder": "Escribe \"{name}\"",
+        "typeMismatch": "El nombre no coincide.",
+        "cancel": "Cancelar",
+        "confirmDelete": "Eliminar perfil permanentemente",
+        "deleting": "Eliminando…",
+        "successToast": "Perfil \"{name}\" eliminado",
+        "errorToast": "Error al eliminar el perfil",
+        "systemToast": "Los perfiles del sistema no se pueden eliminar"
+      }
+    }
+  },
+  "help": {
+    "nav": {
+      "title": "Centro de Ayuda",
+      "subtitle": "Guías rápidas, definiciones y solución de problemas para sacarle el máximo a DocFlow.",
+      "backToIndex": "Volver al índice",
+      "relatedArticles": "Artículos relacionados"
+    },
+    "search": {
+      "placeholder": "Buscar artículos…",
+      "noResults": "No encontramos artículos que coincidan con tu búsqueda."
+    },
+    "categories": {
+      "quickStart": "Inicio rápido",
+      "setup": "Configuración",
+      "concepts": "Conceptos",
+      "workflow": "Flujo de trabajo",
+      "troubleshooting": "Solución de problemas"
+    },
+    "smartEmptyState": {
+      "title": "Procesa órdenes de compra en 4 pasos",
+      "step1Title": "Sube",
+      "step1Desc": "PDF, JPG, PNG o WEBP hasta 25 MB.",
+      "step2Title": "Extrae",
+      "step2Desc": "La IA lee la orden y normaliza los campos.",
+      "step3Title": "Revisa",
+      "step3Desc": "Aprueba o corrige los datos antes de enviar.",
+      "step4Title": "Sincroniza",
+      "step4Desc": "La orden se crea en ERP automáticamente."
+    },
+    "articles": {
+      "getting-started": {
+        "title": "Primeros 5 minutos",
+        "summary": "De cero a tu primera orden en ERP en menos de 5 minutos.",
+        "body": "## Antes de empezar\n\nNecesitas tres cosas:\n\n1. Una **API key de Anthropic** (Claude) — sin ella la IA no puede extraer.\n2. Una **conexión a ERP** activa — la app sincroniza órdenes ahí.\n3. Al menos un **proveedor** registrado para que el sistema sepa cómo interpretar la orden.\n\n## Paso 1 — Conecta Anthropic\n\nVe a **Settings → AI** y pega tu API key. Si no tienes una, mira la guía dedicada de configuración de Anthropic.\n\n## Paso 2 — Conecta ERP\n\nVe a **Settings → ERP** y completa: URL XML-RPC, base de datos, usuario y API key. Pulsa *Test* para verificar.\n\n## Paso 3 — Sube tu primera orden\n\nVe a **Inbox** y arrastra un PDF de orden de compra. En menos de 30 segundos verás la orden en estado **Needs review**. Ábrela, verifica los campos y pulsa **Approve**. La orden aparece en ERP como *Sales Order* o *Quotation* (según tu configuración).\n\n## Activa Auto-sync (opcional)\n\nUna vez que confíes en las extracciones, activa el toggle **Auto-sync** en el header del Inbox: las órdenes \"limpias\" pasarán directo a ERP sin revisión manual."
+      },
+      "dashboard-tour": {
+        "title": "Tour del Dashboard",
+        "summary": "Qué significa cada métrica y sección de la app.",
+        "body": "## Dashboard\n\nResumen del último periodo: órdenes procesadas, tasa de éxito, gasto en IA, errores recientes.\n\n## Inbox\n\nDocumentos en proceso o esperando revisión. El badge naranja indica cuántos requieren tu atención.\n\n## Review\n\nVista enfocada para aprobar/rechazar uno por uno. Equivalente a abrir un documento desde Inbox.\n\n## Processed\n\nHistorial de órdenes ya aprobadas/rechazadas. Aquí ves el estado de sincronización con ERP y puedes reintentar manualmente si algo falló.\n\n## Templates\n\nGestión de **proveedores** y **review profiles**. Aquí defines cómo se mapea cada campo del PDF a ERP.\n\n## Settings\n\nTu conexión ERP, API keys, equipo, créditos y preferencias del tenant."
+      },
+      "anthropic-key": {
+        "title": "Configurar Anthropic API key",
+        "summary": "Cómo obtener una API key de Anthropic, pegarla en DocFlow y entender el costo.",
+        "body": "## ¿Por qué Anthropic?\n\nIntake usa **Claude Sonnet 4.6** para extraer datos de las órdenes de compra. Es el único proveedor de IA soportado.\n\n## Obtener una API key\n\n1. Ve a [console.anthropic.com](https://console.anthropic.com).\n2. Crea una cuenta o inicia sesión.\n3. En **Settings → API keys**, pulsa **Create key**. Dale un nombre como `intake-prod`.\n4. **Copia la key inmediatamente** — solo se muestra una vez.\n5. Carga saldo en **Billing** (mínimo recomendado: $20 USD para empezar).\n\n## Pegarla en DocFlow\n\n1. Ve a **Settings → AI** en DocFlow.\n2. Pega la API key en el campo correspondiente.\n3. Pulsa **Test connection** para verificar.\n4. Pulsa **Save**.\n\n## Costo aproximado\n\nUna orden de compra típica de 1-3 páginas cuesta entre **$0.01 y $0.05** USD en tokens de Claude. Una factura compleja con muchas líneas puede llegar a $0.10. El costo real aparece en el panel de cada documento (columna *AI cost*).\n\n## Errores comunes\n\n- **401 Unauthorized**: la key está mal copiada o fue revocada.\n- **529 Overloaded**: Anthropic está saturado; el sistema reintenta automáticamente hasta 3 veces.\n- **Insufficient credits**: necesitas cargar saldo en tu cuenta Anthropic."
+      },
+      "odoo-setup": {
+        "title": "Configurar conexión a ERP",
+        "summary": "Pasos para conectar tu instancia de ERP vía XML-RPC.",
+        "body": "## Datos que necesitas\n\n- **URL base**: por ejemplo `https://erp.tuempresa.com`.\n- **Database**: el nombre de la base de datos ERP (ej. `production`).\n- **Username**: usuario ERP con permisos para crear *Sales Orders*.\n- **API key**: generada en ERP desde *Mi perfil → Cuenta → Claves API*.\n\n## Generar una API key en ERP\n\n1. En ERP, abre tu perfil (esquina superior derecha).\n2. Ve a la pestaña **Cuenta** → **Claves API** → **Nueva clave API**.\n3. Asigna un nombre (`intake-integration`) y copia la clave.\n4. Pega esa clave en DocFlow — **no uses tu contraseña**, no funcionará si tienes 2FA.\n\n## Probar la conexión\n\n1. **Settings → ERP** en DocFlow.\n2. Llena los 4 campos.\n3. Pulsa **Test connection**.\n4. Si todo está OK, pulsa **Save**.\n\n## Modo de exportación\n\nElige cómo se crean las órdenes en ERP:\n\n- **Quotation**: la orden queda en estado borrador; un humano debe confirmarla en ERP.\n- **Sales order**: la orden se confirma automáticamente al sincronizarse.\n\n## Errores comunes\n\n- **Connection refused**: verifica la URL (incluye `https://`) y que no haya firewall bloqueando.\n- **Invalid login/password**: asegúrate de usar la API key, no la contraseña.\n- **Access denied**: el usuario ERP no tiene permisos para `sale.order` o `res.partner`."
+      },
+      "email-ingest": {
+        "title": "Ingestión por correo",
+        "summary": "Recibe órdenes automáticamente desde Email provider, Mailgun o Resend.",
+        "body": "## ¿Qué es?\n\nIntake puede leer un buzón de correo y procesar automáticamente cualquier PDF adjunto que reciba. Ideal cuando tus proveedores te mandan órdenes por mail.\n\n## Email provider (Outlook / Email provider)\n\n1. Registra una **App** en Azure AD con permisos `Mail.Read` y `Mail.ReadBasic.All` (delegated o application).\n2. Genera un **client secret** en la app.\n3. Crea una **subscription** apuntando a `https://<tu-dominio>/api/email-ingest?source_id=<ID>` con un `clientState` aleatorio (guárdalo, lo necesitarás).\n4. En DocFlow **Ingest Hub → Email sources**, crea una nueva fuente con adapter `microsoft_graph` y pega: tenant ID, client ID, client secret, graph subscription ID, graph client state.\n\n## Mailgun\n\n1. Configura una **route** en Mailgun que haga forward a `https://<tu-dominio>/api/email-ingest?adapter=mailgun&source_id=<ID>`.\n2. Copia tu **signing key** de Mailgun y exponla como variable de entorno `MAILGUN_SIGNING_KEY` en el proyecto Supabase.\n3. En DocFlow crea la fuente con adapter `mailgun` y la dirección de email destino.\n\n## Resend\n\n1. Configura un **inbound webhook** en Resend apuntando al mismo endpoint con `adapter=resend`.\n2. Copia el **webhook secret** y guárdalo en el campo `webhook_secret` de la fuente en DocFlow.\n\n## Verificar\n\nManda un correo de prueba con un PDF adjunto. En unos segundos deberías ver el documento aparecer en **Inbox**.\n\n## Seguridad\n\nIntake rechaza webhooks cuyo timestamp sea de más de 15 minutos atrás (replay protection)."
+      },
+      "browser-scrape": {
+        "title": "Conexiones de scraping",
+        "summary": "Configura un crawler que descargue órdenes desde portales web de proveedores.",
+        "body": "## ¿Cuándo usar scraping?\n\nCuando un proveedor publica las órdenes en su portal web (sin email ni API). El crawler inicia sesión periódicamente, descarga los PDFs nuevos y los inyecta en DocFlow.\n\n## Setup\n\n1. **Ingest Hub → Browser connections → Nueva conexión**.\n2. Llena: nombre, URL de login, credenciales (se cifran con AES-256).\n3. Define un **selector de descarga** (CSS o XPath para el botón \"Descargar PDF\").\n4. Configura la **cadencia**: cada hora, cada 4 horas o diario.\n\n## Diagnóstico\n\nCada ejecución queda registrada en **Ingest Hub → Runs**. Si una corrida falla:\n\n- **Login failed**: la página cambió o la contraseña expiró.\n- **No new orders**: el selector ya no encuentra órdenes nuevas (típico si el portal rediseñó la UI).\n- **Download error**: el PDF no descargó (puede ser timeout o JS dinámico).\n\n## Limitaciones\n\n- No soporta CAPTCHAs.\n- No soporta MFA — usa cuentas dedicadas sin 2FA cuando sea posible.\n- El portal puede detectar el bot y bloquear; no es la opción más estable. Email-ingest es mejor cuando esté disponible."
+      },
+      "cleo-webedi": {
+        "title": "Supplier Portal",
+        "summary": "Cómo DocFlow recibe automáticamente las órdenes 850 (Purchase Orders) de Marketplace, Retailer B, Retailer C y otros partners EDI.",
+        "body": "## ¿Qué es Supplier Portal?\n\nSupplier Portal (`portal.example.com`) es el portal EDI por el que muchos retailers grandes (Marketplace, Retailer B, Retailer C, Retailer D, etc.) envían **Purchase Orders en formato 850 (X12)**. La cuenta de DocFlow es **DocFlow**.\n\nCuando llega una orden, Supplier Portal manda un correo de notificación a `orders@example.com` con una tabla HTML que contiene el `Message ID` interno de Supplier Portal. DocFlow usa ese ID para descargar el PDF directo del portal y meterlo al pipeline de IA.\n\n## ¿Por qué activamos por correo?\n\nUna alternativa hubiera sido un cron que entre a Supplier Portal cada N minutos a buscar mensajes \"no leídos\". El problema: si otro usuario abre la orden en el portal, Supplier Portal la marca como leída y el cron la pierde. Usar el **correo como trigger** garantiza que cada notificación se procese una vez, sin importar quién más entre al portal.\n\n## Flujo end-to-end\n\n1. Marketplace/Retailer C/etc. publica una 850 en Supplier Portal.\n2. Supplier Portal envía email a `orders@example.com` con la tabla de metadata.\n3. DocFlow recibe el correo (Email provider webhook), detecta que es una notificación Supplier Portal, parsea la tabla.\n4. Por cada fila con `Document = 850`, dispatcha al runner Playwright.\n5. El runner se loguea a Supplier Portal, llama `portal.printDocument(messageId)`, descarga el PDF.\n6. El PDF entra al pipeline de IA → se extrae líneas, cantidades, precios.\n7. Aparece en el Inbox como `needs_review`.\n\n## Filtros importantes\n\n- **Solo 850s**: cualquier otro tipo de mensaje (855 ack, 856 ASN, 997 functional ack, etc.) se ignora.\n- **Notificaciones no aparecen como HTML**: antes el correo de notificación generaba un documento HTML basura en el Inbox; ahora se descarta.\n- **Idempotencia**: la tabla `cleo_orders` tiene unique en `(tenant_id, cleo_message_id)` — no se duplican descargas.\n\n## Si algo falla\n\n- Abrir **Ingest Hub → Supplier Portal**.\n- Correr el **smoke test** — verifica env vars, conectividad al portal, endpoint del runner.\n- Las órdenes con `state = failed` aparecen con botón **Reintentar**.\n- Si el password de la cuenta cambia, actualizar `CLEO_PASSWORD` en Vercel.\n\n## Limitaciones\n\n- Solo DocFlow (cuenta ). Para más cuentas Supplier Portal se requiere multi-tenant en `cleo_orders`.\n- Si Supplier Portal cambia su API JS interna (`portal.printDocument`), el runner falla. El smoke test lo detectaría.\n- Cold start de Playwright en Vercel: ~5-10 s. El runner tiene `maxDuration=300` así que hay margen.\n\n## Endpoints (auditoría)\n\n- `POST /api/ingest/cleo/process` — runner protegido por `INTAKE_CLEO_INTERNAL_TOKEN`.\n- `POST /api/ingest/cleo/smoke` — health check.\n- `POST /api/ingest/cleo/orders/[id]/retry` — reintenta una orden fallida."
+      },
+      "provider-templates": {
+        "title": "Plantillas por proveedor",
+        "summary": "Cuándo crear una plantilla de proveedor y cómo se usa.",
+        "body": "## ¿Qué es una plantilla?\n\nUn **proveedor** representa a quien te manda la orden (ej. Home Depot, Retailer D). La **plantilla** define cómo extraer y mapear los campos de su documento al modelo de datos de DocFlow.\n\n## Detección automática\n\nCuando subes un PDF, DocFlow intenta identificar el proveedor por:\n\n1. **Dominio del email** (si vino por email-ingest).\n2. **Nombre/código del proveedor** detectado en el texto del PDF.\n3. **Coincidencia difusa** con proveedores ya registrados.\n\n## Cuándo crear una plantilla manualmente\n\n- Si la detección falla repetidamente para un proveedor.\n- Si el proveedor usa un formato no estándar (ej. códigos SKU dobles, columnas inusuales).\n- Si quieres asignar un **reseller mapping** específico (qué partner ERP usar como cliente).\n\n## Pasos\n\n1. **Templates → Crear plantilla**.\n2. Asigna nombre, código y dominio de email (opcional).\n3. Configura los **field annotations**: marca visualmente en un PDF de ejemplo dónde está cada campo (PO number, customer, etc).\n4. Asocia un **reseller mapping** si aplica.\n\n## Field annotations vs Target fields\n\n- **Target fields**: lista global de campos que ERP necesita (ej. `partner_id`, `client_order_ref`).\n- **Field annotations**: marcas visuales que enseñan a la IA dónde encontrar cada campo en un proveedor específico."
+      },
+      "glossary": {
+        "title": "Glosario",
+        "summary": "Términos clave que usa DocFlow y qué significa cada uno.",
+        "body": "## Review Profile\n\nConfiguración por **tipo de documento** (PO, factura, remisión). Define qué campos son obligatorios y cómo se valida cada uno antes de aprobar.\n\n## Provider Template\n\nRegla por **proveedor** (Home Depot, etc). Define cómo identificar al proveedor y qué `field annotations` aplicar a sus documentos.\n\n## Target Field\n\nCampo de **destino** en ERP. Ejemplos: `partner_id`, `client_order_ref`, `date_order`, `currency_id`, `name` (de línea), `product_id`, `product_uom_qty`, `price_unit`. Los marcados como `required` deben estar presentes para que el auto-sync se active.\n\n## Reseller Mapping\n\nMapea un **proveedor** (ej. Home Depot) a un **partner ERP específico** (ej. cliente \"Retailer D\"). Sin esto, el sistema no sabe a nombre de quién crear la orden.\n\n## Auto-sync\n\nToggle por tenant. Cuando está **ON**, los documentos \"limpios\" (todos los campos requeridos OK) se aprueban y sincronizan a ERP sin revisión humana.\n\n## Field Annotation\n\nMarca visual por proveedor que enseña a la IA dónde está cada campo. Aprendido cuando un humano corrige una extracción.\n\n## Estados de un documento\n\n| Estado | Significa |\n|---|---|\n| `uploaded` | Recién subido, en cola |\n| `processing` | La IA está extrayendo |\n| `needs_review` | Listo para que un humano apruebe |\n| `reviewed` | Aprobado |\n| `rejected` | Rechazado |\n| `failed_processing` | Falló la extracción |\n| `archived` | Movido al archivo |\n| `split` | Era un PDF con múltiples órdenes; cada hijo se procesa por separado |\n\n## Estados de un order draft (sync)\n\n| Estado | Significa |\n|---|---|\n| `none` | No hay borrador |\n| `pending` | Aprobado, esperando sync |\n| `in_progress` | Sincronizando ahora a ERP |\n| `synced` | Llegó a ERP (existe SO) |\n| `sync_failed` | ERP rechazó la orden |"
+      },
+      "upload-review-approve-sync": {
+        "title": "El flujo: Subir → Revisar → Aprobar → Sincronizar",
+        "summary": "El happy path canónico de DocFlow explicado paso a paso.",
+        "body": "## 1. Subir\n\nArrastra un PDF (o JPG/PNG/WEBP, máx 25 MB) al **Inbox**. También se aceptan ingestion automática por email o scraping.\n\nEl documento aparece en estado `uploaded` → `processing` (~5-30 segundos).\n\n## 2. Extraer (automático)\n\nClaude Sonnet 4.6 lee el PDF y produce un objeto normalizado: número PO, fecha, cliente, líneas con SKU/cantidad/precio, totales. Si detecta múltiples órdenes en un PDF lo divide en hijos.\n\n## 3. Revisar\n\nEl documento pasa a `needs_review`. Abre en **Review** y verifica:\n\n- Header: PO number, fecha, cliente, moneda.\n- Shipping/Billing: direcciones de envío y facturación.\n- Lines: SKU, descripción, cantidad, precio unitario.\n- Notes: instrucciones especiales.\n\nSi algo está mal, edita el campo. Si quieres que la IA aprenda de la corrección, marca un *field annotation* nuevo.\n\n## 4. Aprobar\n\nPulsa **Approve**. El documento pasa a `reviewed` y se dispara la sincronización a ERP.\n\n## 5. Sincronizar\n\nLa orden se crea en ERP (Quotation o Sales Order según tu configuración). El estado pasa a `synced` y aparece el link al SO. Si falla, ve a **Processed** y usa el botón de retry manual.\n\n## Auto-sync\n\nSi el toggle Auto-sync está activo y todos los gates pasan (template resuelto, reseller mapeado, todos los campos requeridos presentes), los pasos 3-5 ocurren automáticamente sin intervención humana."
+      },
+      "auto-sync": {
+        "title": "Auto-sync explicado",
+        "summary": "Qué hace el toggle Auto-sync y cuándo decide saltarse la revisión.",
+        "body": "## ¿Qué hace?\n\nCuando está activo, los documentos cuya extracción es \"perfecta\" se aprueban y sincronizan a ERP sin que un humano abra **Review**. Reduce el tiempo de procesamiento a ~30 segundos por orden.\n\n## Cuándo se activa\n\nDeben pasar **4 gates**:\n\n1. **Template resuelto**: el sistema identificó al proveedor (`provider_id` no es null).\n2. **Reseller mapping**: existe un mapping de proveedor → partner ERP para este tenant.\n3. **Header completo**: todos los `target_fields` con `scope=header` y `required=true` están presentes en la extracción.\n4. **Líneas completas**: cada línea tiene `name`, `quantity > 0`, y `unit_price` no nulo (si está marcado como required).\n\nSi cualquier gate falla, el documento se queda en `needs_review` para que un humano revise.\n\n## ¿Por qué un doc \"limpio\" sigue cayendo en review?\n\nUsa la telemetría: cada decisión emite un evento `auto_approve` con `outcome` y `meta.reason`. Consulta `workflow_events` filtrando por `stage=auto_approve` para ver el motivo exacto (`template_not_resolved`, `no_reseller_mapping`, `missing_header_fields`, `incomplete_line_fields`).\n\n## Activar / desactivar\n\nEn el header del Inbox, pulsa el chip **Auto-sync** y mueve el toggle. Solo los **owners** del tenant pueden cambiarlo (RLS lo enforza).\n\n## Documentos que nunca auto-aprueban\n\n- Órdenes sin precio unitario en líneas (típico de POs de Home Depot escolares).\n- Proveedores nuevos sin reseller mapping configurado.\n- Documentos donde la IA tuvo que dividir en hijos: cada hijo evalúa los gates por separado."
+      },
+      "failed-extraction": {
+        "title": "Documentos que fallan extracción",
+        "summary": "Cómo diagnosticar y resolver errores en la fase de extracción AI.",
+        "body": "## Síntomas\n\n- El documento aparece como **Failed** en el Inbox.\n- Banner rojo arriba: *\"Proveedor de IA no disponible\"* o similar.\n- El campo `last_error` del documento contiene el detalle.\n\n## Causas frecuentes\n\n### 1. Anthropic 529 Overloaded\n\nClaude está saturado. El sistema reintenta automáticamente hasta 3 veces con backoff (4s, 8s). Si los 3 intentos fallan, el doc se marca como failed con tag `ai_provider_unavailable`.\n\n**Solución**: espera 5-10 minutos y pulsa **Retry All**.\n\n### 2. PDF corrupto o cifrado\n\nSi el PDF está protegido por contraseña, la IA no puede leerlo.\n\n**Solución**: descifra el PDF antes de subir (Adobe Acrobat → Quitar seguridad).\n\n### 3. Calidad de imagen baja\n\nScans muy borrosos o rotados pueden producir extracciones de baja confianza.\n\n**Solución**: vuelve a escanear a 300 DPI mínimo, en orientación correcta.\n\n### 4. API key inválida o sin saldo\n\nVe a **Settings → AI** y verifica que la key esté activa y la cuenta Anthropic tenga saldo.\n\n## Reintentar\n\n- **Retry All** en el banner de Failed: reprocesa todos los fallidos del Inbox.\n- **Retry individual**: hover sobre la fila → botón de retry.\n\n## Prevención\n\nSi un proveedor falla repetidamente:\n\n1. Crea un **provider template** con field annotations precisos.\n2. Asegúrate de que el formato del PDF sea consistente entre órdenes."
+      },
+      "retry-sync": {
+        "title": "Reintentar sync con ERP",
+        "summary": "Errores comunes al sincronizar con ERP y cómo resolverlos.",
+        "body": "## ¿Cuándo necesito esto?\n\nCuando una orden aprobada no llegó a ERP. Estado del draft: `pending` (atascado) o `sync_failed`.\n\n## Botón de sync manual\n\nEn la página **Processed**, hover sobre cualquier fila Pending/Failed → aparece el icono verde de refresh. Click → se dispara odoo-sync de nuevo.\n\nEstá protegido por rate limit: máx **30 retries por hora por tenant**.\n\n## Errores comunes de ERP\n\n### `Partner not found`\n\nEl reseller mapping apunta a un partner ERP que ya no existe (fue borrado).\n\n**Solución**: ve a **Templates → Provider** del proveedor afectado y reconfigura el reseller mapping.\n\n### `Product not found`\n\nUn SKU de la orden no está en el catálogo ERP.\n\n**Solución**: \n\n1. Sincroniza el catálogo ERP (**Settings → ERP → Sync products**).\n2. Crea un product mapping para ese SKU específico.\n\n### `Cross-tenant product violation`\n\nLa orden referencia un `odoo_product_id` que no pertenece a tu catálogo. Es un check de seguridad. \n\n**Solución**: revisa que el draft no tenga product IDs de otro tenant (raro; suele pasar por edición manual de la DB).\n\n### `Insufficient stock`\n\nOdoo está configurado para rechazar órdenes sin stock disponible.\n\n**Solución**: o subes stock en ERP, o cambias el modo de exportación a **Quotation** (que no chequea stock).\n\n## Errores de red\n\n- **Timeout**: ERP no respondió en 60s. Verifica que el servidor esté arriba.\n- **Connection refused**: la URL/puerto cambió. Actualiza **Settings → ERP**.\n\n## Si todo lo demás falla\n\nAbre el documento desde Processed, verifica los datos extraídos, y manualmente crea la orden en ERP. Luego marca el documento como `archived` para sacarlo del flujo activo."
+      },
+      "pipeline": {
+        "title": "Pipeline de procesamiento",
+        "summary": "Flujo interactivo completo: de un PDF a una orden en ERP en 6 etapas.",
+        "body": "Ver la página interactiva del pipeline."
+      },
+      "tech-stack": {
+        "title": "Stack tecnológico",
+        "summary": "Anthropic, Supabase, Vercel y ERP: qué aporta cada componente.",
+        "body": "Ver la página del stack tecnológico."
+      }
+    },
+    "pipeline_page": {
+      "header": {
+        "title": "Pipeline de procesamiento",
+        "subtitle": "De un PDF a una orden en ERP. Haz clic en cada etapa para ver exactamente qué sucede, qué herramienta lo hace y qué sale al otro lado.",
+        "categoryTag": "flujo de trabajo"
+      },
+      "autosync": {
+        "label": "Simular Auto-sync",
+        "onDesc": "Los docs limpios van directo a ERP sin revisión humana",
+        "offDesc": "Cada documento pasa por revisión manual en el Inbox",
+        "autoBadge": "Auto"
+      },
+      "labels": {
+        "howItWorks": "Cómo funciona",
+        "outputs": "Outputs",
+        "ifFails": "Si falla:",
+        "lifecycleTitle": "Ciclo de vida del documento",
+        "lifecycleNote": "+ estados de sync en order_drafts: <code>none → pending → in_progress → synced</code> (o <code>sync_failed</code>)",
+        "screenshotsTitle": "La UI en cada etapa",
+        "screenshotInbox": "Inbox — documentos en revisión",
+        "screenshotProcessed": "Processed — órdenes en ERP"
+      },
+      "costs": {
+        "perDoc": "Por documento típico",
+        "splitExtract": "Split + extracción",
+        "odooSync": "ERP sync",
+        "free": "Gratis (tu VPS)"
+      },
+      "stages": {
+        "upload": {
+          "label": "Upload",
+          "sublabel": "PDF entra al sistema",
+          "duration": "< 1 s",
+          "actor": "Usuario / Email / Scraper",
+          "what": "El documento llega a DocFlow por alguno de los tres canales: subida manual desde el Inbox, adjunto por correo (email-ingest), o descarga automática desde un portal de proveedor (browser scrape).",
+          "step1": "El archivo se valida: tipo MIME (PDF/JPG/PNG/WEBP) y tamaño máx. 25 MB",
+          "step2": "Se sube al bucket 'documents' de Supabase Storage con path {tenant}/{year-month}/{uuid}.pdf",
+          "step3": "Se crea la fila en la tabla documents con state = 'uploaded'",
+          "step4": "Se dispara el Edge Function ingest con el document_id y tenant_id",
+          "out1": "Archivo en Storage",
+          "out2": "documents.state = 'uploaded'"
+        },
+        "split": {
+          "label": "Split (opcional)",
+          "sublabel": "PDFs multi-orden",
+          "duration": "2–5 s",
+          "actor": "Claude Haiku",
+          "what": "Si el PDF contiene múltiples órdenes de compra, un modelo ligero (Haiku) detecta los límites de página entre órdenes y divide el archivo en hijos independientes.",
+          "step1": "Claude Haiku analiza el PDF completo buscando encabezados PO, números de orden y cambios de cliente",
+          "step2": "Si detecta > 1 orden, extrae cada rango de páginas con pdf-lib y sube PDFs hijos al Storage",
+          "step3": "El documento padre pasa a state = 'split' y desaparece del Inbox",
+          "step4": "Cada hijo inicia su propio pipeline desde cero",
+          "out1": "N documentos hijo con state = 'uploaded'",
+          "out2": "Padre con state = 'split'"
+        },
+        "extract": {
+          "label": "Extracción AI",
+          "sublabel": "Claude lee el PO",
+          "duration": "5–25 s",
+          "actor": "Claude Sonnet 4.6",
+          "what": "Claude Sonnet 4.6 recibe el PDF como imagen (visión multimodal) y produce un objeto JSON normalizado con todos los campos del pedido. Reintenta hasta 3 veces si Anthropic responde 529 (sobrecarga).",
+          "step1": "El PDF se convierte a base64 y se envía al API de Anthropic como document block",
+          "step2": "El prompt instruye a Claude a producir JSON con: PO number, fecha, cliente, dirección, líneas (SKU, descripción, cantidad, precio), totales",
+          "step3": "La respuesta se valida con un schema Zod: fechas ISO, código de moneda 3 chars, totales numéricos",
+          "step4": "Si la confianza es baja, se evalúan los problemas y se decide si el doc pasa auto-approve",
+          "out1": "NormalizedOrder JSON",
+          "out2": "detected_fields con coordenadas",
+          "out3": "confidence 0–1",
+          "fail": "Si los 3 reintentos fallan → documents.state = 'failed_processing' con last_error = 'ai_provider_unavailable'"
+        },
+        "template": {
+          "label": "Detección de proveedor",
+          "sublabel": "¿Quién mandó la orden?",
+          "duration": "< 1 s",
+          "actor": "DB + fuzzy match",
+          "what": "El sistema identifica al proveedor usando tres métodos en cascada. Este paso es crítico para el auto-sync: sin proveedor resuelto, el auto-approve falla.",
+          "step1": "1. Domain match: si vino por email, el dominio del remitente se cruza con email_domains de providers",
+          "step2": "2. Code match: el código slugificado del proveedor detectado en el texto vs. providers.code",
+          "step3": "3. Fuzzy name match: si el nombre extraído por la IA coincide ≥ 4 caracteres con un provider registrado",
+          "step4": "Si se resuelve, se carga el review_profile correspondiente al tipo de documento",
+          "out1": "documents.provider_id",
+          "out2": "autoTemplate.detectionStatus = 'resolved' | 'unresolved'"
+        },
+        "review": {
+          "label": "Revisión",
+          "sublabel": "Humano o Auto-sync",
+          "duration": "Variable",
+          "actor": "Usuario o Auto-sync",
+          "what": "El documento llega a 'needs_review'. Si el Auto-sync está ON y todos los gates pasan, se aprueba automáticamente. Si no, queda en el Inbox para revisión humana.",
+          "step1": "Gate 1: template resuelto (provider_id no nulo)",
+          "step2": "Gate 2: reseller mapping existe (proveedor → partner ERP)",
+          "step3": "Gate 3: todos los target_fields requeridos de tipo header están presentes",
+          "step4": "Gate 4: todas las líneas tienen name, quantity > 0, y price_unit si es requerido",
+          "step5": "Si pasan los 4 gates → auto-approve. Si no → el humano revisa en la UI",
+          "out1": "documents.state = 'reviewed'",
+          "out2": "order_drafts.approved_at",
+          "out3": "sync_state = 'pending'"
+        },
+        "sync": {
+          "label": "Sync a ERP",
+          "sublabel": "Sales Order en ERP",
+          "duration": "2–5 s",
+          "actor": "Edge Function odoo-sync",
+          "what": "El Edge Function odoo-sync llama a la API XML-RPC de ERP para crear la venta. Busca o crea el partner, mapea los productos por SKU, y retorna el número de SO.",
+          "step1": "Resuelve el partner ERP: busca por nombre/email, crea si no existe (según contact_settings)",
+          "step2": "Para cada línea, resuelve el odoo_product_id: primero en provider_product_mappings, luego búsqueda por código en el catálogo",
+          "step3": "Llama a sale.order.create() vía XML-RPC con todos los campos",
+          "step4": "Si exportMode = 'sales_order', confirma la orden con action_confirm()",
+          "step5": "Guarda odoo_so_id y odoo_so_name en order_drafts y marca sync_state = 'synced'",
+          "out1": "ERP Sales Order creado",
+          "out2": "order_drafts.sync_state = 'synced'",
+          "out3": "odoo_so_name = 'S09XXX'",
+          "fail": "sync_state = 'sync_failed' con last_sync_error. Retry manual desde Processed."
+        }
+      }
+    },
+    "tech_stack_page": {
+      "header": {
+        "title": "Stack tecnológico",
+        "subtitle": "DocFlow está construido sobre infraestructura cloud de primer nivel. Cada capa tiene una responsabilidad clara y juntas forman un pipeline robusto y escalable.",
+        "categoryTag": "conceptos"
+      },
+      "diagram": {
+        "title": "Arquitectura"
+      },
+      "labels": {
+        "readMore": "Leer más",
+        "pipelineLink": "Pipeline de procesamiento",
+        "pipelineDesc": "Flujo completo interactivo",
+        "glossaryLink": "Glosario",
+        "glossaryDesc": "Términos clave definidos"
+      },
+      "anthropic": {
+        "name": "Anthropic Claude",
+        "tagline": "El cerebro del sistema",
+        "stat1Label": "Modelo principal",
+        "stat2Label": "Modelo split",
+        "stat3Label": "Costo típico",
+        "stat4Label": "Reintentos en 529",
+        "stat4Value": "3× con backoff",
+        "c1Title": "Extracción multimodal",
+        "c1Desc": "Claude Sonnet 4.6 recibe el PDF como imagen base64 (visión + documentos) y extrae todos los campos del PO en una sola llamada. No necesita OCR previo.",
+        "c2Title": "JSON estructurado",
+        "c2Desc": "El modelo produce JSON con schema estricto: po_number, fecha ISO, código de moneda 3 chars, líneas con SKU/cantidad/precio. Zod valida el output.",
+        "c3Title": "Detección de límites",
+        "c3Desc": "Claude Haiku detecta cuántas órdenes hay en un PDF multi-orden y devuelve los rangos de página para el split. Modelo más barato = costo mínimo en esta tarea.",
+        "c4Title": "Confianza y calidad",
+        "c4Desc": "Cada respuesta incluye un campo confidence (0–1). El sistema evalúa issues (fechas malformadas, totales que no cuadran) y decide si el doc califica para auto-approve."
+      },
+      "supabase": {
+        "name": "Supabase",
+        "tagline": "Backend como servicio — base de datos, auth, storage y Edge Functions",
+        "stat1Label": "Base de datos",
+        "stat2Label": "Runtime EF",
+        "stat3Label": "Auth",
+        "stat3Value": "JWT + RLS",
+        "stat4Label": "Realtime",
+        "stat4Value": "WebSocket",
+        "c1Title": "PostgreSQL + RLS",
+        "c1Desc": "Todas las tablas tienen Row Level Security. Los usuarios solo ven datos de su tenant. Las políticas garantizan aislamiento sin lógica extra en el backend.",
+        "c2Title": "Edge Functions (Deno)",
+        "c2Desc": "ai-process, ingest, odoo-sync y email-ingest corren como funciones serverless en el edge de Supabase. Sin servidor que mantener, escalan solos.",
+        "c3Title": "Realtime",
+        "c3Desc": "El Inbox usa Supabase Realtime para actualizar la lista de documentos sin polling. Cuando un doc pasa a 'needs_review', el usuario lo ve en < 1 segundo.",
+        "c4Title": "Storage",
+        "c4Desc": "Bucket privado 'documents' con políticas de storage por tenant_id. Ningún usuario puede leer el archivo de otro tenant adivinando el path.",
+        "c5Title": "Auth",
+        "c5Desc": "Auth con magic links y email/password. JWT con claims del tenant incluidos. La key de servicio (service role) nunca llega al cliente."
+      },
+      "vercel": {
+        "name": "Vercel + Next.js 16",
+        "tagline": "Frontend y API routes con el framework más moderno de React",
+        "stat1Label": "Framework",
+        "stat2Label": "React",
+        "stat3Label": "Tailwind",
+        "stat4Label": "Runtime",
+        "stat4Value": "Node.js 22 / Edge",
+        "c1Title": "App Router (React 19)",
+        "c1Desc": "Páginas como Server Components por defecto. Solo los componentes interactivos (tabla del Inbox, review workspace) son Client Components. Menor JS enviado al browser.",
+        "c2Title": "API Routes serverless",
+        "c2Desc": "Cada ruta /api/* es una función serverless que corre en Vercel Edge o Node.js según necesidad. Auth, autorización de tenant y validación de input en cada endpoint.",
+        "c3Title": "i18n con next-intl",
+        "c3Desc": "Interfaz en español e inglés. Las rutas tienen prefijo /[locale]/. Los artículos del Help Center están traducidos al 100% en ambos idiomas.",
+        "c4Title": "Shadcn + Tailwind v4",
+        "c4Desc": "Sistema de diseño con variables CSS oklch. Componentes accesibles de Radix UI. El sidebar dark, el content area light, el modo oscuro completo.",
+        "c5Title": "Streaming y Suspense",
+        "c5Desc": "Las páginas pesadas (Templates, Settings) usan Suspense boundaries para mostrar skeleton loaders mientras se resuelven las queries de Supabase."
+      },
+      "odoo": {
+        "name": "ERP 19",
+        "tagline": "ERP de destino — donde viven las Sales Orders",
+        "stat1Label": "Protocolo",
+        "stat2Label": "Versión",
+        "stat3Label": "URL típica",
+        "stat4Label": "Auth",
+        "stat4Value": "API key (no contraseña)",
+        "c1Title": "API XML-RPC",
+        "c1Desc": "DocFlow llama a ERP via XML-RPC (protocolo nativo de ERP). Autenticación con API key. Crea sale.order, res.partner, y attach ir.attachment con el PDF original.",
+        "c2Title": "Catálogo de productos",
+        "c2Desc": "La sincronización de catálogo descarga product.product de ERP y los guarda en odoo_products. Los SKUs del PO se mapean contra este catálogo para resolver odoo_product_id.",
+        "c3Title": "Modos de exportación",
+        "c3Desc": "Quotation: la orden queda en estado borrador, un humano la confirma en ERP. Sales Order: se auto-confirma al sincronizar. Configurable por tenant.",
+        "c4Title": "Multi-empresa",
+        "c4Desc": "El reseller mapping permite que una orden de Home Depot cree la SO en la empresa ERP correcta con el partner correcto, incluso en configuraciones multi-compañía."
+      }
+    },
+    "indexFeatured": {
+      "pipelineTitle": "Pipeline interactivo",
+      "pipelineDesc": "Explora cada etapa del procesamiento — haz clic y entiende exactamente qué hace el sistema.",
+      "pipelineCta": "Explorar pipeline",
+      "techStackTitle": "Stack tecnológico",
+      "techStackDesc": "Anthropic, Supabase, Vercel y ERP — qué aporta cada componente y cómo se integran.",
+      "techStackCta": "Ver el stack"
+    },
+    "indexCount": "{count, plural, one {# artículo} other {# artículos}}",
+    "readArticle": "Leer artículo",
+    "tocTitle": "En este artículo",
+    "resultsCount": "{count, plural, one {# resultado} other {# resultados}}"
+  },
+  "appHeader": {
+    "autoSync": "Auto-sync",
+    "commands": "Comandos",
+    "publicScanner": "Escáner público",
+    "approvedOrders": "Órdenes aprobadas → ERP",
+    "publicScannerTooltip": "Escáner público (QR)",
+    "syncCatalog": "Sincronizar catálogo",
+    "syncCatalogTooltip": "Sincronizar catálogo de ERP",
+    "diagnostics": "Diagnóstico",
+    "diagnosticsTooltip": "Diagnóstico de integraciones"
+  },
+  "notificationsSettings": {
+    "pageTitle": "Notificaciones y alertas por correo",
+    "pageSubtitle": "Centro para configurar todos los emails automáticos que envía DocFlow — destinatarios, plantillas y horarios. Los emails salen desde orders@example.com a través de Email provider.",
+    "loading": "Cargando configuración…",
+    "recipientsTitle": "Destinatarios",
+    "noRecipients": "No hay destinatarios configurados todavía",
+    "addRecipient": "Agregar destinatario",
+    "emailPlaceholder": "correo@empresa.com",
+    "namePlaceholder": "Nombre (opcional)",
+    "typeAll": "Todos los emails",
+    "typeOrderApproved": "Órdenes aprobadas",
+    "typeDailyDigest": "Reporte diario",
+    "recipientAdded": "Destinatario agregado",
+    "recipientDeleted": "Destinatario eliminado",
+    "addError": "No se pudo agregar el destinatario",
+    "templatesTitle": "Templates",
+    "subjectLabel": "Asunto",
+    "introLabel": "Introducción",
+    "varsHint": {
+      "order_approved": "Variables: {{po_number}}, {{partner}}, {{total}}, {{odoo_so}}",
+      "daily_digest": "Variables: {{period}}, {{approved_count}}, {{pending_count}}, {{error_count}}"
+    },
+    "save": "Guardar",
+    "resetDefaults": "Restaurar defaults",
+    "templateSaved": "Template guardado",
+    "templateReset": "Template restaurado a valores por defecto",
+    "templateSaveError": "No se pudo guardar el template"
+  },
+  "integrationsDiagnostics": {
+    "title": "Diagnóstico de integraciones",
+    "subtitle": "Estado en tiempo real de las 4 fuentes de ingesta",
+    "runAll": "Correr todos los diagnósticos",
+    "refresh": "Refrescar",
+    "loading": "Cargando estado…",
+    "loadError": "No se pudo cargar el estado",
+    "runDiagnostic": "Correr diagnóstico",
+    "smokeSuccess": "{name}: diagnóstico exitoso",
+    "smokeFail": "{name}: diagnóstico falló",
+    "smokeError": "Error al correr el diagnóstico",
+    "allSmokeSuccess": "Diagnósticos completados",
+    "close": "Cerrar",
+    "notConfigured": "no configurado",
+    "noData": "Sin datos",
+    "lastHealthcheck": "Último healthcheck",
+    "lastOrder": "Última orden",
+    "orders24h": "Órdenes 24h",
+    "session": "Sesión",
+    "integration": {
+      "rithum": "Supplier Portal",
+      "cleo": "Supplier Portal",
+      "walmart": "Marketplace",
+      "m365": "Email provider"
+    },
+    "sessionState": {
+      "ok": "activa",
+      "stale": "expirada",
+      "unknown": "desconocida"
+    }
+  },
+  "notifications": {
+    "title": "Notificaciones",
+    "bellLabel": "Notificaciones",
+    "viewAll": "Ver todas",
+    "markAllRead": "Marcar todas leídas",
+    "empty": "Sin notificaciones",
+    "pageTitle": "Notificaciones",
+    "pageSubtitle": "{count, plural, =0 {Todas leídas} one {# sin leer} other {# sin leer}}",
+    "loading": "Cargando…",
+    "loadMore": "Cargar más",
+    "searchPlaceholder": "Buscar…",
+    "apply": "Aplicar",
+    "severity": "Severidad",
+    "source": "Fuente",
+    "severityValues": {
+      "info": "Info",
+      "success": "Éxito",
+      "warning": "Advertencia",
+      "error": "Error"
+    },
+    "sourceValues": {
+      "workflow_event": "Workflow",
+      "odoo_sync": "Sync ERP",
+      "healthcheck": "Healthcheck",
+      "admin": "Admin"
+    }
+  },
+  "odooCatalogSync": {
+    "title": "Sincronizar desde ERP",
+    "subtitle": "Elegí qué bajar — cada bloque actualiza una capa distinta del cache",
+    "sync": "Sincronizar",
+    "syncing": "Sincronizando…",
+    "synced": "Sincronizado",
+    "close": "Cerrar",
+    "countDetail": "{count} registros bajados · {deactivated} desactivados",
+    "products": {
+      "title": "Productos",
+      "summary": "Catálogo de productos activos en ERP (SKU, código, código de barras, UoM)",
+      "detail1": "Fuente: modelo product.product activo",
+      "detail2": "Marca como inactivo lo que ERP ya borró (reaper automático)",
+      "detail3": "El cron diario corre a las 3am hora local",
+      "duration": "~30 s a 2 min",
+      "success": "Productos sincronizados",
+      "error": "No se pudieron sincronizar los productos"
+    },
+    "catalog": {
+      "title": "Clientes y referencias",
+      "summary": "Partners (empresas), impuestos, monedas, payment terms, bodegas, carriers, equipos de venta, UoMs",
+      "detail1": "Necesario para resolver el cliente al aprobar una orden",
+      "detail2": "Solo partners top-level (compañías o personas sin parent)",
+      "detail3": "Refresca también currencies, taxes y warehouses para los selects de ERP",
+      "duration": "~1 a 3 min",
+      "success": "Clientes y referencias sincronizados",
+      "error": "No se pudieron sincronizar clientes/referencias"
+    },
+    "schema": {
+      "title": "Schema de modelos",
+      "summary": "Metadata de campos y tipos de los modelos clave de ERP (sale.order, res.partner, etc.)",
+      "detail1": "Solo necesario para crear templates avanzados o ver field types",
+      "detail2": "No afecta la sincronización de productos ni de órdenes",
+      "detail3": "Se actualiza poco — no hace falta correrlo seguido",
+      "duration": "~30 s",
+      "success": "Schema sincronizado",
+      "error": "No se pudo sincronizar el schema"
+    },
+    "all": {
+      "title": "Sincronizar todo",
+      "summary": "Ejecuta las 3 sincronizaciones en orden: clientes/referencias → productos → schema",
+      "detail1": "Tarda lo que suman las tres (clientes suele ser la más lenta)",
+      "detail2": "Si una falla, las anteriores quedan aplicadas; podés reintentar la que falló",
+      "detail3": "Usa cuota de la API de ERP — evitá en horarios de mucha actividad",
+      "duration": "~3 a 5 min",
+      "confirm": "Sincronizar todo",
+      "success": "Todas las sincronizaciones completaron"
+    },
+    "timer": {
+      "lastSyncOk": "Última sync: hace {time}",
+      "lastSyncOkWithCount": "Última sync: hace {time} · {count} registros",
+      "failedAgo": "Falló hace {time}",
+      "neverSynced": "Nunca sincronizado",
+      "nextRun": "Próxima: en {time}",
+      "nextRunOverdue": "Atrasado: corría hace {time}",
+      "running": "Sincronizando ahora…",
+      "loadError": "No se pudo cargar el estado"
+    }
+  },
+  "breadcrumbs": {
+    "detail": "Detalle",
+    "dashboard": "Inicio",
+    "inbox": "Bandeja",
+    "ingest": "Centro de Ingesta",
+    "email": "Email",
+    "portals": "Portales",
+    "browser": "Navegador",
+    "review": "Revisión",
+    "processed": "Procesados",
+    "providers": "Plantillas",
+    "templates": "Plantillas",
+    "profile-studio": "Profile Studio",
+    "integrations": "Integraciones",
+    "odoo": "ERP",
+    "settings": "Configuración",
+    "general": "General",
+    "team": "Equipo",
+    "mappings": "Mapeos",
+    "credits": "Créditos",
+    "ai": "IA",
+    "configuration": "Configuración",
+    "source-target": "Mapeo de campos",
+    "sku-mapping": "Mapeo de SKU",
+    "microsoft-365": "Email provider",
+    "help": "Ayuda",
+    "pipeline": "Pipeline",
+    "tech-stack": "Stack tecnológico"
+  },
+  "emailInbound": {
+    "title": "Email Inbound",
+    "subtitle": "Histórico de todos los correos recibidos en orders@example.com (Email provider). Solo lectura.",
+    "inbox": "Inbox",
+    "unreads": "No leídos",
+    "search": "Buscar...",
+    "empty": "No hay correos.",
+    "messages": "{count, plural, =0 {Sin mensajes} one {# mensaje} other {# mensajes}}",
+    "processingCount": "{count} procesando",
+    "noSubject": "(sin asunto)",
+    "selectEmail": "Selecciona un correo",
+    "loadError": "Error cargando el correo",
+    "to": "Para:",
+    "html": "HTML",
+    "text": "Texto",
+    "noBody": "Sin cuerpo de mensaje",
+    "attachments": "{count, plural, one {# adjunto} other {# adjuntos}}",
+    "errorLoadingHtml": "(error cargando HTML)",
+    "relativeNow": "ahora",
+    "relativeMin": "{n}m",
+    "relativeHour": "{n}h",
+    "relativeDay": "{n}d"
+  }
+}
